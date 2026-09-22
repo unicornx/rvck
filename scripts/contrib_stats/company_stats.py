@@ -290,8 +290,10 @@ class ContribStats:
             for specific_email in info["specific_emails"]:
                 email_match = re.search(r'<([^>]+)>', specific_email)
                 if email_match:
+                    print(f"===> Checking specific email: {specific_email} against {email_lower}")
                     specific_email_addr = email_match.group(1).lower()
                     if specific_email_addr in email_lower:
+                        print(f"===> Matched specific email: {specific_email_addr} for company {company}")
                         return company
 
         return None
@@ -370,9 +372,11 @@ class ContribStats:
                     # 获取签名信息
                     signatures = self.get_commit_signatures(tmp_dir, commit['hash'])
                     commit['signatures'] = signatures
+                    print(f"===> 获取签名信息：\n{commit['signatures']}")
 
                     # 确定提交所属机构
                     author_company = self.get_company_by_email(commit['author_email'])
+                    print(f"===> 确定提交所属机构：\n{author_company}")
 
                     if author_company:
                         # Author属于某个机构，只统计该机构
