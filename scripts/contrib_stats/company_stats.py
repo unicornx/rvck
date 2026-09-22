@@ -375,6 +375,7 @@ class ContribStats:
                     print(f"===> 获取签名信息：\n{commit['signatures']}")
 
                     # 确定提交所属机构
+                    print(f"===> get_company_by_email 1: {commit['author_email']}")
                     author_company = self.get_company_by_email(commit['author_email'])
                     print(f"===> 确定提交所属机构：\n{author_company}")
 
@@ -393,7 +394,9 @@ class ContribStats:
                             email_match = re.search(r'<([^>]+)>', sig)
                             if email_match:
                                 email = email_match.group(1)
+                                print(f"===> get_company_by_email 2: {email}")
                                 company = self.get_company_by_email(email)
+                                print(f"===> 从签名中提取邮箱 {email} 对应机构: {company}")
                                 if company:
                                     signature_companies.add(company)
 
