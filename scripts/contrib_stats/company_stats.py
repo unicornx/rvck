@@ -268,14 +268,15 @@ class ContribStats:
 
         print(f"===> 提交中的完整签名列表信息: {signatures}")
 
-        if not signatures:
-            return []
+        # 需要排除的邮箱
+        excluded_emails = ("<si.yanteng@linux.dev>", "<siyanteng@iscas.ac.cn>")
 
-        # 如果最后一个签名包含指定邮箱，则尝试返回上一个
-        if "<siyanteng@iscas.ac.cn>" in signatures[-1]:
-            return signatures[-2:-1]  # 上上个可能不存在，此时返回 []
+        # 从最后一个往前找，返回第一个不含排除邮箱的
+        for sig in reversed(signatures):
+            if not any(email in sig for email in excluded_emails):
+                return [sig]
 
-        return signatures[-1:]
+        return []
 
     def get_company_by_email(self, email):
         """根据邮箱判断机构归属"""
@@ -394,9 +395,9 @@ class ContribStats:
                         email_match = re.search(r'<([^>]+)>', sig)
                         if email_match:
                             email = email_match.group(1)
-                            print(f"===> get_company_by_email 2: {email}")
+                            #print(f"===> get_company_by_email 2: {email}")
                             company = self.get_company_by_email(email)
-                            print(f"===> 从签名中提取邮箱 {email} 对应机构: {company}")
+                            #print(f"===> 从签名中提取邮箱 {email} 对应机构: {company}")
                             if company:
                                 signature_companies.add(company)
 
@@ -404,12 +405,14 @@ class ContribStats:
                         # 统计所有出现的机构
                         stats['commits_with_company'] += 1
                         for company in signature_companies:
+                            print(f"===> 统计机构匹配成功: {company} ...")
                             stats['companies'][company]['count'] += 1
                             stats['companies'][company]['insertions'] += commit_stats['insertions']
                             stats['companies'][company]['deletions'] += commit_stats['deletions']
                             stats['companies'][company]['commits'].append(commit)
                     else:
                         # 没有机构相关签名
+                        print(f"===> 统计机构匹配失败: ...")
                         stats['no_company_commits'].append(commit)
 
                 return stats
