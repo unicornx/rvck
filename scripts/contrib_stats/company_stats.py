@@ -262,14 +262,20 @@ class ContribStats:
             return []
 
         signatures = []
-        last_signature = []
         for line in stdout.split('\n'):
             if line.strip().lower().startswith('signed-off-by:'):
                 signatures.append(line.strip())
-                last_signature=line.strip()
 
-        print(f"===> 提交的签名列表信息: {signatures}")
-        return [last_signature] if last_signature else []
+        print(f"===> 提交中的完整签名列表信息: {signatures}")
+
+        if not signatures:
+            return []
+
+        # 如果最后一个签名包含指定邮箱，则尝试返回上一个
+        if "<siyanteng@iscas.ac.cn>" in signatures[-1]:
+            return signatures[-2:-1]  # 上上个可能不存在，此时返回 []
+
+        return signatures[-1:]
 
     def get_company_by_email(self, email):
         """根据邮箱判断机构归属"""
@@ -375,7 +381,7 @@ class ContribStats:
                     # 获取签名信息
                     signatures = self.get_commit_signatures(tmp_dir, commit['hash'])
                     commit['signatures'] = signatures
-                    print(f"===> 获取签名信息：\n{commit['signatures']}")
+                    print(f"===> 该提交的最后一个签名信息：\n{commit['signatures']}")
 
                     # 确定提交所属机构
                     #print(f"===> get_company_by_email 1: {commit['author_email']}")
