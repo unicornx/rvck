@@ -254,7 +254,7 @@ class ContribStats:
 
     def get_commit_signatures(self, tmp_dir, commit_hash):
         """从克隆中获取提交的签名信息"""
-
+        # 只返回最后一个 SOB
         show_cmd = f"git show --no-patch --format=%B {commit_hash}"
         stdout, stderr, code = self.run_git(show_cmd, cwd=tmp_dir)
 
@@ -262,11 +262,14 @@ class ContribStats:
             return []
 
         signatures = []
+        last_signature = []
         for line in stdout.split('\n'):
             if line.strip().lower().startswith('signed-off-by:'):
                 signatures.append(line.strip())
+                last_signature=line.strip()
 
-        return signatures
+        print(f"===> 提交的签名列表信息: {signatures}")
+        return [last_signature] if last_signature else []
 
     def get_company_by_email(self, email):
         """根据邮箱判断机构归属"""
@@ -375,42 +378,33 @@ class ContribStats:
                     print(f"===> 获取签名信息：\n{commit['signatures']}")
 
                     # 确定提交所属机构
-                    print(f"===> get_company_by_email 1: {commit['author_email']}")
-                    author_company = self.get_company_by_email(commit['author_email'])
-                    print(f"===> 确定提交所属机构：\n{author_company}")
+                    #print(f"===> get_company_by_email 1: {commit['author_email']}")
+                    #author_company = self.get_company_by_email(commit['author_email'])
+                    #print(f"===> 确定提交所属机构：\n{author_company}")
 
-                    if author_company:
-                        # Author属于某个机构，只统计该机构
-                        stats['companies'][author_company]['count'] += 1
-                        stats['companies'][author_company]['insertions'] += commit_stats['insertions']
-                        stats['companies'][author_company]['deletions'] += commit_stats['deletions']
-                        stats['companies'][author_company]['commits'].append(commit)
+                    signature_companies = set()
+                    for sig in signatures:
+                        # 从签名中提取邮箱
+                        email_match = re.search(r'<([^>]+)>', sig)
+                        if email_match:
+                            email = email_match.group(1)
+                            print(f"===> get_company_by_email 2: {email}")
+                            company = self.get_company_by_email(email)
+                            print(f"===> 从签名中提取邮箱 {email} 对应机构: {company}")
+                            if company:
+                                signature_companies.add(company)
+
+                    if signature_companies:
+                        # 统计所有出现的机构
                         stats['commits_with_company'] += 1
+                        for company in signature_companies:
+                            stats['companies'][company]['count'] += 1
+                            stats['companies'][company]['insertions'] += commit_stats['insertions']
+                            stats['companies'][company]['deletions'] += commit_stats['deletions']
+                            stats['companies'][company]['commits'].append(commit)
                     else:
-                        # Author不属于任何机构，检查签名中的机构
-                        signature_companies = set()
-                        for sig in signatures:
-                            # 从签名中提取邮箱
-                            email_match = re.search(r'<([^>]+)>', sig)
-                            if email_match:
-                                email = email_match.group(1)
-                                print(f"===> get_company_by_email 2: {email}")
-                                company = self.get_company_by_email(email)
-                                print(f"===> 从签名中提取邮箱 {email} 对应机构: {company}")
-                                if company:
-                                    signature_companies.add(company)
-
-                        if signature_companies:
-                            # 统计所有出现的机构
-                            stats['commits_with_company'] += 1
-                            for company in signature_companies:
-                                stats['companies'][company]['count'] += 1
-                                stats['companies'][company]['insertions'] += commit_stats['insertions']
-                                stats['companies'][company]['deletions'] += commit_stats['deletions']
-                                stats['companies'][company]['commits'].append(commit)
-                        else:
-                            # 没有机构相关签名
-                            stats['no_company_commits'].append(commit)
+                        # 没有机构相关签名
+                        stats['no_company_commits'].append(commit)
 
                 return stats
 
