@@ -77,7 +77,7 @@ class ContribStats:
             }
         }
 
-        self.maintainer_emails = ("siyanteng@iscas.ac.cn",)
+        self.maintainer_emails = ("siyanteng@iscas.ac.cn","gaohan@iscas.ac.cn")
 
         # 输出目录
         self.docs_dir = self.repo_path / "docs"
@@ -379,7 +379,6 @@ class ContribStats:
                     for i in range(len(signatures) - 1, -1, -1):
                         if any(email in signatures[i] for email in self.maintainer_emails):
                             del signatures[i]
-                            break
                     filtered_signatures = signatures
                     print(f"===> 排除掉 RVCK 维护人员签名的 SOB 列表信息：\n{filtered_signatures}")
 
