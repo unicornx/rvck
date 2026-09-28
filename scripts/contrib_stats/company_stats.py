@@ -467,7 +467,7 @@ class ContribStats:
         """生成统计主页"""
 
         # 按 “贡献” 所做的统计 ======
-        # 按提交数排序
+        # 按贡献数排序
         sorted_companies_contribution = sorted(
             [(company, stats['companies_contribution'][company]['count']) for company in self.companies],
             key=lambda x: x[1],
