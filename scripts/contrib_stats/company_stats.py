@@ -18,6 +18,12 @@ from datetime import datetime, timedelta
 from collections import defaultdict
 from pathlib import Path
 
+DEBUG = os.getenv("DEBUG", "0") == "1"
+
+def dprint(*args, **kwargs):
+    if DEBUG:
+        print("[DEBUG] ===>", *args, **kwargs)
+
 def beijing_timestamp():
     """返回北京时间字符串"""
 
@@ -97,7 +103,7 @@ class ContribStats:
 
     def run_git(self, cmd, cwd=None, check_error=True):
         """运行git命令"""
-        print(f"run_git ===>: {cmd} (cwd={cwd})")
+        dprint(f"run_git: {cmd} (cwd={cwd})")
 
         if cwd is None:
             cwd = self.repo_path
@@ -276,10 +282,6 @@ class ContribStats:
 
         email_lower = email.lower()
 
-        #for excl in self.excluded_emails:
-        #    if excl.lower() == email_lower:
-        #        return None
-
         for company, info in self.companies.items():
             # 检查邮箱后缀
             for suffix in info["suffixes"]:
@@ -290,10 +292,8 @@ class ContribStats:
             for specific_email in info["specific_emails"]:
                 email_match = re.search(r'<([^>]+)>', specific_email)
                 if email_match:
-                    #print(f"===> Checking specific email: {specific_email} against {email_lower}")
                     specific_email_addr = email_match.group(1).lower()
                     if specific_email_addr in email_lower:
-                        #print(f"===> Matched specific email: {specific_email_addr} for company {company}")
                         return company
 
         return None
@@ -377,7 +377,7 @@ class ContribStats:
                     # 获取签名信息
                     signatures = self.get_commit_signatures(tmp_dir, commit['hash'])
                     commit['signatures'] = signatures
-                    print(f"===> 该提交的 SOB 列表信息：\n{commit['signatures']}")
+                    dprint(f"该提交的 SOB 列表信息：{commit['signatures']}")
 
                     # 对 SOB 列表进行过滤，排除掉一些 RCVK 维护人员在 rebase
                     # 过程中添加在末尾的签名，这些 RVCK 维护人员的签名仅仅用于
@@ -386,14 +386,9 @@ class ContribStats:
                         if any(email in signatures[i] for email in self.maintainer_emails):
                             del signatures[i]
                     filtered_signatures = signatures
-                    print(f"===> 排除掉 RVCK 维护人员签名的 SOB 列表信息：\n{filtered_signatures}")
+                    dprint(f"排除掉 RVCK 维护人员签名的 SOB 列表信息：{filtered_signatures}")
 
-                    # 确定提交所属机构
-                    #print(f"===> get_company_by_email 1: {commit['author_email']}")
-                    #author_company = self.get_company_by_email(commit['author_email'])
-                    #print(f"===> 确定提交所属机构：\n{author_company}")
-
-                    print(f"===> 按 “提交” 的思路进行统计 =======================")
+                    dprint(f"按 “提交” 的思路进行统计 =======================")
                     # 从后往前遍历过滤后的签名列表，找到第一个匹配的可识别机构就退出
                     signature_companies = set()
                     for sig in reversed(filtered_signatures):
@@ -406,13 +401,13 @@ class ContribStats:
                                 signature_companies.add(company)
                                 break
 
-                    print(f"===> 针对该提交的 SOB 检测匹配公司结果：\n{signature_companies}")
+                    dprint(f"针对该提交的 SOB 检测匹配公司结果：{signature_companies}")
                     # 此时要么找到；要么没有找到任何我们统计范围内的机构
                     if signature_companies:
                         # 统计所有出现的机构
                         stats['commits_with_company'] += 1
                         for company in signature_companies:
-                            print(f"===> 统计机构匹配成功: {company} ...")
+                            dprint(f"统计机构匹配成功: {company} ...")
                             stats['companies'][company]['count'] += 1
                             stats['companies'][company]['insertions'] += commit_stats['insertions']
                             stats['companies'][company]['deletions'] += commit_stats['deletions']
@@ -420,12 +415,12 @@ class ContribStats:
                     else:
                         # 再看看 author 是不是 RVCK 的维护人员邮箱，如果是的话
                         # 则按照维护人员所在公司统计（目前应该就是 iscas）
-                        print(f"===> 针对该提交的 SOB 检测匹配公司结果为空，继续检查 author 是否是维护人员邮箱: {commit['author_email']}")
+                        dprint(f"针对该提交的 SOB 检测匹配公司结果为空，继续检查 author 是否是维护人员邮箱: {commit['author_email']}")
                         if commit['author_email'] in self.maintainer_emails:
-                            print(f"===> 该提交的 author 是维护人员邮箱，尝试归入维护人员所在机构...")
+                            dprint(f"该提交的 author 是维护人员邮箱，尝试归入维护人员所在机构...")
                             maintainer_company = self.get_company_by_email(commit['author_email'])
                             if maintainer_company:
-                                print(f"===> 统计机构匹配成功（维护人员邮箱）: {maintainer_company} ...")
+                                dprint(f"统计机构匹配成功（维护人员邮箱）: {maintainer_company} ...")
                                 stats['commits_with_company'] += 1
                                 stats['companies'][maintainer_company]['count'] += 1
                                 stats['companies'][maintainer_company]['insertions'] += commit_stats['insertions']
@@ -433,16 +428,16 @@ class ContribStats:
                                 stats['companies'][maintainer_company]['commits'].append(commit)
                             else:
                                 # 没有机构相关签名
-                                print(f"===> 该提交的 author 邮箱不属于我们可识别的公司: 归入其他 ...")
+                                dprint(f"该提交的 author 邮箱不属于我们可识别的公司: 归入其他 ...")
                                 stats['no_company_commits'].append(commit)
                         else:
                             # 没有机构相关签名
-                            print(f"===> 该提交的 author 不是维护人员邮箱: 归入其他 ...")
+                            dprint(f"该提交的 author 不是维护人员邮箱: 归入其他 ...")
                             stats['no_company_commits'].append(commit)
 
-                    print(f"===> 按照 “贡献” 的定义进行统计 (只要有 SOB 匹配到机构就算贡献) =======================")
+                    dprint(f"按照 “贡献” 的定义进行统计 (只要有 SOB 匹配到机构就算贡献) =======================")
                     filtered_signatures.append(commit['author_name'] + " <" + commit['author_email'] + ">")
-                    print(f"===> 补充作者后的 SOB 列表信息：\n{filtered_signatures}")
+                    dprint(f"补充作者后的 SOB 列表信息：{filtered_signatures}")
                     signature_companies = set()
                     for sig in filtered_signatures:
                     # 从签名中提取邮箱
@@ -452,7 +447,7 @@ class ContribStats:
                             company = self.get_company_by_email(email)
                             if company:
                                signature_companies.add(company)
-                    print(f"===> 针对该提交的 SOB 检测参与贡献的公司结果：\n{signature_companies}")
+                    dprint(f"针对该提交的 SOB 检测参与贡献的公司结果：{signature_companies}")
                     if signature_companies:
                         # 统计所有出现的机构
                         for company in signature_companies:
