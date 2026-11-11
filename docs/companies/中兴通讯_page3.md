@@ -3,10 +3,10 @@
 <div style="background-color: #FF980020; padding: 15px; border-radius: 8px; border-left: 5px solid #FF9800;">
 <p><strong>📊 统计信息</strong></p>
 <ul>
-<li><strong>贡献提交数</strong>: 546</li>
-<li><strong>统计时间</strong>: 2026-11-06 17:36:55</li>
+<li><strong>贡献提交数</strong>: 509</li>
+<li><strong>统计时间</strong>: 2026-11-11 17:35:51</li>
 <li><strong>主分支</strong>: rvck-6.6</li>
-<li><strong>起始标签</strong>: v6.6.161</li>
+<li><strong>起始标签</strong>: v6.6.155</li>
 </ul>
 </div>
 
@@ -18,155 +18,118 @@
 
 | 提交哈希 | 日期 | 原始作者 | 标题 |
 |----------|------|----------|------|
-| [26dffd17](https://github.com/RVCK-Project/rvck/commit/26dffd172d97e4e6e00d0349ed2e4ef470d7aa08) | 2023-12-07 | Jason Gunthorpe | iommu: Mark dev_iommu_get() with lockdep |
-| [38460e71](https://github.com/RVCK-Project/rvck/commit/38460e718bff1be8909864707253ec988cfd3ae8) | 2023-12-07 | Jason Gunthorpe | iommu/of: Use -ENODEV consistently in of_iommu_configure() |
-| [4095aba7](https://github.com/RVCK-Project/rvck/commit/4095aba76f9ad89c207ae945320bd0f6577a79f2) | 2023-12-07 | Jason Gunthorpe | iommmu/of: Do not return struct iommu_ops from of_iommu_configure() |
-| [829df152](https://github.com/RVCK-Project/rvck/commit/829df15253802d7d8c772997b80525caa1a5dec3) | 2023-12-07 | Jason Gunthorpe | iommu: Remove struct iommu_ops *iommu from arch_setup_dma_ops() |
-| [ad1ed461](https://github.com/RVCK-Project/rvck/commit/ad1ed4614c3cfeb16cb5bd577174bf5f5a96f19d) | 2023-11-21 | Robin Murphy | iommu: Clean up open-coded ownership checks |
-| [421e99d0](https://github.com/RVCK-Project/rvck/commit/421e99d0f5d1c2b97bf3cd1067602b144c52c2bf) | 2023-11-21 | Robin Murphy | iommu: Retire bus ops |
-| [64142af5](https://github.com/RVCK-Project/rvck/commit/64142af5bd5dbb88510cfe67157bdf3129250195) | 2023-11-21 | Robin Murphy | iommu: Decouple iommu_domain_alloc() from bus ops |
-| [418a8f84](https://github.com/RVCK-Project/rvck/commit/418a8f847cac2f50c41ec8d737d00cc8f11a30d4) | 2023-11-21 | Robin Murphy | iommu: Validate that devices match domains |
-| [e8d7729f](https://github.com/RVCK-Project/rvck/commit/e8d7729f88101fda9264215d061a846fbf5dc5f1) | 2023-11-21 | Robin Murphy | iommu: Decouple iommu_present() from bus ops |
-| [da88eebc](https://github.com/RVCK-Project/rvck/commit/da88eebca5aa882974fc0fd2dfbdf0932c072267) | 2023-11-21 | Robin Murphy | iommu: Factor out some helpers |
-| [a29cfb2e](https://github.com/RVCK-Project/rvck/commit/a29cfb2e27c26fe661801747d93016129ff28a59) | 2024-03-13 | Xiao Wang | riscv: uaccess: Relax the threshold for fast path |
-| [90b3a898](https://github.com/RVCK-Project/rvck/commit/90b3a898572bb91b3b2c99294f8e6e1a51806546) | 2024-03-13 | Xiao Wang | riscv: uaccess: Allow the last potential unrolled copy |
-| [ee50cff5](https://github.com/RVCK-Project/rvck/commit/ee50cff5f7391e93de4c9b7faabf7d1de2915099) | 2024-12-24 | Atish Patra | RISC-V: KVM: Add new exit statstics for redirected traps |
-| [53147894](https://github.com/RVCK-Project/rvck/commit/53147894a07595ddc905f3d7fe6881164674b9a5) | 2024-12-24 | Atish Patra | RISC-V: KVM: Update firmware counters for various events |
-| [87a97ed5](https://github.com/RVCK-Project/rvck/commit/87a97ed54c544afcf7a22d663749e2c9755ab0e6) | 2024-12-24 | Quan Zhou | RISC-V: KVM: Redirect instruction access fault trap to guest |
-| [ac7b6fcb](https://github.com/RVCK-Project/rvck/commit/ac7b6fcb142e72cea5e41058f6f3ee64a43f11e1) | 2024-04-29 | Yu-Wei Hsu | RISC-V: KVM: Redirect AMO load/store access fault traps to guest |
-| [bdde0e55](https://github.com/RVCK-Project/rvck/commit/bdde0e55dd9db62c6236ef86d56072847da50b24) | 2025-08-20 | XianLiang Huang | iommu/riscv: prevent NULL deref in iova_to_phys |
-| [0b50b924](https://github.com/RVCK-Project/rvck/commit/0b50b92470ea8c5308c400e1a0b58cf2a257d920) | 2025-01-02 | Guo Ren | iommu/riscv: Fixup compile warning |
-| [fdd84fbe](https://github.com/RVCK-Project/rvck/commit/fdd84fbe6fa691fd001739296c8c56eb07f65931) | 2025-01-03 | Xu Lu | iommu/riscv: Add shutdown function for iommu driver |
-| [52c3b0a7](https://github.com/RVCK-Project/rvck/commit/52c3b0a7d54a85e7ec9227a1394a1ec7de8a8ae0) | 2025-01-03 | Xu Lu | iommu/riscv: Empty iommu queue before enabling it |
-| [bf3d1a84](https://github.com/RVCK-Project/rvck/commit/bf3d1a842f0ee3eee12cd1dea154384cead08c0c) | 2024-11-12 | Andrew Jones | iommu/riscv: Add support for platform msi |
-| [57efbd11](https://github.com/RVCK-Project/rvck/commit/57efbd11ecc95992b1185fc308188c94141f602f) | 2024-10-15 | Tomasz Jeznach | iommu/riscv: Paging domain support |
-| [4047720f](https://github.com/RVCK-Project/rvck/commit/4047720fd5755e7eb01735e33ed7f2b09057b59a) | 2024-10-15 | Tomasz Jeznach | iommu/riscv: Command and fault queue support |
-| [43738414](https://github.com/RVCK-Project/rvck/commit/437384140739d7cf64cc42582d9aef325477ce6e) | 2024-10-15 | Tomasz Jeznach | iommu/riscv: Device directory management. |
-| [985d2bcc](https://github.com/RVCK-Project/rvck/commit/985d2bcc51d82b6d8dd89954b6fc4213e881af74) | 2024-10-15 | Tomasz Jeznach | iommu/riscv: Enable IOMMU registration and device probe. |
-| [f885b929](https://github.com/RVCK-Project/rvck/commit/f885b929687afa4ac7a62026f429544920628758) | 2024-10-15 | Tomasz Jeznach | iommu/riscv: Add RISC-V IOMMU PCIe device driver |
-| [2fadbd0d](https://github.com/RVCK-Project/rvck/commit/2fadbd0db7c4b736697a931f11c93eabb8797318) | 2024-10-15 | Tomasz Jeznach | iommu/riscv: Add RISC-V IOMMU platform device driver |
-| [d0535b3f](https://github.com/RVCK-Project/rvck/commit/d0535b3fc4d5166279e936f7514bc2869e570ee6) | 2024-10-15 | Tomasz Jeznach | dt-bindings: iommu: riscv: Add bindings for RISC-V IOMMU |
-| [e5872a57](https://github.com/RVCK-Project/rvck/commit/e5872a574ba19784eacc4134bc67be1dc34d8444) | 2024-04-13 | Pasha Tatashin | iommu/vt-d: add wrapper functions for page allocations |
-| [776ddbb8](https://github.com/RVCK-Project/rvck/commit/776ddbb8169539e96f3e5bd19223159047eca4b6) | 2024-02-16 | Krzysztof Kozlowski | iommu: constify of_phandle_args in xlate |
-| [ba5b9607](https://github.com/RVCK-Project/rvck/commit/ba5b96079a57ff43da8b0d23b1394c9176d7698a) | 2023-11-22 | Matt Coster | sizes.h: Add entries between SZ_32G and SZ_64T |
-| [7a29c4b6](https://github.com/RVCK-Project/rvck/commit/7a29c4b6359161c4fd269bc09d24b3ac9ba07e68) | 2024-03-05 | Lu Baolu | iommu: Add static iommu_ops-\>release_domain |
-| [8b2c0e6c](https://github.com/RVCK-Project/rvck/commit/8b2c0e6c3d8aeddddc87f28c7e1cb1d9b674a3d4) | 2023-09-27 | Jason Gunthorpe | iommufd: Convert to alloc_domain_paging() |
-| [23392563](https://github.com/RVCK-Project/rvck/commit/2339256308c4063e9412df0f1eea2f3401002b32) | 2024-04-13 | Pasha Tatashin | iommu: Move IOMMU_DOMAIN_BLOCKED global statics to ops-\>blocked_domain |
-| [26876f4a](https://github.com/RVCK-Project/rvck/commit/26876f4af7cdfc55f7c6093e96ba2dd38d050d51) | 2024-07-17 | Alexandre Ghiti | riscv: Stop emitting preventive sfence.vma for new userspace mappings with Svvpt... |
-| [09161298](https://github.com/RVCK-Project/rvck/commit/091612988e039b4b453b0179f36cda6fd0209f1a) | 2024-07-17 | Alexandre Ghiti | riscv: Stop emitting preventive sfence.vma for new vmalloc mappings |
-| [8b841bcc](https://github.com/RVCK-Project/rvck/commit/8b841bcc6dcf9aab22ccf9b93fe8fd875e322b3b) | 2023-10-20 | Anup Patel | KVM: riscv: selftests: Add SBI DBCN extension to get-reg-list test |
-| [80346d47](https://github.com/RVCK-Project/rvck/commit/80346d471791a4130c33ef84b2e21fd86a86e5bd) | 2022-07-22 | Anup Patel | RISC-V: KVM: Forward SBI DBCN extension to user-space |
-| [b3ce8fc3](https://github.com/RVCK-Project/rvck/commit/b3ce8fc3a688284fe385f95882131daaf61608b1) | 2023-10-11 | Anup Patel | RISC-V: KVM: Allow some SBI extensions to be disabled by default |
-| [776ebe84](https://github.com/RVCK-Project/rvck/commit/776ebe844cac7b97e03699b0bcff31ae949a7aa4) | 2023-10-10 | Anup Patel | RISC-V: KVM: Change the SBI specification version to v2.0 |
-| [817f7939](https://github.com/RVCK-Project/rvck/commit/817f7939a3f274661a275fcd6d73eddcd0db2dcd) | 2022-07-22 | Anup Patel | RISC-V: Add defines for SBI debug console extension |
-| [c8fe8bfa](https://github.com/RVCK-Project/rvck/commit/c8fe8bfa9b05ae5d8b48aad69e3765708d39f5b8) | 2023-11-24 | Anup Patel | RISC-V: Enable SBI based earlycon support |
-| [e3f3ad46](https://github.com/RVCK-Project/rvck/commit/e3f3ad463dc48c926fcf29d2293463309bc7fede) | 2023-11-24 | Atish Patra | tty: Add SBI debug console support to HVC SBI driver |
-| [20be488d](https://github.com/RVCK-Project/rvck/commit/20be488db57f6b0ab9acbbce2f760808d0c91a10) | 2023-11-24 | Anup Patel | tty/serial: Add RISC-V SBI debug console based earlycon |
-| [7823fc33](https://github.com/RVCK-Project/rvck/commit/7823fc33465ea431775398ba4a875bbc47aca5b9) | 2023-11-24 | Anup Patel | RISC-V: Add SBI debug console helper routines |
-| [be377f29](https://github.com/RVCK-Project/rvck/commit/be377f293eb5ceaa40749b7483b2c22f0aa8ef4a) | 2023-11-24 | Anup Patel | RISC-V: Add stubs for sbi_console_putchar/getchar() |
-| [5d91c6a7](https://github.com/RVCK-Project/rvck/commit/5d91c6a7d2de87f8deb507f2f26f1e35a6367e7f) | 2024-04-03 | Björn Töpel | riscv: Fix vector state restore in rt_sigreturn() |
-| [b7830444](https://github.com/RVCK-Project/rvck/commit/b7830444d3e3a114d517510f4a7a642cf84da44b) | 2024-01-15 | Andy Chiu | riscv: vector: allow kernel-mode Vector with preemption |
-| [3a8552c6](https://github.com/RVCK-Project/rvck/commit/3a8552c6ff07dc3095a47a0c515df59ca98eabcf) | 2024-01-15 | Andy Chiu | riscv: vector: use kmem_cache to manage vector context |
-| [686f47f5](https://github.com/RVCK-Project/rvck/commit/686f47f55b69149b498763b4b6b5d9fa51927d57) | 2024-01-15 | Andy Chiu | riscv: vector: use a mask to write vstate_ctrl |
-| [439e44ad](https://github.com/RVCK-Project/rvck/commit/439e44adb671a2aca4091d65d8112d3ab9db515c) | 2024-01-15 | Andy Chiu | riscv: vector: do not pass task_struct into riscv_v_vstate_{save,restore}() |
-| [bced43cc](https://github.com/RVCK-Project/rvck/commit/bced43ccd3de16d9b81fe50efd92091bb3d6c034) | 2024-01-15 | Andy Chiu | riscv: fpu: drop SR_SD bit checking |
-| [896d9d02](https://github.com/RVCK-Project/rvck/commit/896d9d022f72d20b10a4962523c2f851753db140) | 2024-01-15 | Andy Chiu | riscv: lib: vectorize copy_to_user/copy_from_user |
-| [324bcf16](https://github.com/RVCK-Project/rvck/commit/324bcf165bd15e1879343e8b64da5ef261258673) | 2024-01-15 | Andy Chiu | riscv: sched: defer restoring Vector context for user |
-| [8303a977](https://github.com/RVCK-Project/rvck/commit/8303a9774b4f6dfbfc60643892c1fd63f2f64fea) | 2024-01-15 | Greentime Hu | riscv: Add vector extension XOR implementation |
-| [bf6e411f](https://github.com/RVCK-Project/rvck/commit/bf6e411f1f90444d88fe3ba717f470fd2fdc1531) | 2024-01-15 | Andy Chiu | riscv: vector: make Vector always available for softirq context |
-| [5e521af8](https://github.com/RVCK-Project/rvck/commit/5e521af834b2de48a24338ab54c5901db7ba0171) | 2024-01-15 | Greentime Hu | riscv: Add support for kernel mode vector |
-| [ae1a6436](https://github.com/RVCK-Project/rvck/commit/ae1a6436546f420761a003a3e7b1f2614266e961) | 2023-10-24 | Clément Léger | riscv: kernel: Use correct SYM_DATA_*() macro for data |
-| [406b5683](https://github.com/RVCK-Project/rvck/commit/406b5683046cbbda489ca23a5786d87675412cae) | 2023-10-24 | Clément Léger | riscv: Use SYM_*() assembly macros instead of deprecated ones |
-| [ce12e6ad](https://github.com/RVCK-Project/rvck/commit/ce12e6ad38916ca14a532f7a7fffae8d0024613c) | 2023-10-24 | Clément Léger | riscv: use ".L" local labels in assembly when applicable |
-| [562811ed](https://github.com/RVCK-Project/rvck/commit/562811edcd3a34daaa23a08d64f14a6c55f0fbb1) | 2024-11-03 | Alexandre Ghiti | riscv: Add qspinlock support |
-| [b03e14a4](https://github.com/RVCK-Project/rvck/commit/b03e14a49b0bb03865a37f71b78a32915caee286) | 2024-11-03 | Guo Ren | asm-generic: ticket-lock: Add separate ticket-lock.h |
-| [a6701faf](https://github.com/RVCK-Project/rvck/commit/a6701faf2089b45a534751498a1a7dd32af6da59) | 2024-11-03 | Guo Ren | asm-generic: ticket-lock: Reuse arch_spinlock_t of qspinlock |
-| [ed58d463](https://github.com/RVCK-Project/rvck/commit/ed58d463bfffe2cd39e41aa0f08e2e356d133cd7) | 2024-11-03 | Alexandre Ghiti | riscv: Implement xchg8/16() using Zabha |
-| [fbd3fa00](https://github.com/RVCK-Project/rvck/commit/fbd3fa00930fc29ddf3fb886cadfd62a7bdeda59) | 2024-11-03 | Alexandre Ghiti | riscv: Implement arch_cmpxchg128() using Zacas |
-| [5f38279e](https://github.com/RVCK-Project/rvck/commit/5f38279e3d2c050575d21a99083449f2b2405478) | 2024-11-03 | Alexandre Ghiti | riscv: Improve zacas fully-ordered cmpxchg() |
-| [38bcf6e5](https://github.com/RVCK-Project/rvck/commit/38bcf6e5a078dc93190f74a1f7e33f92d17f7d53) | 2023-09-08 | Guo Ren | asm-generic: ticket-lock: Optimize arch_spin_value_unlocked() |
-| [debea1a8](https://github.com/RVCK-Project/rvck/commit/debea1a802000b021f5eea2cd7b73c2173734c9a) | 2024-12-02 | Quan Zhou | RISC-V: KVM: Allow Ziccrse extension for Guest/VM |
-| [e10be8d8](https://github.com/RVCK-Project/rvck/commit/e10be8d8ea0fb04456763d724d984ee313670711) | 2024-12-02 | Quan Zhou | RISC-V: KVM: Allow Zabha extension for Guest/VM |
-| [747c1468](https://github.com/RVCK-Project/rvck/commit/747c14685faca56bb86e9333f1c61c1610287155) | 2024-12-02 | Quan Zhou | RISC-V: KVM: Allow Svvptc extension for Guest/VM |
-| [630f9dd9](https://github.com/RVCK-Project/rvck/commit/630f9dd9f0ad558a2ddae07e371799e0dbbe746b) | 2024-07-26 | Yong-Xuan Wang | RISC-V: KVM: Add Svade and Svadu Extensions Support for Guest/VM |
-| [1fc47936](https://github.com/RVCK-Project/rvck/commit/1fc4793675acc3beb24e9c007141da7004b19006) | 2024-10-16 | Samuel Holland | RISC-V: KVM: Allow Smnpm and Ssnpm extensions for guests |
-| [1323d122](https://github.com/RVCK-Project/rvck/commit/1323d12208a6d39720fe8ee3001061cd893e2340) | 2024-04-26 | Andrew Jones | KVM: riscv: Support guest wrs.nto |
-| [97fe0208](https://github.com/RVCK-Project/rvck/commit/97fe0208b2dc4b816e2826be273b597adf57f8af) | 2024-06-19 | Clément Léger | RISC-V: KVM: Allow Zcmop extension for Guest/VM |
-| [78f7834d](https://github.com/RVCK-Project/rvck/commit/78f7834dc0e9a3762ce4b2dcae0d303363366b53) | 2024-06-19 | Clément Léger | RISC-V: KVM: Allow Zca, Zcf, Zcd and Zcb extensions for Guest/VM |
-| [da0d75f7](https://github.com/RVCK-Project/rvck/commit/da0d75f741bbe8de9d525a22ff3f3d45e0a4ceb5) | 2024-06-19 | Clément Léger | RISC-V: KVM: Allow Zimop extension for Guest/VM |
-| [3d293f76](https://github.com/RVCK-Project/rvck/commit/3d293f769e9364b48945f903b4c3b9540b934000) | 2024-02-13 | Anup Patel | RISC-V: KVM: Allow Zacas extension for Guest/VM |
-| [7e4dac59](https://github.com/RVCK-Project/rvck/commit/7e4dac59675081a7acd63c354c36de8f9faf23b7) | 2024-02-13 | Anup Patel | RISC-V: KVM: Allow Ztso extension for Guest/VM |
-| [f978d37a](https://github.com/RVCK-Project/rvck/commit/f978d37a9c5e23e4c8e13c51e37feba70ab06c45) | 2024-02-13 | Anup Patel | RISC-V: KVM: Forward SEED CSR access to user space |
-| [37ab85a1](https://github.com/RVCK-Project/rvck/commit/37ab85a108bc00cde85cdb4f44a85a0f6a479eaf) | 2023-11-27 | Anup Patel | RISC-V: KVM: Allow Zfa extension for Guest/VM |
-| [d00941ee](https://github.com/RVCK-Project/rvck/commit/d00941ee0b97e2f8316e8c2b34764afc5c87edcb) | 2023-11-27 | Anup Patel | RISC-V: KVM: Allow Zvfh[min] extensions for Guest/VM |
-| [bfbeb718](https://github.com/RVCK-Project/rvck/commit/bfbeb718e325058fa4522e82379c6bd0f3e19107) | 2023-11-27 | Anup Patel | RISC-V: KVM: Allow Zihintntl extension for Guest/VM |
-| [feeecef3](https://github.com/RVCK-Project/rvck/commit/feeecef3121f2b20fe73a985b1648acce30a6628) | 2023-11-27 | Anup Patel | RISC-V: KVM: Allow Zfh[min] extensions for Guest/VM |
-| [76e44855](https://github.com/RVCK-Project/rvck/commit/76e448558bd853000e54eaf1de879d963f223afa) | 2023-11-27 | Anup Patel | RISC-V: KVM: Allow vector crypto extensions for Guest/VM |
-| [8e1ba609](https://github.com/RVCK-Project/rvck/commit/8e1ba6094862197854f41e4f772820347c8f05ca) | 2023-11-27 | Anup Patel | RISC-V: KVM: Allow scalar crypto extensions for Guest/VM |
-| [c1044f86](https://github.com/RVCK-Project/rvck/commit/c1044f86fc66132067dbd20ba63352dcc9ea3e98) | 2023-11-27 | Anup Patel | RISC-V: KVM: Allow Zbc extension for Guest/VM |
-| [1be98d50](https://github.com/RVCK-Project/rvck/commit/1be98d50d4c31004977b5c6f5b869046c10694c1) | 2023-09-15 | Anup Patel | RISC-V: KVM: Allow Zicond extension for Guest/VM |
-| [396a2879](https://github.com/RVCK-Project/rvck/commit/396a28795bcc8f7f8a1fdd0e4bd63f5a7d911edd) | 2023-11-12 | Xiao Wang | riscv: Optimize hweight API with Zbb extension |
-| [3836907d](https://github.com/RVCK-Project/rvck/commit/3836907da326bef9c646f9df59b3dfe8bfcbb1e0) | 2023-10-31 | Xiao Wang | riscv: Optimize bitops with Zbb extension |
-| [baec58ae](https://github.com/RVCK-Project/rvck/commit/baec58aeceb1bd4f03c250b0b6ee2cb619fa4546) | 2024-06-21 | Xiao Wang | riscv: Optimize crc32 with Zbc extension |
-| [147b8bdf](https://github.com/RVCK-Project/rvck/commit/147b8bdf7bb1fd9afc7efcf4194fb04a2b598ac0) | 2025-02-28 | Robin Murphy | iommu: Handle race with default domain setup |
-| [e52cdc23](https://github.com/RVCK-Project/rvck/commit/e52cdc23d20ed1470fdfc13c58d4f73cb0c3689a) | 2023-10-03 | Jason Gunthorpe | iommu: Do not use IOMMU_DOMAIN_DMA if CONFIG_IOMMU_DMA is not enabled |
-| [5e7fc617](https://github.com/RVCK-Project/rvck/commit/5e7fc617ff0dc494754b1761e0867840df96c220) | 2023-09-13 | Jason Gunthorpe | iommu: Convert remaining simple drivers to domain_alloc_paging() |
-| [2faa6b25](https://github.com/RVCK-Project/rvck/commit/2faa6b253e02986f8a76a3e0618ce24b95ee3158) | 2023-09-13 | Jason Gunthorpe | iommu: Convert simple drivers with DOMAIN_DMA to domain_alloc_paging() |
-| [fcd4d7a1](https://github.com/RVCK-Project/rvck/commit/fcd4d7a1325ab7f50ab1649ce9a5264a5ea6b3a0) | 2023-09-13 | Jason Gunthorpe | iommu: Add ops-\>domain_alloc_paging() |
-| [511fe78a](https://github.com/RVCK-Project/rvck/commit/511fe78a2464d9321fd7dab5a552a0dcd7c1e49e) | 2023-09-13 | Jason Gunthorpe | iommu: Add __iommu_group_domain_alloc() |
-| [bb6af1bc](https://github.com/RVCK-Project/rvck/commit/bb6af1bc3af9168cf7246c05119509259cf4dbf7) | 2023-09-13 | Jason Gunthorpe | iommu: Require a default_domain for all iommu drivers |
-| [9bd6cab0](https://github.com/RVCK-Project/rvck/commit/9bd6cab0e667a3f406d40d47fb75cfabb8571bfb) | 2023-09-13 | Jason Gunthorpe | iommu/sun50i: Add an IOMMU_IDENTITIY_DOMAIN |
-| [3ca2e8f1](https://github.com/RVCK-Project/rvck/commit/3ca2e8f1f3d063c925f839fe903ce115f9d600f9) | 2023-09-13 | Jason Gunthorpe | iommu/mtk_iommu: Add an IOMMU_IDENTITIY_DOMAIN |
-| [6dcc7259](https://github.com/RVCK-Project/rvck/commit/6dcc7259685f57f2d5b412f53fa25ee73cf8feca) | 2023-09-13 | Jason Gunthorpe | iommu/ipmmu: Add an IOMMU_IDENTITIY_DOMAIN |
-| [839bef49](https://github.com/RVCK-Project/rvck/commit/839bef49d9343c449bc22725a631a010db143cc7) | 2023-09-13 | Jason Gunthorpe | iommu/qcom_iommu: Add an IOMMU_IDENTITIY_DOMAIN |
-| [64e8c11b](https://github.com/RVCK-Project/rvck/commit/64e8c11b245fbd54de121b72f163ba77e05af30e) | 2023-09-13 | Jason Gunthorpe | iommu: Remove ops-\>set_platform_dma_ops() |
-| [f8442ce2](https://github.com/RVCK-Project/rvck/commit/f8442ce234f1fefc5e7937bc885f4e2575130317) | 2023-09-13 | Jason Gunthorpe | iommu/msm: Implement an IDENTITY domain |
-| [9d0d97e5](https://github.com/RVCK-Project/rvck/commit/9d0d97e580c88539c0984e247459ab90dffdc3e6) | 2023-09-13 | Jason Gunthorpe | iommu/omap: Implement an IDENTITY domain |
-| [a72ac441](https://github.com/RVCK-Project/rvck/commit/a72ac4410522fb4042f989936972dc2fef4cb398) | 2023-09-13 | Jason Gunthorpe | iommu/tegra-smmu: Support DMA domains in tegra |
-| [0a04902c](https://github.com/RVCK-Project/rvck/commit/0a04902c186fcb31607cabe615091cce20549f51) | 2023-09-13 | Jason Gunthorpe | iommu/tegra-smmu: Implement an IDENTITY domain |
-| [4a25b021](https://github.com/RVCK-Project/rvck/commit/4a25b021335b9364a2ae78326eac76a9d3279b24) | 2023-09-13 | Jason Gunthorpe | iommu/exynos: Implement an IDENTITY domain |
-| [9e60c1c6](https://github.com/RVCK-Project/rvck/commit/9e60c1c67f955ab0435f1aa7ba6aa18a504d56fd) | 2023-09-13 | Jason Gunthorpe | iommu: Allow an IDENTITY domain as the default_domain in ARM32 |
-| [05e9cd16](https://github.com/RVCK-Project/rvck/commit/05e9cd165bb094413a4a60632217cc70b3705448) | 2023-09-13 | Jason Gunthorpe | iommu: Reorganize iommu_get_default_domain_type() to respect def_domain_type() |
-| [8de8a2a0](https://github.com/RVCK-Project/rvck/commit/8de8a2a0a2102f852605d250abe402690c7e6949) | 2023-09-13 | Jason Gunthorpe | iommu/mtk_iommu_v1: Implement an IDENTITY domain |
-| [608cd3cb](https://github.com/RVCK-Project/rvck/commit/608cd3cb7351568332f0e647f06f163d0b12d3b8) | 2023-09-13 | Jason Gunthorpe | iommu/fsl_pamu: Implement a PLATFORM domain |
-| [b2f375f1](https://github.com/RVCK-Project/rvck/commit/b2f375f1452de55f4cad13f6086b1a3a6795a6a7) | 2023-09-13 | Jason Gunthorpe | iommu: Add IOMMU_DOMAIN_PLATFORM for S390 |
-| [6ab38506](https://github.com/RVCK-Project/rvck/commit/6ab38506a7b49cc4ac6e683a886fa3e4091b0e92) | 2023-09-13 | Jason Gunthorpe | iommu: Add IOMMU_DOMAIN_PLATFORM |
-| [8a547d49](https://github.com/RVCK-Project/rvck/commit/8a547d49dcb00a289403309027839bf15d3d2008) | 2023-09-13 | Jason Gunthorpe | iommu: Add iommu_ops-\>identity_domain |
-| [4f411a19](https://github.com/RVCK-Project/rvck/commit/4f411a199cdafef206ba2976909cfa44ce2586da) | 2025-07-29 | gaorui | Revert "iommu: Handle race with default domain setup" |
-| [6fdf0836](https://github.com/RVCK-Project/rvck/commit/6fdf08361d01803941987ce8924aa2c320a85cd5) | 2024-04-09 | Baoquan He | kexec: fix the unexpected kexec_dprintk() macro |
-| [1bf0699a](https://github.com/RVCK-Project/rvck/commit/1bf0699a929525ea8909eaed2d1ff4bfdb6e4d66) | 2024-07-30 | Sunil V L | kexec_file, parisc: print out debugging message if required |
-| [12776b4b](https://github.com/RVCK-Project/rvck/commit/12776b4b9519427d1e815561be3dd945de82448e) | 2023-12-13 | Baoquan He | kexec_file, power: print out debugging message if required |
-| [9a983c4a](https://github.com/RVCK-Project/rvck/commit/9a983c4a705bec916c3e60e41921af62a07776cb) | 2023-12-13 | Baoquan He | kexec_file, riscv: print out debugging message if required |
-| [76b7ae96](https://github.com/RVCK-Project/rvck/commit/76b7ae9600ee4ff843704e6add0dbe2cc6ebf847) | 2023-12-13 | Baoquan He | kexec_file, arm64: print out debugging message if required |
-| [46ac3dc3](https://github.com/RVCK-Project/rvck/commit/46ac3dc35feb122601b82e9db4d074e8f864c285) | 2023-12-13 | Baoquan He | kexec_file, x86: print out debugging message if required |
-| [d25afab0](https://github.com/RVCK-Project/rvck/commit/d25afab0f5b9bd596e92b96c5ac2cf8dca7b6ab0) | 2023-12-13 | Baoquan He | kexec_file: print out debugging message if required |
-| [0654808b](https://github.com/RVCK-Project/rvck/commit/0654808b96c9ea2d78846c688dd0b42836c5f7a6) | 2023-12-13 | Baoquan He | kexec_file: add kexec_file flag to control debug printing |
-| [e32d2d92](https://github.com/RVCK-Project/rvck/commit/e32d2d92d245da43ddeb2d9a0d71bd379a3819e8) | 2025-04-03 | Radim Krčmář | KVM: RISC-V: reset smstateen CSRs |
-| [5c449fa3](https://github.com/RVCK-Project/rvck/commit/5c449fa379cdab71633e6d1fd8327f4a6e10de45) | 2023-12-24 | Anup Patel | RISC-V: KVM: Fix indentation in kvm_riscv_vcpu_set_reg_csr() |
-| [e0346c98](https://github.com/RVCK-Project/rvck/commit/e0346c983221af230736519fa691edaac64baf01) | 2023-09-13 | Mayuresh Chitale | RISCV: KVM: Add sstateen0 to ONE_REG |
-| [a00fdd62](https://github.com/RVCK-Project/rvck/commit/a00fdd621173a0b9091886907a5264d8b86074a5) | 2023-09-13 | Mayuresh Chitale | RISCV: KVM: Add sstateen0 context save/restore |
-| [587ba2ed](https://github.com/RVCK-Project/rvck/commit/587ba2ed341d241a93dd9aeb43429e699eb69fa1) | 2023-09-13 | Mayuresh Chitale | RISCV: KVM: Add senvcfg context save/restore |
-| [e1a148bf](https://github.com/RVCK-Project/rvck/commit/e1a148bfdb492c752eb9dee89ba90e54fc88846c) | 2023-09-13 | Mayuresh Chitale | RISC-V: KVM: Enable Smstateen accesses |
-| [c7137e6c](https://github.com/RVCK-Project/rvck/commit/c7137e6cb4a8942371e1f3d2546575712aaee068) | 2024-07-30 | Sunil V L | serial: 8250_platform: Enable generic 16550A platform devices |
-| [ba1bdfc6](https://github.com/RVCK-Project/rvck/commit/ba1bdfc66e51905a3b505c300447c686570d5cc1) | 2025-04-09 | Song Shuai | riscv: kexec_file: Support loading Image binary file |
-| [c2cc01cc](https://github.com/RVCK-Project/rvck/commit/c2cc01ccbdd0b5dfd731a200876639ce1516dc3d) | 2025-07-25 | gaorui | riscv: kexec_file: Split the loading of kernel and others |
-| [adc3dfa2](https://github.com/RVCK-Project/rvck/commit/adc3dfa2217043ebe511f70586d8684af1fe1a3e) | 2025-07-25 | gaorui | Revert "riscv: kexec: Add image loader for kexec file" |
-| [a8c9ab0d](https://github.com/RVCK-Project/rvck/commit/a8c9ab0dd3be58079340a4b97f39be8c4cb12755) | 2023-11-30 | Samuel Ortiz | RISC-V: Implement archrandom when Zkr is available |
-| [44ba35a7](https://github.com/RVCK-Project/rvck/commit/44ba35a7443c5cc3cbf74a561017add4009ed7f7) | 2024-02-08 | Sunil V L | cpufreq: Move CPPC configs to common Kconfig and add RISC-V |
-| [79aabcd8](https://github.com/RVCK-Project/rvck/commit/79aabcd863ef7df04f9c1316e221305c999c754e) | 2024-02-08 | Sunil V L | ACPI: RISC-V: Add CPPC driver |
-| [a11020ec](https://github.com/RVCK-Project/rvck/commit/a11020eccaec3d11f42ade08c07cbc47aac222a9) | 2024-06-17 | Yunhui Cui | RISC-V: Select ACPI PPTT drivers |
-| [b98f5a20](https://github.com/RVCK-Project/rvck/commit/b98f5a2058b515343d145e50d86103cae3b1b0d8) | 2024-05-02 | Sia Jee Heng | RISC-V: ACPI: Enable SPCR table for console output on RISC-V |
-| [5c918edb](https://github.com/RVCK-Project/rvck/commit/5c918edb403bd7717ceaa861e228adfdc2c6f0a2) | 2024-07-18 | Ryo Takakura | RISC-V: Enable IPI CPU Backtrace |
-| [e15af1b9](https://github.com/RVCK-Project/rvck/commit/e15af1b90438e13408b890a32cfee74178582727) | 2024-06-13 | Haibo Xu | riscv: dmi: Add SMBIOS/DMI support |
-| [6f6726a9](https://github.com/RVCK-Project/rvck/commit/6f6726a9b86eba03ed5db73a9dae394d065578c9) | 2024-06-13 | Haibo Xu | ACPI: NUMA: replace pr_info with pr_debug in arch_acpi_numa_init |
-| [baf5f9cc](https://github.com/RVCK-Project/rvck/commit/baf5f9ccfad38be47a9301b98a1be58288b1a5d1) | 2025-04-25 | gaorui | ACPI: NUMA: change the ACPI_NUMA to a hidden option |
-| [2eb76cfb](https://github.com/RVCK-Project/rvck/commit/2eb76cfbcec453a942863004484d114008462d19) | 2025-04-25 | gaorui | ACPI: NUMA: Make some NUMA-related functions available for RISC-V |
-| [c03ad1ac](https://github.com/RVCK-Project/rvck/commit/c03ad1ac8400e5158cad7ffe40dec845a6b00280) | 2024-06-13 | Haibo Xu | ACPI: NUMA: Add handler for SRAT RINTC affinity structure |
-| [6844c4ca](https://github.com/RVCK-Project/rvck/commit/6844c4caeca1a83e20c4fb82894fe33f20941c72) | 2024-06-13 | Haibo Xu | ACPI: RISCV: Add NUMA support based on SRAT and SLIT |
-| [cbf4f664](https://github.com/RVCK-Project/rvck/commit/cbf4f6644bd0355282d69aa396267bbf334cb104) | 2024-01-17 | Haibo Xu | ACPICA: SRAT: Add RISC-V RINTC affinity structure |
+| [ba498668](https://github.com/unicornx/rvck/commit/ba4986685fc80df55e209f12ac1b9fff795b100c) | 2023-10-11 | Anup Patel | RISC-V: KVM: Allow some SBI extensions to be disabled by default |
+| [bec9526b](https://github.com/unicornx/rvck/commit/bec9526b5db45ab2afb8e9a4b2c47e5f2daed8cb) | 2023-10-10 | Anup Patel | RISC-V: KVM: Change the SBI specification version to v2.0 |
+| [5be9d152](https://github.com/unicornx/rvck/commit/5be9d152f500eaf6f5448729efe8c63fce08178b) | 2022-07-22 | Anup Patel | RISC-V: Add defines for SBI debug console extension |
+| [c9b05fb7](https://github.com/unicornx/rvck/commit/c9b05fb7097bd832d2ca0b437d3ab9a32ed32217) | 2023-11-24 | Anup Patel | RISC-V: Enable SBI based earlycon support |
+| [c358d86f](https://github.com/unicornx/rvck/commit/c358d86ffccdcd69bdc05e48bf3a7daf91ee97b8) | 2023-11-24 | Atish Patra | tty: Add SBI debug console support to HVC SBI driver |
+| [b559acc2](https://github.com/unicornx/rvck/commit/b559acc28f6f61d47d52595c7023c508c338a4f3) | 2023-11-24 | Anup Patel | tty/serial: Add RISC-V SBI debug console based earlycon |
+| [859491b1](https://github.com/unicornx/rvck/commit/859491b1af069c1e5a20ee9858e8afa954673a10) | 2023-11-24 | Anup Patel | RISC-V: Add SBI debug console helper routines |
+| [f8277a94](https://github.com/unicornx/rvck/commit/f8277a949e860ef002cf8a150177659fd25d3b55) | 2023-11-24 | Anup Patel | RISC-V: Add stubs for sbi_console_putchar/getchar() |
+| [6932dbac](https://github.com/unicornx/rvck/commit/6932dbac6c916e5645420b8e6b0759c53eb3f4b9) | 2024-04-03 | Björn Töpel | riscv: Fix vector state restore in rt_sigreturn() |
+| [9d5c63fb](https://github.com/unicornx/rvck/commit/9d5c63fbff85777b7e3774efd1f7195f97af4c5b) | 2024-01-15 | Andy Chiu | riscv: vector: allow kernel-mode Vector with preemption |
+| [7cbb7bf9](https://github.com/unicornx/rvck/commit/7cbb7bf9f2b91e0981f400a6d9c76214c3a92e67) | 2024-01-15 | Andy Chiu | riscv: vector: use kmem_cache to manage vector context |
+| [b637198b](https://github.com/unicornx/rvck/commit/b637198b2efa1618c68dbe044d5b9427b19eedf6) | 2024-01-15 | Andy Chiu | riscv: vector: use a mask to write vstate_ctrl |
+| [cc805193](https://github.com/unicornx/rvck/commit/cc805193c3dddf54c44e581d3988cdd294dbe209) | 2024-01-15 | Andy Chiu | riscv: vector: do not pass task_struct into riscv_v_vstate_{save,restore}() |
+| [5284a6e2](https://github.com/unicornx/rvck/commit/5284a6e2e5f63674692205814481f545d7f85971) | 2024-01-15 | Andy Chiu | riscv: fpu: drop SR_SD bit checking |
+| [bc336f8b](https://github.com/unicornx/rvck/commit/bc336f8b278ec1c98fb9275e24ad7a94d6b6f961) | 2024-01-15 | Andy Chiu | riscv: lib: vectorize copy_to_user/copy_from_user |
+| [fed40dc4](https://github.com/unicornx/rvck/commit/fed40dc489ae696bf0564000b6919b3f1b4ac544) | 2024-01-15 | Andy Chiu | riscv: sched: defer restoring Vector context for user |
+| [91cfef79](https://github.com/unicornx/rvck/commit/91cfef79f0959cdb26dedfe250e3217b67dfab03) | 2024-01-15 | Greentime Hu | riscv: Add vector extension XOR implementation |
+| [3135e21e](https://github.com/unicornx/rvck/commit/3135e21eb23b786a7c6997a3be9121b37f3eae72) | 2024-01-15 | Andy Chiu | riscv: vector: make Vector always available for softirq context |
+| [28b72514](https://github.com/unicornx/rvck/commit/28b7251477c008e7369de24224833ecca05ebda5) | 2024-01-15 | Greentime Hu | riscv: Add support for kernel mode vector |
+| [b66619c2](https://github.com/unicornx/rvck/commit/b66619c2b33e41601d1ea7aea1128388d83258f3) | 2023-10-24 | Clément Léger | riscv: kernel: Use correct SYM_DATA_*() macro for data |
+| [96528d7f](https://github.com/unicornx/rvck/commit/96528d7f175b15fe70a4f317f46d354a3e028089) | 2023-10-24 | Clément Léger | riscv: Use SYM_*() assembly macros instead of deprecated ones |
+| [0948d6ce](https://github.com/unicornx/rvck/commit/0948d6ce904b416e65eb259da64e337384780280) | 2023-10-24 | Clément Léger | riscv: use ".L" local labels in assembly when applicable |
+| [f2bde542](https://github.com/unicornx/rvck/commit/f2bde542e3fd16ed44a33b1cfb78bcde1f5d4eb9) | 2024-11-03 | Alexandre Ghiti | riscv: Add qspinlock support |
+| [5e6e1a3d](https://github.com/unicornx/rvck/commit/5e6e1a3d57cd8c699337909a8ec735340075d388) | 2024-11-03 | Guo Ren | asm-generic: ticket-lock: Add separate ticket-lock.h |
+| [06154718](https://github.com/unicornx/rvck/commit/06154718a93b58dd6a0faf62bec15fb715b3272d) | 2024-11-03 | Guo Ren | asm-generic: ticket-lock: Reuse arch_spinlock_t of qspinlock |
+| [ed9fb072](https://github.com/unicornx/rvck/commit/ed9fb0721c3e0203cfdb9021a82b767c67fe1ea6) | 2024-11-03 | Alexandre Ghiti | riscv: Implement xchg8/16() using Zabha |
+| [05e5658c](https://github.com/unicornx/rvck/commit/05e5658c626ee972e2e0f5e44fa15de3edf21a65) | 2024-11-03 | Alexandre Ghiti | riscv: Implement arch_cmpxchg128() using Zacas |
+| [d7100d75](https://github.com/unicornx/rvck/commit/d7100d7553b434e74f745a04eb7fa0bb309819a8) | 2024-11-03 | Alexandre Ghiti | riscv: Improve zacas fully-ordered cmpxchg() |
+| [bbd18a34](https://github.com/unicornx/rvck/commit/bbd18a34ce1e1254629a4c0180e82e13167cdcd8) | 2023-09-08 | Guo Ren | asm-generic: ticket-lock: Optimize arch_spin_value_unlocked() |
+| [30580d90](https://github.com/unicornx/rvck/commit/30580d9090f0ef3a50d059fc92343329e7faad16) | 2024-12-02 | Quan Zhou | RISC-V: KVM: Allow Ziccrse extension for Guest/VM |
+| [7ffb8346](https://github.com/unicornx/rvck/commit/7ffb8346f39d3fcfa1eab821a8892fef5aa6036d) | 2024-12-02 | Quan Zhou | RISC-V: KVM: Allow Zabha extension for Guest/VM |
+| [89b37fdf](https://github.com/unicornx/rvck/commit/89b37fdf85f9b249d0c3aef19935e6ac1501d4a2) | 2024-12-02 | Quan Zhou | RISC-V: KVM: Allow Svvptc extension for Guest/VM |
+| [4cbf25c0](https://github.com/unicornx/rvck/commit/4cbf25c06285f9f5531306bd167df3cd2333485a) | 2024-07-26 | Yong-Xuan Wang | RISC-V: KVM: Add Svade and Svadu Extensions Support for Guest/VM |
+| [29a8b020](https://github.com/unicornx/rvck/commit/29a8b02084c5f1b13cab569564453c605a1e19c9) | 2024-10-16 | Samuel Holland | RISC-V: KVM: Allow Smnpm and Ssnpm extensions for guests |
+| [b0733330](https://github.com/unicornx/rvck/commit/b0733330382a2a91574651d9dc2d6aaf311e2634) | 2024-04-26 | Andrew Jones | KVM: riscv: Support guest wrs.nto |
+| [fdd7073e](https://github.com/unicornx/rvck/commit/fdd7073e0f225c8a0bd00100933477fe0c5b8e68) | 2024-06-19 | Clément Léger | RISC-V: KVM: Allow Zcmop extension for Guest/VM |
+| [25b3b104](https://github.com/unicornx/rvck/commit/25b3b10451cb8a83e8a943168fa6f30f65ab5d5d) | 2024-06-19 | Clément Léger | RISC-V: KVM: Allow Zca, Zcf, Zcd and Zcb extensions for Guest/VM |
+| [a74af32b](https://github.com/unicornx/rvck/commit/a74af32be6672edd9630772338a0fd411e5d7acb) | 2024-06-19 | Clément Léger | RISC-V: KVM: Allow Zimop extension for Guest/VM |
+| [8e14270e](https://github.com/unicornx/rvck/commit/8e14270e8397410367f4bd9404eac93626bc4689) | 2024-02-13 | Anup Patel | RISC-V: KVM: Allow Zacas extension for Guest/VM |
+| [a2ecc96b](https://github.com/unicornx/rvck/commit/a2ecc96bea87a66493a1eb5885e96f507a4e6fe7) | 2024-02-13 | Anup Patel | RISC-V: KVM: Allow Ztso extension for Guest/VM |
+| [6c53d8fc](https://github.com/unicornx/rvck/commit/6c53d8fc4709897d19777b7bb1db23da0d201f0d) | 2024-02-13 | Anup Patel | RISC-V: KVM: Forward SEED CSR access to user space |
+| [360d8356](https://github.com/unicornx/rvck/commit/360d835644010f0597655ef5892af955db30ce6b) | 2023-11-27 | Anup Patel | RISC-V: KVM: Allow Zfa extension for Guest/VM |
+| [e7d2a825](https://github.com/unicornx/rvck/commit/e7d2a8258592631843cbc0f80ec747d040c6535d) | 2023-11-27 | Anup Patel | RISC-V: KVM: Allow Zvfh[min] extensions for Guest/VM |
+| [1dd3dbb7](https://github.com/unicornx/rvck/commit/1dd3dbb70d26b2cb1f927c0bd99341e6a11d179e) | 2023-11-27 | Anup Patel | RISC-V: KVM: Allow Zihintntl extension for Guest/VM |
+| [dc7e2080](https://github.com/unicornx/rvck/commit/dc7e2080ed48adebcb360738d99ffb658127b061) | 2023-11-27 | Anup Patel | RISC-V: KVM: Allow Zfh[min] extensions for Guest/VM |
+| [66ba13c3](https://github.com/unicornx/rvck/commit/66ba13c3b43ac9a3dbca7d565c3c971e9b044f31) | 2023-11-27 | Anup Patel | RISC-V: KVM: Allow vector crypto extensions for Guest/VM |
+| [24e940b0](https://github.com/unicornx/rvck/commit/24e940b053d9c262141ddf1e1da0823e604e0467) | 2023-11-27 | Anup Patel | RISC-V: KVM: Allow scalar crypto extensions for Guest/VM |
+| [16c8fa4c](https://github.com/unicornx/rvck/commit/16c8fa4c029bfdc621818b9885f96b443fda3987) | 2023-11-27 | Anup Patel | RISC-V: KVM: Allow Zbc extension for Guest/VM |
+| [3eba211c](https://github.com/unicornx/rvck/commit/3eba211ccf5c8dd651159fb7b363a755f3537f06) | 2023-09-15 | Anup Patel | RISC-V: KVM: Allow Zicond extension for Guest/VM |
+| [bbc1b36c](https://github.com/unicornx/rvck/commit/bbc1b36c31ffd700cd31f171ed377843c2108298) | 2023-11-12 | Xiao Wang | riscv: Optimize hweight API with Zbb extension |
+| [fc9f031c](https://github.com/unicornx/rvck/commit/fc9f031c9e425e5b0618c4fdf54ec6aaa88005f7) | 2023-10-31 | Xiao Wang | riscv: Optimize bitops with Zbb extension |
+| [934de2f1](https://github.com/unicornx/rvck/commit/934de2f14780da8a80bfd4faf268345381fd1672) | 2024-06-21 | Xiao Wang | riscv: Optimize crc32 with Zbc extension |
+| [84dbe015](https://github.com/unicornx/rvck/commit/84dbe015ae605f339585d40626a7c3ba8168e679) | 2025-02-28 | Robin Murphy | iommu: Handle race with default domain setup |
+| [ee0b74e8](https://github.com/unicornx/rvck/commit/ee0b74e831b00ccb281183e7dbae032d73b0666d) | 2023-10-03 | Jason Gunthorpe | iommu: Do not use IOMMU_DOMAIN_DMA if CONFIG_IOMMU_DMA is not enabled |
+| [924bb2a4](https://github.com/unicornx/rvck/commit/924bb2a44eac4ec5885986ab11bea04d8d1ab778) | 2023-09-13 | Jason Gunthorpe | iommu: Convert remaining simple drivers to domain_alloc_paging() |
+| [1ecfbb9f](https://github.com/unicornx/rvck/commit/1ecfbb9f79386665cd32ef12665efdfd3c385ecb) | 2023-09-13 | Jason Gunthorpe | iommu: Convert simple drivers with DOMAIN_DMA to domain_alloc_paging() |
+| [f822742d](https://github.com/unicornx/rvck/commit/f822742d671c335d2daba6985e267e9e4e1427ed) | 2023-09-13 | Jason Gunthorpe | iommu: Add ops-\>domain_alloc_paging() |
+| [0924fe0f](https://github.com/unicornx/rvck/commit/0924fe0f8a949457c63be31d283015cfed09cfab) | 2023-09-13 | Jason Gunthorpe | iommu: Add __iommu_group_domain_alloc() |
+| [3b46893b](https://github.com/unicornx/rvck/commit/3b46893b846c0264290462731900e003fa2accf4) | 2023-09-13 | Jason Gunthorpe | iommu: Require a default_domain for all iommu drivers |
+| [86cb3c48](https://github.com/unicornx/rvck/commit/86cb3c4857cd4f1ddf60febb8faa43283b8bb72a) | 2023-09-13 | Jason Gunthorpe | iommu/sun50i: Add an IOMMU_IDENTITIY_DOMAIN |
+| [0613c123](https://github.com/unicornx/rvck/commit/0613c123daa9f2aa7569f98ea315390c4f12e99a) | 2023-09-13 | Jason Gunthorpe | iommu/mtk_iommu: Add an IOMMU_IDENTITIY_DOMAIN |
+| [1e7475d8](https://github.com/unicornx/rvck/commit/1e7475d80e0100cee3d7f5931ab678e8c1c407e8) | 2023-09-13 | Jason Gunthorpe | iommu/ipmmu: Add an IOMMU_IDENTITIY_DOMAIN |
+| [5c2572d7](https://github.com/unicornx/rvck/commit/5c2572d77f157b736b1eba1e4fb8068012d34076) | 2023-09-13 | Jason Gunthorpe | iommu/qcom_iommu: Add an IOMMU_IDENTITIY_DOMAIN |
+| [13d6d92f](https://github.com/unicornx/rvck/commit/13d6d92f477a282e0d33cbeb79032f4e4284d81b) | 2023-09-13 | Jason Gunthorpe | iommu: Remove ops-\>set_platform_dma_ops() |
+| [ef811cac](https://github.com/unicornx/rvck/commit/ef811cacfcbf5d32c94b2ff4a8800d279713f178) | 2023-09-13 | Jason Gunthorpe | iommu/msm: Implement an IDENTITY domain |
+| [59788e1d](https://github.com/unicornx/rvck/commit/59788e1dc8688856bb4e6e4348b1b8c9f5abe34f) | 2023-09-13 | Jason Gunthorpe | iommu/omap: Implement an IDENTITY domain |
+| [fd222ae8](https://github.com/unicornx/rvck/commit/fd222ae851a108f5dde4b5efe9291b65497f5ff0) | 2023-09-13 | Jason Gunthorpe | iommu/tegra-smmu: Support DMA domains in tegra |
+| [2ce0a668](https://github.com/unicornx/rvck/commit/2ce0a668b83a2f994c42e44f81dbb0fc01a4faf9) | 2023-09-13 | Jason Gunthorpe | iommu/tegra-smmu: Implement an IDENTITY domain |
+| [d7da524d](https://github.com/unicornx/rvck/commit/d7da524db26afd441d30e3ed82281a30d913eb8f) | 2023-09-13 | Jason Gunthorpe | iommu/exynos: Implement an IDENTITY domain |
+| [ebd14022](https://github.com/unicornx/rvck/commit/ebd1402207686079d5bcaeeb1d219b9bb58734c4) | 2023-09-13 | Jason Gunthorpe | iommu: Allow an IDENTITY domain as the default_domain in ARM32 |
+| [00300f24](https://github.com/unicornx/rvck/commit/00300f2436e2271fe83f4ff8400208333d68bade) | 2023-09-13 | Jason Gunthorpe | iommu: Reorganize iommu_get_default_domain_type() to respect def_domain_type() |
+| [4939da99](https://github.com/unicornx/rvck/commit/4939da996f1d6ce2bcd2a90f0c7a01070e4b4f7d) | 2023-09-13 | Jason Gunthorpe | iommu/mtk_iommu_v1: Implement an IDENTITY domain |
+| [679a1244](https://github.com/unicornx/rvck/commit/679a124412f9dcbab54aebf2688a62b7ca06d9f9) | 2023-09-13 | Jason Gunthorpe | iommu/fsl_pamu: Implement a PLATFORM domain |
+| [7c83e76b](https://github.com/unicornx/rvck/commit/7c83e76b4ff7b7479f41cc33a24bf551a4a4ce19) | 2023-09-13 | Jason Gunthorpe | iommu: Add IOMMU_DOMAIN_PLATFORM for S390 |
+| [dc1b2410](https://github.com/unicornx/rvck/commit/dc1b2410ab7cf8f5ab1c803aa5a06db47520fa17) | 2023-09-13 | Jason Gunthorpe | iommu: Add IOMMU_DOMAIN_PLATFORM |
+| [84703f58](https://github.com/unicornx/rvck/commit/84703f586777c80ea6053839359f4cf0c40bcae6) | 2023-09-13 | Jason Gunthorpe | iommu: Add iommu_ops-\>identity_domain |
+| [0d45c54f](https://github.com/unicornx/rvck/commit/0d45c54ff32315b4ce15411390f9f24c4591bdc7) | 2025-07-29 | gaorui | Revert "iommu: Handle race with default domain setup" |
+| [8a32574d](https://github.com/unicornx/rvck/commit/8a32574d9456d0eefe0dad3282ecfe8d1d86374e) | 2024-04-09 | Baoquan He | kexec: fix the unexpected kexec_dprintk() macro |
+| [cc29b0eb](https://github.com/unicornx/rvck/commit/cc29b0eba2171b6dfd8fe7d664180d397dc1802d) | 2024-07-30 | Sunil V L | kexec_file, parisc: print out debugging message if required |
+| [eba5ed9d](https://github.com/unicornx/rvck/commit/eba5ed9d5ec4a506ce8b9068c9de80144efdc0a4) | 2023-12-13 | Baoquan He | kexec_file, power: print out debugging message if required |
+| [b93850b2](https://github.com/unicornx/rvck/commit/b93850b22e3c6940a0be684b16b89f0cf6d87021) | 2023-12-13 | Baoquan He | kexec_file, riscv: print out debugging message if required |
+| [14a9e50c](https://github.com/unicornx/rvck/commit/14a9e50c3d8339eda9eac6562e918772c622112b) | 2023-12-13 | Baoquan He | kexec_file, arm64: print out debugging message if required |
+| [3c368919](https://github.com/unicornx/rvck/commit/3c3689191781f7d230fa196500251d68e8b749a7) | 2023-12-13 | Baoquan He | kexec_file, x86: print out debugging message if required |
+| [42a77eaf](https://github.com/unicornx/rvck/commit/42a77eaf2f11c081283d74411e9b8cf120038ef4) | 2023-12-13 | Baoquan He | kexec_file: print out debugging message if required |
+| [c60c5f03](https://github.com/unicornx/rvck/commit/c60c5f03d80e3cc8082b20213ecbbb8cc3ae7276) | 2023-12-13 | Baoquan He | kexec_file: add kexec_file flag to control debug printing |
+| [73d6aa7f](https://github.com/unicornx/rvck/commit/73d6aa7f4aa35825fa0724fe5b57b5c5a848d0f8) | 2025-04-03 | Radim Krčmář | KVM: RISC-V: reset smstateen CSRs |
+| [34cf9013](https://github.com/unicornx/rvck/commit/34cf9013a567e8e2ee97a7d93bf882d1e1ad68a3) | 2023-12-24 | Anup Patel | RISC-V: KVM: Fix indentation in kvm_riscv_vcpu_set_reg_csr() |
+| [28b08a85](https://github.com/unicornx/rvck/commit/28b08a85cad71ad17f47368577cd93db1891970b) | 2023-09-13 | Mayuresh Chitale | RISCV: KVM: Add sstateen0 to ONE_REG |
+| [d6595ad9](https://github.com/unicornx/rvck/commit/d6595ad9a22e035679b228498ba7df1bb9344abd) | 2023-09-13 | Mayuresh Chitale | RISCV: KVM: Add sstateen0 context save/restore |
+| [d8f58da4](https://github.com/unicornx/rvck/commit/d8f58da4870d5e0085d6a898bdb60a1da2f7933f) | 2023-09-13 | Mayuresh Chitale | RISCV: KVM: Add senvcfg context save/restore |
+| [f76ccc13](https://github.com/unicornx/rvck/commit/f76ccc138571d8ea1f1340c1fd75736023b01b89) | 2023-09-13 | Mayuresh Chitale | RISC-V: KVM: Enable Smstateen accesses |
+| [7237ca11](https://github.com/unicornx/rvck/commit/7237ca11aecc65b6554cf0ccb0e39078e98fadb8) | 2023-09-13 | Mayuresh Chitale | RISC-V: KVM: Add kvm_vcpu_config |
+| [45a14a58](https://github.com/unicornx/rvck/commit/45a14a584bfc2fff207758ca257dc6ca379b4ad3) | 2024-07-30 | Sunil V L | serial: 8250_platform: Enable generic 16550A platform devices |
+| [28c255bc](https://github.com/unicornx/rvck/commit/28c255bcf0d4d676e2f1d1c66c1b777c7b41183c) | 2025-04-09 | Song Shuai | riscv: kexec_file: Support loading Image binary file |
+| [801d3d3c](https://github.com/unicornx/rvck/commit/801d3d3c72ce9024c48bf79ae9dd01ac88799332) | 2025-07-25 | gaorui | riscv: kexec_file: Split the loading of kernel and others |
+| [57bba7c7](https://github.com/unicornx/rvck/commit/57bba7c7f5067f03d29da03860e0618284573aab) | 2025-07-25 | gaorui | Revert "riscv: kexec: Add image loader for kexec file" |
+| [2e2ccc0e](https://github.com/unicornx/rvck/commit/2e2ccc0ee9d6012a2af0139e37d7b17fb72a850d) | 2023-11-30 | Samuel Ortiz | RISC-V: Implement archrandom when Zkr is available |
+| [73e6c9f9](https://github.com/unicornx/rvck/commit/73e6c9f9a2bcb5733e40c7e5e5cf26eee2c6cbf9) | 2024-02-08 | Sunil V L | cpufreq: Move CPPC configs to common Kconfig and add RISC-V |
+| [aadc78bd](https://github.com/unicornx/rvck/commit/aadc78bd2e7291045b67e3328ece21d35e5e6812) | 2024-02-08 | Sunil V L | ACPI: RISC-V: Add CPPC driver |
+| [2bc9557b](https://github.com/unicornx/rvck/commit/2bc9557bfb576b1e7f4fa08bfa40997127a96d0a) | 2024-06-17 | Yunhui Cui | RISC-V: Select ACPI PPTT drivers |
+| [264d78cd](https://github.com/unicornx/rvck/commit/264d78cdfa1a887330baad3f62c667fc49312a18) | 2024-05-02 | Sia Jee Heng | RISC-V: ACPI: Enable SPCR table for console output on RISC-V |
+| [3ebaecbb](https://github.com/unicornx/rvck/commit/3ebaecbb7d5ab02d8f9cbc298ffc83aefa20724c) | 2024-07-18 | Ryo Takakura | RISC-V: Enable IPI CPU Backtrace |
+| [41873c93](https://github.com/unicornx/rvck/commit/41873c9362dcb1cb25df596575a8c4c47d4e355a) | 2024-06-13 | Haibo Xu | riscv: dmi: Add SMBIOS/DMI support |
+| [658ba5a2](https://github.com/unicornx/rvck/commit/658ba5a275ad7985507d6551ba4069232484da21) | 2024-06-13 | Haibo Xu | ACPI: NUMA: replace pr_info with pr_debug in arch_acpi_numa_init |
+| [d095cc12](https://github.com/unicornx/rvck/commit/d095cc1229a74e5cee7e589c5538a77707accb8e) | 2025-04-25 | gaorui | ACPI: NUMA: change the ACPI_NUMA to a hidden option |
+| [9fe5013d](https://github.com/unicornx/rvck/commit/9fe5013d22f2fb49e9f6185d09787352b0103b39) | 2025-04-25 | gaorui | ACPI: NUMA: Make some NUMA-related functions available for RISC-V |
+| [2150a23e](https://github.com/unicornx/rvck/commit/2150a23e52038c0b20a516e957d3111b65826e41) | 2024-06-13 | Haibo Xu | ACPI: NUMA: Add handler for SRAT RINTC affinity structure |
+| [e0eacf9f](https://github.com/unicornx/rvck/commit/e0eacf9f6a01a1840a956be2da0783cf6b4b1156) | 2024-06-13 | Haibo Xu | ACPI: RISCV: Add NUMA support based on SRAT and SLIT |
+| [48e1d183](https://github.com/unicornx/rvck/commit/48e1d183bed68f477ce4663b59390a9542ccde7b) | 2024-01-17 | Haibo Xu | ACPICA: SRAT: Add RISC-V RINTC affinity structure |
 ---
 
-**共 546 条提交，显示 401-546**
+**共 509 条提交，显示 401-509**
 
 [1](中兴通讯.md) [2](中兴通讯_page2.md) **[3]**
 
@@ -177,5 +140,5 @@
 
 ---
 
-*本页面最后更新于 2026-11-06 17:36:55*
-*数据来源: 主分支 rvck-6.6@dc246d68*
+*本页面最后更新于 2026-11-11 17:35:51*
+*数据来源: 主分支 rvck-6.6@0bee6ebb*

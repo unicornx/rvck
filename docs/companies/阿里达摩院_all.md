@@ -3,10 +3,10 @@
 <div style="background-color: #F4433620; padding: 15px; border-radius: 8px; border-left: 5px solid #F44336;">
 <p><strong>📊 统计信息</strong></p>
 <ul>
-<li><strong>贡献提交数</strong>: 406</li>
-<li><strong>统计时间</strong>: 2026-11-06 17:36:55</li>
+<li><strong>贡献提交数</strong>: 351</li>
+<li><strong>统计时间</strong>: 2026-11-11 17:35:51</li>
 <li><strong>主分支</strong>: rvck-6.6</li>
-<li><strong>起始标签</strong>: v6.6.161</li>
+<li><strong>起始标签</strong>: v6.6.155</li>
 </ul>
 </div>
 
@@ -18,415 +18,360 @@
 
 | 提交哈希 | 日期 | 原始作者 | 标题 |
 |----------|------|----------|------|
-| [d8c386c7](https://github.com/RVCK-Project/rvck/commit/d8c386c77b9f00c25d2597b17967d45045f38ea3) | 2026-07-18 | Pengpeng Hou | RISC-V: KVM: Reject overlapping AIA IMSIC address fields |
-| [a6aa65e0](https://github.com/RVCK-Project/rvck/commit/a6aa65e038fb03abbd7b6db1a60fd0e1dd6fe28d) | 2026-07-28 | Yicong Yang | RISC-V: KVM: Use try_cmpxchg for IMSIC MRIF RMW |
-| [26ea757b](https://github.com/RVCK-Project/rvck/commit/26ea757b037965fa50ebec00ab304f23fac588c6) | 2026-01-27 | Jiakai Xu | RISC-V: KVM: Skip IMSIC update if vCPU IMSIC state is not initialized |
-| [2e1cbe84](https://github.com/RVCK-Project/rvck/commit/2e1cbe840d6f9491a189bdd7e293f9b7ad2d1b77) | 2026-02-26 | Jiakai Xu | RISC-V: KVM: Fix null pointer dereference in kvm_riscv_vcpu_aia_rmw_topei() |
-| [c4b739e5](https://github.com/RVCK-Project/rvck/commit/c4b739e5357ee0704a51c32d3fdd76565210aa1a) | 2026-03-04 | Jiakai Xu | RISC-V: KVM: Fix potential UAF in kvm_riscv_aia_imsic_has_attr() |
-| [67208bf1](https://github.com/RVCK-Project/rvck/commit/67208bf112dc41efcb04b25bc8b917d2390fb9b7) | 2026-03-02 | Jiakai Xu | RISC-V: KVM: Fix use-after-free in kvm_riscv_aia_aplic_has_attr() |
-| [dd4dd97e](https://github.com/RVCK-Project/rvck/commit/dd4dd97e67db3baff068c2949e6deadf6438b111) | 2026-07-13 | Vivian Wang | mm/sparse-vmemmap: flush_cache_vmap() after hotplugging vmemmap |
-| [9a055e39](https://github.com/RVCK-Project/rvck/commit/9a055e39ad5717fa4d6577cf28040611cc881d9b) | 2026-10-09 | ZhenXing Zhu | riscv: mm: Make mark_new_valid_map() stuff depend on 64BIT && MMU |
-| [7b9372d5](https://github.com/RVCK-Project/rvck/commit/7b9372d5349e9212f90a36a7308b9e438eec650a) | 2026-03-03 | Vivian Wang | riscv: mm: Unconditionally sfence.vma for spurious fault |
-| [550cc989](https://github.com/RVCK-Project/rvck/commit/550cc98961bfd001954ee72167c05c0af05ef4dd) | 2026-10-09 | ZhenXing Zhu | riscv: mm: Use the bitmap API for new_valid_map_cpus |
-| [e679254b](https://github.com/RVCK-Project/rvck/commit/e679254be6f62be0f9f66349335b3c12b9526743) | 2026-10-09 | ZhenXing Zhu | riscv: mm: Rename new_vmalloc into new_valid_map_cpus |
-| [49d947b5](https://github.com/RVCK-Project/rvck/commit/49d947b51c9f229d10f0666433fc52d311bb217b) | 2026-03-03 | Vivian Wang | riscv: kfence: Call mark_new_valid_map() for kfence_unprotect() |
-| [786b65b1](https://github.com/RVCK-Project/rvck/commit/786b65b11395665efd8c153c906482461ba91094) | 2026-03-03 | Vivian Wang | riscv: mm: Extract helper mark_new_valid_map() |
-| [a00633da](https://github.com/RVCK-Project/rvck/commit/a00633da5c5c51b2203c8d7816e4f8fe6a16be53) | 2025-01-03 | Clément Léger | riscv: use local label names instead of global ones in assembly |
-| [b75d8412](https://github.com/RVCK-Project/rvck/commit/b75d841237d7057bda3b619492faffc4c5918428) | 2026-09-17 | ZhenXing Zhu | irqchip: thead-c900-aclint-sswi: Fixup riscv_ipi_set_virq_range() conflict |
-| [e36ace89](https://github.com/RVCK-Project/rvck/commit/e36ace8923b5243f08049c026d6332c342e06bc8) | 2024-05-22 | Palmer Dabbelt | irqchip: riscv-imsic: Fixup riscv_ipi_set_virq_range() conflict |
-| [2e1c6f71](https://github.com/RVCK-Project/rvck/commit/2e1c6f719d41d53ce31e6ab3ca6603b7c8a8b951) | 2024-03-26 | Samuel Holland | riscv: mm: Always use an ASID to flush mm contexts |
-| [28aae774](https://github.com/RVCK-Project/rvck/commit/28aae774430026959605095e73d5a42bc4c4e4ca) | 2024-03-26 | Samuel Holland | riscv: mm: Preserve global TLB entries when switching contexts |
-| [ca96592e](https://github.com/RVCK-Project/rvck/commit/ca96592ee7ef11648b94c9458335de32c57bf2b7) | 2024-03-26 | Samuel Holland | riscv: mm: Make asid_bits a local variable |
-| [2ad666a8](https://github.com/RVCK-Project/rvck/commit/2ad666a86257b3c3d9b5bc3097c2b39f27bb8ca1) | 2024-03-26 | Samuel Holland | riscv: mm: Use a fixed layout for the MM context ID |
-| [7d6d9d57](https://github.com/RVCK-Project/rvck/commit/7d6d9d57f164ec160f4880325e8841664a494d7e) | 2024-03-26 | Samuel Holland | riscv: mm: Introduce cntx2asid/cntx2version helper macros |
-| [054c7c37](https://github.com/RVCK-Project/rvck/commit/054c7c37de63a1ef50327ac0cd3d7be23eb1c7c3) | 2024-03-26 | Samuel Holland | riscv: Avoid TLB flush loops when affected by SiFive CIP-1200 |
-| [6e235c2b](https://github.com/RVCK-Project/rvck/commit/6e235c2bc15af27ef2a70bc451fd70b7d4e3fdaa) | 2024-03-26 | Samuel Holland | riscv: mm: Combine the SMP and UP TLB flush code |
-| [dfeaac20](https://github.com/RVCK-Project/rvck/commit/dfeaac205c5d9b0983d6576eff00c4892286c087) | 2024-03-26 | Samuel Holland | riscv: Only send remote fences when some other CPU is online |
-| [fd86b47a](https://github.com/RVCK-Project/rvck/commit/fd86b47a4183968dbe6faf8c859be74c89d40b88) | 2024-03-26 | Samuel Holland | riscv: mm: Broadcast kernel TLB flushes only when needed |
-| [76b7f126](https://github.com/RVCK-Project/rvck/commit/76b7f12603d4e9c0059dcb7c08056becebe1f019) | 2024-03-26 | Samuel Holland | riscv: Use IPIs for remote cache/TLB flushes by default |
-| [2dad2ae8](https://github.com/RVCK-Project/rvck/commit/2dad2ae82d26d750e6bb5c42228f5e2ea333f54f) | 2024-03-26 | Samuel Holland | riscv: Factor out page table TLB synchronization |
-| [7d74ad1b](https://github.com/RVCK-Project/rvck/commit/7d74ad1bc828e8a0be6df0f5578ca9a78abe2772) | 2024-03-26 | Samuel Holland | riscv: Flush the instruction cache during SMP bringup |
-| [b6c0cd3d](https://github.com/RVCK-Project/rvck/commit/b6c0cd3dd1619b98c5be67ce7678528056ef899c) | 2026-08-11 | ZhenXing Zhu | riscv: dts: thead: add TH1520 ACLINT SSWI interrupt-controller node |
-| [1d0abe62](https://github.com/RVCK-Project/rvck/commit/1d0abe628bce4be6aae38220b0144c41dbeb8615) | 2026-08-11 | ZhenXing Zhu | Revert "riscv: Add ACLINT SSWI support" |
-| [d927b615](https://github.com/RVCK-Project/rvck/commit/d927b615f0f573f8b7716e469dcd8916d4028412) | 2025-10-20 | Vivian Wang | riscv: tests: Make RISCV_KPROBES_KUNIT tristate |
-| [3ff7230d](https://github.com/RVCK-Project/rvck/commit/3ff7230dd0ce19e0a76fb254a61c167f4c8a7304) | 2025-05-13 | Nam Cao | riscv: Add kprobes KUnit test |
-| [289866f9](https://github.com/RVCK-Project/rvck/commit/289866f9709384679f3fac08996f380adb2aacff) | 2023-11-01 | Charlie Jenkins | riscv: Add tests for riscv module loading |
-| [6f7ab613](https://github.com/RVCK-Project/rvck/commit/6f7ab613137286ff7a8db23712269b0b6952553b) | 2025-05-11 | Nam Cao | riscv: kprobes: Remove duplication of RV_EXTRACT_ITYPE_IMM |
-| [31b6cf1f](https://github.com/RVCK-Project/rvck/commit/31b6cf1f46eb0c6ef59f53f69ffe1fe7cefb6dab) | 2025-05-11 | Nam Cao | riscv: kprobes: Remove duplication of RV_EXTRACT_UTYPE_IMM |
-| [b3ec7273](https://github.com/RVCK-Project/rvck/commit/b3ec727339c70a69fafddf6dd3936575bd33508a) | 2025-05-11 | Nam Cao | riscv: kprobes: Remove duplication of RV_EXTRACT_RD_REG |
-| [63b4bb4f](https://github.com/RVCK-Project/rvck/commit/63b4bb4f4b2f49e8d5c6a8e132afffae5425a511) | 2025-05-11 | Nam Cao | riscv: kprobes: Remove duplication of RVC_EXTRACT_BTYPE_IMM |
-| [18120dbc](https://github.com/RVCK-Project/rvck/commit/18120dbc09d3ac2fbb1c33566eca2cfcca376b5e) | 2025-05-11 | Nam Cao | riscv: kprobes: Remove duplication of RVC_EXTRACT_C2_RS1_REG |
-| [37e4b111](https://github.com/RVCK-Project/rvck/commit/37e4b111248c7fda746943881e90f8e1711d836b) | 2025-05-11 | Nam Cao | riscv: kprobes: Remove duplication of RVC_EXTRACT_JTYPE_IMM |
-| [649781ae](https://github.com/RVCK-Project/rvck/commit/649781aef941493707575f46d307fdb41c28986a) | 2025-05-11 | Nam Cao | riscv: kprobes: Remove duplication of RV_EXTRACT_BTYPE_IMM |
-| [b5862b41](https://github.com/RVCK-Project/rvck/commit/b5862b41155bf533fe36b8c95216e3eb52dc94e4) | 2025-05-11 | Nam Cao | riscv: kprobes: Remove duplication of RV_EXTRACT_RS1_REG |
-| [7b3aae56](https://github.com/RVCK-Project/rvck/commit/7b3aae56299ef16d6d13111d554db4a1316c83cf) | 2025-05-11 | Nam Cao | riscv: kprobes: Remove duplication of RV_EXTRACT_JTYPE_IMM |
-| [d359f911](https://github.com/RVCK-Project/rvck/commit/d359f9119e8e65783e3e93f4634ab5eeca7be6f2) | 2025-05-11 | Nam Cao | riscv: kprobes: Move branch_funct3 to insn.h |
-| [13a46fd1](https://github.com/RVCK-Project/rvck/commit/13a46fd1808d36f427f6b41584558e0abc7316be) | 2025-05-11 | Nam Cao | riscv: kprobes: Move branch_rs2_idx to insn.h |
-| [d96d7bf1](https://github.com/RVCK-Project/rvck/commit/d96d7bf11d991a4436fdf76e6525b4ed3ab4f29f) | 2026-09-21 | Zhiguo Zhu | riscv: dts: zhihe: disable unused A210 UARTs by default |
-| [030ed077](https://github.com/RVCK-Project/rvck/commit/030ed0778849cae95caee0bc53986cc5be656076) | 2026-09-21 | Zhiguo Zhu | riscv: dts: zhihe: enable GPIO controllers on A210 boards |
-| [c0a83f96](https://github.com/RVCK-Project/rvck/commit/c0a83f96be57e7f202b718a153f5734f35dfd4b3) | 2026-09-21 | Zhiguo Zhu | riscv: dts: zhihe: add A210 SPI controllers |
-| [96cce2ed](https://github.com/RVCK-Project/rvck/commit/96cce2ed2d5596baeb1811b8b8e855c303c5677c) | 2026-09-21 | Zhiguo Zhu | riscv: dts: zhihe: add A210 I2C controllers |
-| [c591e30f](https://github.com/RVCK-Project/rvck/commit/c591e30f685038354987fd41d39b5a8c50fa1e54) | 2026-09-21 | Zhiguo Zhu | riscv: dts: zhihe: add A210 DW APB timers |
-| [71872b79](https://github.com/RVCK-Project/rvck/commit/71872b79a428236b2cbd05962026b4b0b70c9a24) | 2026-09-21 | Zhiguo Zhu | riscv: dts: zhihe: add A210 GPIO controllers |
-| [1268a564](https://github.com/RVCK-Project/rvck/commit/1268a5641d7e8acae5c1df4080e28c4eff5a41f2) | 2026-09-21 | Zhiguo Zhu | riscv: dts: zhihe: add A210 DMA controllers |
-| [1e452118](https://github.com/RVCK-Project/rvck/commit/1e4521186ea504c54c4ed3d104ca99371e2d1fa2) | 2026-09-21 | Zhiguo Zhu | dmaengine: dw-axi-dmac: add ZhiHe A210 support |
-| [ebca8f0b](https://github.com/RVCK-Project/rvck/commit/ebca8f0bd631278fd37c7754330eb10a22777c1c) | 2026-09-21 | Zhiguo Zhu | dt-bindings: dma: snps,dw-axi-dmac: add ZhiHe A210 |
-| [1fce9a6c](https://github.com/RVCK-Project/rvck/commit/1fce9a6cba641d8df51324ab3934f9d6fbb9064e) | 2026-09-30 | Zhiguo Zhu | riscv: dts: zhihe: rename A210 board to Melon Pi |
-| [7b411457](https://github.com/RVCK-Project/rvck/commit/7b41145778514ca176add31938db3d08a10ef3c5) | 2026-09-30 | Zhiguo Zhu | dt-bindings: riscv: zhihe: rename A210 board to Melon Pi |
-| [bbb8af22](https://github.com/RVCK-Project/rvck/commit/bbb8af228bde282ad639cb5a86102f7456c24e3f) | 2026-09-12 | ZhenXing Zhu | firmware: thead: th1520_event: make stubs static inline |
-| [bf0edd71](https://github.com/RVCK-Project/rvck/commit/bf0edd710499b1d13b9c2b4650133047009a8271) | 2026-08-31 | Zhiguo Zhu | riscv: rvck_defconfig: enable ZhiHe A210 drivers as modules |
-| [69204386](https://github.com/RVCK-Project/rvck/commit/6920438641f76c1f084c246f86cf2a62bcabe9a6) | 2026-08-18 | Zhiguo Zhu | riscv: dts: zhihe: add A210 power domains |
-| [94f97641](https://github.com/RVCK-Project/rvck/commit/94f97641a45494ab528618ad0675436a01aa0c4d) | 2026-08-18 | Zhiguo Zhu | riscv: dts: zhihe: add A210 AON subsystem |
-| [4f29ba6f](https://github.com/RVCK-Project/rvck/commit/4f29ba6f4db8dc361b77755477f9ff37da7cf112) | 2026-08-18 | Zhiguo Zhu | riscv: dts: zhihe: add A210 pinctrl |
-| [e325def6](https://github.com/RVCK-Project/rvck/commit/e325def609f851e87b05d774e69b216d181b9faa) | 2026-08-18 | Zhiguo Zhu | pmdomain: zhihe: add A210 power domain support |
-| [50f6baa8](https://github.com/RVCK-Project/rvck/commit/50f6baa8b9cf2be270ec75f8727f64d17fa6c585) | 2026-08-27 | Zhiguo Zhu | dt-bindings: power: zhihe: add A210 power domains |
-| [6f79297b](https://github.com/RVCK-Project/rvck/commit/6f79297bc96eac72d26907757f7808b5364eec13) | 2026-08-27 | Zhiguo Zhu | dt-bindings: clock: zhihe: add A210 CCU |
-| [adb357e3](https://github.com/RVCK-Project/rvck/commit/adb357e3de50819078552e5cbd44df124693689d) | 2026-08-18 | Zhiguo Zhu | regulator: zhihe: add A210 AON regulator driver |
-| [dcb12cae](https://github.com/RVCK-Project/rvck/commit/dcb12cae5a8f7719c89c3ea1404c9a68f9957c32) | 2026-08-18 | Zhiguo Zhu | firmware: zhihe: add A210 AON subsystem driver |
-| [726af24e](https://github.com/RVCK-Project/rvck/commit/726af24e800f2697b1f9c4c69be3b37473c4d408) | 2026-08-18 | Zhiguo Zhu | mailbox: zhihe: add A210 mailbox controller driver |
-| [87926a69](https://github.com/RVCK-Project/rvck/commit/87926a69e5491d0193fcad37e75c9a4a979d1840) | 2026-08-27 | Zhiguo Zhu | dt-bindings: regulator: zhihe: add A210 AON regulator |
-| [9e91f432](https://github.com/RVCK-Project/rvck/commit/9e91f4322277e70fcf1b30f21f6cb06f5a97e1b5) | 2026-08-27 | Zhiguo Zhu | dt-bindings: mailbox: zhihe: add A210 mailbox controller |
-| [5f78cf4e](https://github.com/RVCK-Project/rvck/commit/5f78cf4e058dc28186592cbefdb4fdb907c502a2) | 2026-08-27 | Zhiguo Zhu | dt-bindings: firmware: zhihe: add A210 AON subsystem |
-| [3ba7ec45](https://github.com/RVCK-Project/rvck/commit/3ba7ec45b2c510b2ac4378ef93aaad26d7ccebac) | 2026-08-18 | Zhiguo Zhu | pinctrl: zhihe: add A210 pinctrl driver |
-| [bd754e86](https://github.com/RVCK-Project/rvck/commit/bd754e8694086ad8ff0cc6bdeede9964d550473c) | 2026-08-18 | Zhiguo Zhu | dt-bindings: pinctrl: zhihe: add A210 pinctrl |
-| [2831b2dc](https://github.com/RVCK-Project/rvck/commit/2831b2dced416e983096430d92e4b78dfeab63b3) | 2026-08-18 | Zhiguo Zhu | riscv: dts: zhihe: add A210 Ethernet controllers |
-| [2b21db32](https://github.com/RVCK-Project/rvck/commit/2b21db327cfdc3a8a131c681a69effd2c63752ed) | 2026-08-18 | Zhiguo Zhu | net: stmmac: add ZhiHe A210 DWMAC glue layer |
-| [4c58d8d3](https://github.com/RVCK-Project/rvck/commit/4c58d8d37b79062539c8f5f864cb29c8452b7f77) | 2026-08-18 | Zhiguo Zhu | dt-bindings: net: zhihe: add A210 DWMAC |
-| [2810fa8a](https://github.com/RVCK-Project/rvck/commit/2810fa8a289e685c0d8e4c6a1a899c3d9a278aaf) | 2026-08-20 | Zhiguo Zhu | dt-bindings: mfd: syscon: add ZhiHe A210 GMAC syscon |
-| [c9ac798d](https://github.com/RVCK-Project/rvck/commit/c9ac798d4eeed1051095e9b54bf43d9a17483070) | 2026-08-13 | Zhiguo Zhu | riscv: rvck_defconfig: enable ZhiHe A210 support |
-| [76cc45f6](https://github.com/RVCK-Project/rvck/commit/76cc45f66037286258b6f25daf64a814933456a4) | 2026-08-13 | Zhiguo Zhu | riscv: dts: add ZhiHe A210 device tree support |
-| [b8bc0116](https://github.com/RVCK-Project/rvck/commit/b8bc011680dab9d49c1910c02eeeb6f2d5700868) | 2026-08-13 | Zhiguo Zhu | irqchip/sifive-plic: add ZhiHe A210 PLIC support |
-| [8ff6ccc6](https://github.com/RVCK-Project/rvck/commit/8ff6ccc66ef3094bd33ef4a6d8dbb891b4061f3a) | 2026-08-11 | Zhiguo Zhu | mmc: sdhci-of-dwcmshc: add ZhiHe A210 support |
-| [5d886e9f](https://github.com/RVCK-Project/rvck/commit/5d886e9f1420af49c93cbb1cb488402af3b0411a) | 2026-08-13 | Zhiguo Zhu | reset: zhihe: add A210 reset controller driver |
-| [98fe88ed](https://github.com/RVCK-Project/rvck/commit/98fe88eda0a05470ab22a52a98e1fb8eacda9ebd) | 2026-08-13 | Zhiguo Zhu | clk: zhihe: add A210 clock controller driver |
-| [7f3f9e97](https://github.com/RVCK-Project/rvck/commit/7f3f9e97973d423e383977747460a174011228f7) | 2026-08-13 | Zhiguo Zhu | riscv: add Kconfig option for ZHIHE SoC family |
-| [bbb69719](https://github.com/RVCK-Project/rvck/commit/bbb69719f16342745752ef3c36218f416ce99655) | 2026-08-13 | Zhiguo Zhu | dt-bindings: interrupt-controller: sifive,plic: add ZhiHe A210 |
-| [9635ead5](https://github.com/RVCK-Project/rvck/commit/9635ead5a1e9c97607b7fd22509c8870b7343462) | 2026-08-11 | Zhiguo Zhu | dt-bindings: mmc: snps,dwcmshc: add ZhiHe A210 |
-| [57d73d05](https://github.com/RVCK-Project/rvck/commit/57d73d058df0ce6191bfe6e805e9ebb690216e55) | 2026-08-13 | Zhiguo Zhu | dt-bindings: reset: zhihe: add reset controller for A210 |
-| [bb843112](https://github.com/RVCK-Project/rvck/commit/bb8431121532138a141d7de312673f0af4edf8af) | 2026-08-13 | Zhiguo Zhu | dt-bindings: clock: zhihe: add clock controller for A210 |
-| [c47b1c3f](https://github.com/RVCK-Project/rvck/commit/c47b1c3f844af6facf7ee18a91a66109a0099e0e) | 2026-08-13 | Zhiguo Zhu | dt-bindings: riscv: zhihe: Add A210 evaluation board |
-| [b4b91806](https://github.com/RVCK-Project/rvck/commit/b4b91806ffe6168067877813b274c71c922159c1) | 2026-08-13 | Zhiguo Zhu | dt-bindings: vendor-prefixes: add ZhiHe |
-| [379a32e0](https://github.com/RVCK-Project/rvck/commit/379a32e0863e8a30f10e2df640aab382a67db9d5) | 2024-05-10 | Andy Chiu | riscv: vector: adjust minimum Vector requirement to ZVE32X |
-| [41411817](https://github.com/RVCK-Project/rvck/commit/4141181730a2c6835f2ec3fd5cf68f795cda46d4) | 2025-09-19 | Han Gao | riscv: dts: thead: add xtheadvector to the th1520 devicetree |
-| [42b082e2](https://github.com/RVCK-Project/rvck/commit/42b082e2c66d091ebd4b7a90f706df659e6d1309) | 2025-11-19 | Sergey Matyukevich | riscv: dts: allwinner: d1: fix vlenb property |
-| [e64d3dea](https://github.com/RVCK-Project/rvck/commit/e64d3dea5ddcaac32e7b5a5a880ce74cdf80f354) | 2025-10-18 | Paul Walmsley | riscv: cpufeature: avoid uninitialized variable in has_thead_homogeneous_vlenb() |
-| [5b2de94e](https://github.com/RVCK-Project/rvck/commit/5b2de94ed942a44cfe41f3932d9b954ae17398e6) | 2025-05-23 | Han Gao | riscv: vector: Fix context save/restore with xtheadvector |
-| [addacc34](https://github.com/RVCK-Project/rvck/commit/addacc343253fbd76d54bf76a5bfb691663110d2) | 2024-11-13 | Charlie Jenkins | selftests: riscv: Support xtheadvector in vector tests |
-| [bb4f93cc](https://github.com/RVCK-Project/rvck/commit/bb4f93cc55639a5691ae95f7fc9a1c1efefecd83) | 2024-11-13 | Charlie Jenkins | selftests: riscv: Fix vector tests |
-| [f7c59066](https://github.com/RVCK-Project/rvck/commit/f7c59066e76191df0e58b4ab2382055de038943c) | 2024-11-13 | Charlie Jenkins | riscv: hwprobe: Document thead vendor extensions and xtheadvector extension |
-| [dd2cfb98](https://github.com/RVCK-Project/rvck/commit/dd2cfb98d999dca86b2e0f011eeed557ad76794a) | 2024-11-13 | Charlie Jenkins | riscv: vector: Support xtheadvector save/restore |
-| [31cce2d2](https://github.com/RVCK-Project/rvck/commit/31cce2d23aabb2571c5e4b00f6bcff7fb72ae19a) | 2024-11-13 | Charlie Jenkins | riscv: Add xtheadvector instruction definitions |
-| [8dc041b6](https://github.com/RVCK-Project/rvck/commit/8dc041b6f591c2a5d7025f3d6d56985a39443e9f) | 2024-11-13 | Charlie Jenkins | riscv: csr: Add CSR encodings for CSR_VXRM/CSR_VXSAT |
-| [eecaf43e](https://github.com/RVCK-Project/rvck/commit/eecaf43e33eb64075fbe0eab5a307fa8017ba5b5) | 2024-11-13 | Heiko Stuebner | RISC-V: define the elements of the VCSR vector CSR |
-| [d955594c](https://github.com/RVCK-Project/rvck/commit/d955594cbbbc9e2ef856595d13a29b3c0559c33c) | 2024-11-13 | Charlie Jenkins | riscv: vector: Use vlenb from DT for thead |
-| [07bab969](https://github.com/RVCK-Project/rvck/commit/07bab9692db80885f839decce0cb74e334a13b2a) | 2024-11-13 | Charlie Jenkins | riscv: Add thead and xtheadvector as a vendor extension |
-| [69316daf](https://github.com/RVCK-Project/rvck/commit/69316daf8d69c5453f47f138208ba13f0a91d8d6) | 2024-11-13 | Charlie Jenkins | riscv: dts: allwinner: Add xtheadvector to the D1/D1s devicetree |
-| [297a5290](https://github.com/RVCK-Project/rvck/commit/297a52905b1a1b43f8f4c13bcb552e3dc36dd1b2) | 2024-11-13 | Charlie Jenkins | dt-bindings: cpus: add a thead vlen register length property |
-| [24987ad4](https://github.com/RVCK-Project/rvck/commit/24987ad41ee9873849ef3f436b69f0bb39d6f0e6) | 2024-11-13 | Charlie Jenkins | dt-bindings: riscv: Add xtheadvector ISA extension description |
-| [3527bfc8](https://github.com/RVCK-Project/rvck/commit/3527bfc80025eef26e8f92b90a58a30572b028f8) | 2023-10-09 | Conor Dooley | riscv: dts: allwinner: convert isa detection to new properties |
-| [8e048586](https://github.com/RVCK-Project/rvck/commit/8e0485865bd7e797859b4f4302caa1b78da03fdd) | 2026-07-29 | ZhenXing Zhu | Revert "T-Head C9xx cores implement an older version (0.7.1) of the vector speci... |
-| [73eb58a5](https://github.com/RVCK-Project/rvck/commit/73eb58a5869aa7e289e3721024411fa047fdb6cf) | 2026-07-29 | ZhenXing Zhu | Revert "riscv: xtheadvector: enable vector function" |
-| [602b05a4](https://github.com/RVCK-Project/rvck/commit/602b05a4625971a07fe25399c0b165f8f8a15da4) | 2026-07-29 | ZhenXing Zhu | Revert "xtheadvector: fix it used as v-ext when hwprobe is used" |
-| [a8899819](https://github.com/RVCK-Project/rvck/commit/a889981979f62319ec487a1f8f2a497d42a86741) | 2026-07-29 | ZhenXing Zhu | Revert "fix: riscv: xtheadvector: fix setup_v_vsize" |
-| [c8885cce](https://github.com/RVCK-Project/rvck/commit/c8885cceeaf4e99e67e10a04f5b3f6a468f04333) | 2024-01-03 | Leonardo Bras | riscv: Introduce set_compat_task() in asm/compat.h |
-| [73662d67](https://github.com/RVCK-Project/rvck/commit/73662d67eba6f0552b5fa37df8763425c367b0bb) | 2024-01-03 | Leonardo Bras | riscv: Introduce is_compat_thread() into compat.h |
-| [d0ed06b2](https://github.com/RVCK-Project/rvck/commit/d0ed06b2f31a4820159f58cc759a1a81170b7096) | 2024-01-03 | Leonardo Bras | riscv: add compile-time test into is_compat_task() |
-| [4fd6539f](https://github.com/RVCK-Project/rvck/commit/4fd6539fce9e15844add91bcf8c7c465c8fe18ea) | 2024-01-03 | Leonardo Bras | riscv: Replace direct thread flag check with is_compat_task() |
-| [6e2beb28](https://github.com/RVCK-Project/rvck/commit/6e2beb28f7345a0e79bd1113deb6e72b1c508141) | 2024-10-16 | Samuel Holland | KVM: riscv: selftests: Add Smnpm and Ssnpm to get-reg-list test |
-| [9764f803](https://github.com/RVCK-Project/rvck/commit/9764f80369614cb5f0b47625ef0b384de7183fc8) | 2024-10-16 | Samuel Holland | riscv: selftests: Add a pointer masking test |
-| [3e1b7946](https://github.com/RVCK-Project/rvck/commit/3e1b794601b1ee37bba2f6f5dd8aa588859ccade) | 2024-10-16 | Samuel Holland | riscv: Allow ptrace control of the tagged address ABI |
-| [36ec62d3](https://github.com/RVCK-Project/rvck/commit/36ec62d3944223e86b07efd74bebe0439d505cf6) | 2024-10-16 | Samuel Holland | riscv: Add support for the tagged address ABI |
-| [ad6faa09](https://github.com/RVCK-Project/rvck/commit/ad6faa097e6c3f5cfdfac7a56ec6a39db32b52ff) | 2024-10-16 | Samuel Holland | riscv: Add support for userspace pointer masking |
-| [6e1a936e](https://github.com/RVCK-Project/rvck/commit/6e1a936e826b83d13348b79923ed2cdffbe99289) | 2024-10-16 | Samuel Holland | riscv: Add CSR definitions for pointer masking |
-| [bf6376dc](https://github.com/RVCK-Project/rvck/commit/bf6376dcf88cceb26c8436cffd4d241d10ccfea8) | 2026-04-04 | Charlie Jenkins | selftests: riscv: Add license to cfi selftest |
-| [a44ee164](https://github.com/RVCK-Project/rvck/commit/a44ee164dfe5a478402125f61b02870bad2de294) | 2026-04-04 | Paul Walmsley | prctl: cfi: change the branch landing pad prctl()s to be more descriptive |
-| [b43eb2f6](https://github.com/RVCK-Project/rvck/commit/b43eb2f6b8a569a47d68ab6432394a7865073714) | 2026-04-04 | Zong Li | riscv: cfi: clear CFI lock status in start_thread() |
-| [4f548c93](https://github.com/RVCK-Project/rvck/commit/4f548c9395f660c998ea8a1f4a0b9b4565750ece) | 2026-04-04 | Paul Walmsley | riscv: ptrace: cfi: expand "SS" references to "shadow stack" in uapi headers |
-| [8ca4b5b1](https://github.com/RVCK-Project/rvck/commit/8ca4b5b1497fbbfaee60cb3499ca0c63a56ae882) | 2026-04-04 | Paul Walmsley | prctl: rename branch landing pad implementation functions to be more explicit |
-| [0008f04f](https://github.com/RVCK-Project/rvck/commit/0008f04f4dca1d87ec3fa3457991e8a42abd92fb) | 2026-04-04 | Paul Walmsley | riscv: ptrace: expand "LP" references to "branch landing pads" in uapi headers |
-| [f41c38b9](https://github.com/RVCK-Project/rvck/commit/f41c38b9ecd2ae1fdbcec3caf701c9fe89ecac6e) | 2026-04-04 | Paul Walmsley | riscv: ptrace: cfi: fix "PRACE" typo in uapi header |
-| [b24ba0f3](https://github.com/RVCK-Project/rvck/commit/b24ba0f3877025918ea514f1237f0a30f1efeb35) | 2026-04-02 | Paul Walmsley | riscv: use _BITUL macro rather than BIT() in ptrace uapi and kselftests |
-| [a832e88e](https://github.com/RVCK-Project/rvck/commit/a832e88e5c392e929aa9157a10c9aeecfc210e48) | 2026-01-25 | Deepak Gupta | kselftest/riscv: add kselftest for user mode CFI |
-| [c62fdc19](https://github.com/RVCK-Project/rvck/commit/c62fdc1947709e75df3c126ae5d85d95f1f0e5cd) | 2026-01-25 | Deepak Gupta | riscv: add documentation for shadow stack |
-| [d3d398ac](https://github.com/RVCK-Project/rvck/commit/d3d398acc080d2cbc6a70375a1cfaaad4815240d) | 2026-01-25 | Deepak Gupta | riscv: add documentation for landing pad / indirect branch tracking |
-| [19e86700](https://github.com/RVCK-Project/rvck/commit/19e8670006e5f869b6a316860adc28b0db673c62) | 2026-01-25 | Deepak Gupta | riscv: create a Kconfig fragment for shadow stack and landing pad support |
-| [1b328e72](https://github.com/RVCK-Project/rvck/commit/1b328e721f4d655b2b0fcbd1b5727d7dc52b5b6b) | 2026-01-25 | Deepak Gupta | arch/riscv: add dual vdso creation logic and select vdso based on hw |
-| [5b08fd45](https://github.com/RVCK-Project/rvck/commit/5b08fd45eaa3a5e7696ac18df785a8a3d66b4fe8) | 2026-01-25 | Jim Shu | arch/riscv: compile vdso with landing pad and shadow stack note |
-| [54d77d96](https://github.com/RVCK-Project/rvck/commit/54d77d967230a0c39a1d880d54ed48af8466d10e) | 2024-10-16 | Alexandre Ghiti | riscv: Check that vdso does not contain any dynamic relocations |
-| [2807467e](https://github.com/RVCK-Project/rvck/commit/2807467ed1df8fa5fd35f8be8e390e62c519784c) | 2026-01-25 | Deepak Gupta | riscv: enable kernel access to shadow stack memory via the FWFT SBI call |
-| [c2a44b95](https://github.com/RVCK-Project/rvck/commit/c2a44b95c85aebee86117cce85d671e5305bf4d7) | 2026-01-25 | Deepak Gupta | riscv: add kernel command line option to opt out of user CFI |
-| [ac831700](https://github.com/RVCK-Project/rvck/commit/ac831700ecfe0a67b6e25afe712d25cf4dff439b) | 2026-01-25 | Deepak Gupta | riscv/hwprobe: add zicfilp / zicfiss enumeration in hwprobe |
-| [bbb63fe3](https://github.com/RVCK-Project/rvck/commit/bbb63fe32b0e52b328db82b7e0b4ef9139c24e06) | 2026-01-25 | Paul Walmsley | riscv: hwprobe: add support for RISCV_HWPROBE_KEY_IMA_EXT_1 |
-| [839d88aa](https://github.com/RVCK-Project/rvck/commit/839d88aac4df4cecbc23b15eaae27888fa7460b9) | 2026-01-25 | Deepak Gupta | riscv/ptrace: expose riscv CFI status and state via ptrace and in core files |
-| [a234100c](https://github.com/RVCK-Project/rvck/commit/a234100c605081e900bca1d3832a876f12ea2cff) | 2026-01-25 | Deepak Gupta | riscv/kernel: update __show_regs() to print shadow stack register |
-| [32912f04](https://github.com/RVCK-Project/rvck/commit/32912f049690617043693448c31b77a6a7088327) | 2026-01-25 | Deepak Gupta | riscv/signal: save and restore the shadow stack on a signal |
-| [68c37e0c](https://github.com/RVCK-Project/rvck/commit/68c37e0c99ab90d1f2f94d608d69bfc67bee1d4c) | 2026-01-25 | Deepak Gupta | riscv/traps: Introduce software check exception and uprobe handling |
-| [c375b6d8](https://github.com/RVCK-Project/rvck/commit/c375b6d8fa14c5a7c89924a2391ffcda8940281d) | 2026-01-25 | Deepak Gupta | riscv: Implement indirect branch tracking prctls |
-| [2b040465](https://github.com/RVCK-Project/rvck/commit/2b040465069ee8a31cf33dcd950fa0452f91e5b4) | 2026-01-25 | Deepak Gupta | prctl: add arch-agnostic prctl()s for indirect branch tracking |
-| [b6093d8a](https://github.com/RVCK-Project/rvck/commit/b6093d8a824296cf83bba5ad5be83c819578a9bc) | 2024-10-01 | Mark Brown | mman: Add map_shadow_stack() flags |
-| [f53e9f59](https://github.com/RVCK-Project/rvck/commit/f53e9f59b69f011287516b94bcd13652fc9f09b9) | 2024-10-01 | Mark Brown | prctl: arch-agnostic prctl for shadow stack |
-| [5bbfe50f](https://github.com/RVCK-Project/rvck/commit/5bbfe50fc8b2d9465ff93f2c5b83e749c7f1a117) | 2026-01-25 | Deepak Gupta | riscv: Implement arch-agnostic shadow stack prctls |
-| [299ef157](https://github.com/RVCK-Project/rvck/commit/299ef1572e663b36b4c1b5677f881773451814d5) | 2026-01-25 | Deepak Gupta | riscv/shstk: If needed allocate a new shadow stack on clone |
-| [4ecc589f](https://github.com/RVCK-Project/rvck/commit/4ecc589fad533c458bb91af51d757ca2ee308a5a) | 2026-01-25 | Deepak Gupta | riscv/mm: Implement map_shadow_stack() syscall |
-| [822d7e73](https://github.com/RVCK-Project/rvck/commit/822d7e73407b48130aac63ddfd51765bad992fdd) | 2026-01-25 | Deepak Gupta | riscv/mm: update write protect to work on shadow stacks |
-| [4d8215a1](https://github.com/RVCK-Project/rvck/commit/4d8215a17da8569bce8ede2ed390efa948968c89) | 2026-01-25 | Deepak Gupta | riscv/mm: teach pte_mkwrite to manufacture shadow stack PTEs |
-| [cf461e59](https://github.com/RVCK-Project/rvck/commit/cf461e59148fad5e71a87616a43d82143cd8710d) | 2026-01-25 | Deepak Gupta | riscv/mm: manufacture shadow stack ptes |
-| [385275f6](https://github.com/RVCK-Project/rvck/commit/385275f6ed700fe607281ecc69444098db28e2fc) | 2026-01-25 | Deepak Gupta | riscv/mm: ensure PROT_WRITE leads to VM_READ \| VM_WRITE |
-| [86de9132](https://github.com/RVCK-Project/rvck/commit/86de9132512a4309256292d52980be43d36065d3) | 2026-01-25 | Deepak Gupta | riscv: Add usercfi state for task and save/restore of CSR_SSP on trap entry/exit |
-| [3b4a67ce](https://github.com/RVCK-Project/rvck/commit/3b4a67ce0e0c39674dddc152ff8f427c40c74963) | 2026-01-25 | Deepak Gupta | riscv: add Zicfiss / Zicfilp extension CSR and bit definitions |
-| [8fa5b531](https://github.com/RVCK-Project/rvck/commit/8fa5b531d8de52a86c1315359b37fe9d7e821cc7) | 2026-01-25 | Deepak Gupta | riscv: zicfiss / zicfilp enumeration |
-| [48849cea](https://github.com/RVCK-Project/rvck/commit/48849cea8e2198f63da4d05d7ff1a872b74c7cf7) | 2026-01-25 | Deepak Gupta | dt-bindings: riscv: document zicfilp and zicfiss in extensions.yaml |
-| [a721a1fc](https://github.com/RVCK-Project/rvck/commit/a721a1fcc429b7e6911b7477bdbb19122c63f86d) | 2026-01-25 | Deepak Gupta | mm: add VM_SHADOW_STACK definition for riscv |
-| [f24367b2](https://github.com/RVCK-Project/rvck/commit/f24367b2719b927db53a8c322dbc349570b585ff) | 2024-04-27 | Masahiro Yamada | kbuild: use $(obj)/ instead of $(src)/ for common pattern rules |
-| [5be628d8](https://github.com/RVCK-Project/rvck/commit/5be628d81ca517deb575683d1d7512f23ec26005) | 2024-03-13 | Vladimir Isaev | riscv: hwprobe: do not produce frtace relocation |
-| [17334ad9](https://github.com/RVCK-Project/rvck/commit/17334ad91c0a98301c2f66cd7ae01038e117a000) | 2025-03-20 | Charlie Jenkins | riscv: entry: Split ret_from_fork() into user and kernel |
-| [1bce3b9c](https://github.com/RVCK-Project/rvck/commit/1bce3b9c7afbdee79943cf8f90fa8f8e3f6aea5e) | 2025-03-20 | Charlie Jenkins | riscv: entry: Convert ret_from_fork() to C |
-| [7c7438ec](https://github.com/RVCK-Project/rvck/commit/7c7438ec4bb3aadb1d2b0a90931bf8e0d139cdba) | 2025-04-11 | Xi Ruoyao | RISC-V: vDSO: Wire up getrandom() vDSO implementation |
-| [3f3601d6](https://github.com/RVCK-Project/rvck/commit/3f3601d642ccac119bb3cf61a0ffff6838dda907) | 2024-08-22 | Christophe Leroy | random: vDSO: add missing c-getrandom-y in Makefile |
-| [b2d8cd15](https://github.com/RVCK-Project/rvck/commit/b2d8cd15c0d64a3fc8411a0b25a6023f57bf526d) | 2025-11-12 | Andy Chiu | riscv: signal: abstract header saving for setup_sigcontext |
-| [b0efd4ec](https://github.com/RVCK-Project/rvck/commit/b0efd4ec1ee9ee698f86de95391e8b2662d6bcb7) | 2023-09-14 | Sohil Mehta | arch: Reserve map_shadow_stack() syscall number for all architectures |
-| [0cfa1113](https://github.com/RVCK-Project/rvck/commit/0cfa1113a425cc28bfd1db76b65594e87763f466) | 2026-06-04 | ZhenXing Zhu | soc: thead: adapt AON drivers to new th1520-aon protocol API |
-| [9a3c82d3](https://github.com/RVCK-Project/rvck/commit/9a3c82d3ad7ad53f362a38643bf5ba5aa11af1e3) | 2026-06-04 | ZhenXing Zhu | drivers/soc/event: Add THEAD TH1520 event driver |
-| [4dd41266](https://github.com/RVCK-Project/rvck/commit/4dd41266c702b70505f8ee3522f534023955fb64) | 2026-06-04 | ZhenXing Zhu | drivers/watchdog: Add THEAD TH1520 pmic watchdog driver |
-| [eeb52343](https://github.com/RVCK-Project/rvck/commit/eeb5234339fe25e5b43f02a74bf5215625a93495) | 2026-06-03 | ZhenXing Zhu | riscv: dts: th1520: add watchdog nodes for reboot support |
-| [fdf3c69d](https://github.com/RVCK-Project/rvck/commit/fdf3c69d1bc038db23bb1d6059bafc97d582ce47) | 2026-06-03 | ZhenXing Zhu | riscv: th1520: lpi4a: fix fan not spinning |
-| [d11f34d3](https://github.com/RVCK-Project/rvck/commit/d11f34d3ebedb3ea40cb8680252978105f9d675b) | 2026-06-03 | ZhenXing Zhu | riscv: defconfig: th1520: fix DWMAC config symbol for ethernet |
-| [79f52bdb](https://github.com/RVCK-Project/rvck/commit/79f52bdb477ee3ec86358d6da0793640aef6c5f3) | 2024-04-19 | Robin Murphy | dma-mapping: Simplify arch_setup_dma_ops() |
-| [0fa825f7](https://github.com/RVCK-Project/rvck/commit/0fa825f71de14aa8e68c2cec506231b9e752d12c) | 2024-04-19 | Robin Murphy | iommu/dma: Centralise iommu_setup_dma_ops() |
-| [9ffe6e5e](https://github.com/RVCK-Project/rvck/commit/9ffe6e5e431c7864b2b5d2b2c008d9804b51a4bb) | 2024-04-19 | Robin Murphy | iommu/dma: Make limit checks self-contained |
-| [520cd6d9](https://github.com/RVCK-Project/rvck/commit/520cd6d90b33fb5e4573be2441345a44dbcabff9) | 2024-04-19 | Robin Murphy | dma-mapping: Add helpers for dma_range_map bounds |
-| [65c88671](https://github.com/RVCK-Project/rvck/commit/65c886713256b6d659554462ee3d06c8064b5d99) | 2024-04-19 | Robin Murphy | ACPI/IORT: Handle memory address size limits as limits |
-| [2c62fd42](https://github.com/RVCK-Project/rvck/commit/2c62fd4273a311d25157b7ae75c8b749dec98489) | 2024-04-19 | Robin Murphy | OF: Simplify DMA range calculations |
-| [4fa6351b](https://github.com/RVCK-Project/rvck/commit/4fa6351b9aee5ca5a3b3aca291f7720aeac415ad) | 2024-04-19 | Robin Murphy | OF: Retire dma-ranges mask workaround |
-| [125c8c72](https://github.com/RVCK-Project/rvck/commit/125c8c72416bc872bbadd307ba79ab7a3d2eb510) | 2024-01-22 | Haibo Xu | KVM: selftests: Add CONFIG_64BIT definition for the build |
-| [a4f18f52](https://github.com/RVCK-Project/rvck/commit/a4f18f524996c1fae99fdde333391fba4b6f09f1) | 2024-06-03 | Andrew Jones | KVM: selftests: Fix RISC-V compilation |
-| [63568675](https://github.com/RVCK-Project/rvck/commit/63568675a680c99e9a7ef427d20e09a98ee7e378) | 2026-05-29 | ZhenXing Zhu | KVM: riscv: selftests: Move sbi definitions to its own header file |
-| [c9b87b21](https://github.com/RVCK-Project/rvck/commit/c9b87b21abb5196ffce358b29240b00f3cff692c) | 2026-05-29 | ZhenXing Zhu | Revert "KVM: riscv: selftests: Move sbi definitions to its own header file" |
-| [2ca2bf8f](https://github.com/RVCK-Project/rvck/commit/2ca2bf8f7960077da6fc2fe85abb13ad7f903f90) | 2025-06-26 | Michal Wilczynski | riscv: dts: thead: th1520: Add GPU clkgen reset to AON node |
-| [ad80ceba](https://github.com/RVCK-Project/rvck/commit/ad80cebadd42a3a343ec80e3e3444e434de7de11) | 2025-03-03 | Michal Wilczynski | reset: thead: Add TH1520 reset controller driver |
-| [6b347e3d](https://github.com/RVCK-Project/rvck/commit/6b347e3daf3932cecb5bfbbade1c5c2477c73cfe) | 2025-03-03 | Michal Wilczynski | dt-bindings: reset: Add T-HEAD TH1520 SoC Reset Controller |
-| [2779f758](https://github.com/RVCK-Project/rvck/commit/2779f758cf478cede9908f0341018963966aac9a) | 2026-03-12 | ZhenXing Zhu | Revert "dt-bindings: reset: Document th1520 reset control" |
-| [011fab6c](https://github.com/RVCK-Project/rvck/commit/011fab6ca1ad3ef83bcc3203ac0f045c9940fb57) | 2026-03-12 | ZhenXing Zhu | Revert "reset: Add th1520 reset driver support" |
-| [5ce82e9d](https://github.com/RVCK-Project/rvck/commit/5ce82e9d7fe8548d15cee3736eedae58f17b6369) | 2026-03-12 | ZhenXing Zhu | Revert "reset: th1520: to support npu/fce reset feature" |
-| [42c9d438](https://github.com/RVCK-Project/rvck/commit/42c9d438305e922edb02611be030ede23d7fd273) | 2026-04-20 | ZhenXing Zhu | riscv: dts: thead: Fix aon node for OpenSBI compatibility |
-| [52468098](https://github.com/RVCK-Project/rvck/commit/5246809881ed33f5d600840aad86aa1eb50a5e93) | 2026-04-17 | ZhenXing Zhu | clk: Kconfig: Restore thead clock driver Kconfig inclusion |
-| [7fa7a52b](https://github.com/RVCK-Project/rvck/commit/7fa7a52bd94c99f516df689cf177a64e461401da) | 2026-03-12 | ZhenXing Zhu | Revert "riscv:dts:thead: Add TH1520 event and watchdog device node" |
-| [4a9603cb](https://github.com/RVCK-Project/rvck/commit/4a9603cbefe283007b3ad326f8bcc5e732d38fce) | 2026-03-12 | ZhenXing Zhu | Revert "i2s: add i2s driver for XuanTie TH1520 SoC" |
-| [9490b2ec](https://github.com/RVCK-Project/rvck/commit/9490b2ece8e535c328e5849540ac371d9fc7eca7) | 2026-03-12 | ZhenXing Zhu | Revert "audio: th1520: add tdm driver for XuanTie TH1520 SoC" |
-| [724d8c7e](https://github.com/RVCK-Project/rvck/commit/724d8c7eecbb23b34be7047c5f6966fc3c950fca) | 2026-03-12 | ZhenXing Zhu | Revert "dts: audio: to support i2s-8ch feature" |
-| [bbcd890a](https://github.com/RVCK-Project/rvck/commit/bbcd890ab774319aecfd792eefe4a35f918dbc5a) | 2026-03-12 | ZhenXing Zhu | Revert "audio: th1520: to support tdm/spdif feature" |
-| [fe0ffd84](https://github.com/RVCK-Project/rvck/commit/fe0ffd842e9f754586f232d9fd553ceb8c847e68) | 2025-02-19 | Michal Wilczynski | riscv: dts: thead: Introduce power domain nodes with aon firmware |
-| [f00c5970](https://github.com/RVCK-Project/rvck/commit/f00c59701fe0b1d80808eded5eae7ca19879d83e) | 2024-02-08 | Krzysztof Kozlowski | pmdomain: core: constify of_phandle_args in xlate |
-| [b894cee1](https://github.com/RVCK-Project/rvck/commit/b894cee143cb3e07529163f21b4fb462949f2cf0) | 2025-03-11 | Michal Wilczynski | dt-bindings: power: Add TH1520 SoC power domains |
-| [e1b0c756](https://github.com/RVCK-Project/rvck/commit/e1b0c7569244bbada676152de62a303c821cc0d8) | 2023-09-11 | Ulf Hansson | pmdomain: Prepare to move Kconfig files into the pmdomain subsystem |
-| [5a71072e](https://github.com/RVCK-Project/rvck/commit/5a71072ecef367555ba840cbcb0fcd7832c68942) | 2025-03-14 | Arnd Bergmann | pmdomain: thead: fix TH1520_AON_PROTOCOL dependency |
-| [636fe297](https://github.com/RVCK-Project/rvck/commit/636fe2975dcba2c4f4dfd5ae6ebb42621a8d229a) | 2025-03-11 | Michal Wilczynski | pmdomain: thead: Add power-domain driver for TH1520 |
-| [e40eed8b](https://github.com/RVCK-Project/rvck/commit/e40eed8ba5c9dc27fbfa75cd31d0dea112c3e455) | 2025-03-11 | Michal Wilczynski | firmware: thead: Add AON firmware protocol driver |
-| [d8776ea6](https://github.com/RVCK-Project/rvck/commit/d8776ea6c01850c970c658583849d03c1ce3a4e2) | 2026-03-11 | ZhenXing Zhu | Revert "regdump:add regdump support for lpi4a and light-a && rename some dts nam... |
-| [5298d117](https://github.com/RVCK-Project/rvck/commit/5298d11702a105644fa89ba6fd037b9f39058645) | 2026-03-11 | ZhenXing Zhu | Revert "drivers/soc/event: Add THEAD TH1520 event driver" |
-| [c1f17a98](https://github.com/RVCK-Project/rvck/commit/c1f17a9816c6b2d55547ee0feff309eb3d07c73e) | 2026-03-11 | ZhenXing Zhu | Revert "add c906 audio support" |
-| [9f19ba4f](https://github.com/RVCK-Project/rvck/commit/9f19ba4f1105fe5aac6c996b6ec831f9f9faed4d) | 2026-03-11 | ZhenXing Zhu | Revert "drivers: regulator: add th1520 AON virtual regulator control support." |
-| [fad7b6ed](https://github.com/RVCK-Project/rvck/commit/fad7b6edaec7ba93992b62dca4f7e0d1ace9d137) | 2026-03-10 | ZhenXing Zhu | Revert "drivers/watchdog: Add THEAD TH1520 pmic watchdog driver" |
-| [8254e00f](https://github.com/RVCK-Project/rvck/commit/8254e00fc9f83c639b3d18067625b21d1053b23e) | 2026-03-10 | ZhenXing Zhu | Revert "firmware: thead: c910_aon: add th1520 Aon protocol driver" |
-| [663c0d70](https://github.com/RVCK-Project/rvck/commit/663c0d70a3e4be96cfdeb37595ab5b59ff1a25ae) | 2026-03-10 | ZhenXing Zhu | Revert "drivers: cpufreq: add cpufreq driver." |
-| [13ba43db](https://github.com/RVCK-Project/rvck/commit/13ba43db2717dd74435c7af5c7f2bf34176416a1) | 2026-03-10 | ZhenXing Zhu | Revert "dts: th1520: to modify rvbook dts" |
-| [96960edd](https://github.com/RVCK-Project/rvck/commit/96960edd2b6dba11fcdd830f6ab0de134f3f1e62) | 2026-03-10 | ZhenXing Zhu | Revert "audio: th1520: add soundcard dts node of th1520-a-val board" |
-| [3c016017](https://github.com/RVCK-Project/rvck/commit/3c016017f974b736652b68e5117b7210f01a2984) | 2026-03-10 | ZhenXing Zhu | Revert "dts:th1520-a: add th1520-a-val.dts and th1520-a-val-sec.dts" |
-| [120d3e33](https://github.com/RVCK-Project/rvck/commit/120d3e338bf0c3a491e74633964f18913f0be13b) | 2026-03-10 | ZhenXing Zhu | Revert "drivers: pmdomain: support th1520 Power domain control." |
-| [98e08ac6](https://github.com/RVCK-Project/rvck/commit/98e08ac6dcce435ee16c163226c19cccb0975ab8) | 2026-03-10 | ZhenXing Zhu | Revert "dts: add GPU device node" |
-| [b4e7a59b](https://github.com/RVCK-Project/rvck/commit/b4e7a59bfa6ba324bbb60d4f469aff2fcba12908) | 2026-03-10 | ZhenXing Zhu | Revert "dts: th1520: add cpu thermal node and device thermal node" |
-| [90c6a1bf](https://github.com/RVCK-Project/rvck/commit/90c6a1bf8bff24fcdbbe4971f65f198e47e3421c) | 2026-03-10 | ZhenXing Zhu | Revert "dts: th1520: add npu device node" |
-| [570db731](https://github.com/RVCK-Project/rvck/commit/570db7318bac7c21783ead718ec23794da124da6) | 2026-03-10 | ZhenXing Zhu | Revert "dts: th1520: to add npu device node" |
-| [c5b9f5bb](https://github.com/RVCK-Project/rvck/commit/c5b9f5bb309a46bd6cc7a1397273d73e3d675a7b) | 2026-03-10 | ZhenXing Zhu | Revert "dts: th1520: add th1520-a-val-crash.dts and th1520-lpi4a-product-crash.d... |
-| [ee3d8e62](https://github.com/RVCK-Project/rvck/commit/ee3d8e62196aea77255810938dca0e8f61848068) | 2026-03-10 | ZhenXing Zhu | Revert "dts: th1520: add cpu thermal node and device thermal node" |
-| [fe1520eb](https://github.com/RVCK-Project/rvck/commit/fe1520eb5af9f85d345933d2c732a90f056c69fa) | 2026-03-10 | ZhenXing Zhu | Revert "dtb:lipi:enable VI module config" |
-| [9a57af18](https://github.com/RVCK-Project/rvck/commit/9a57af1804bf58cb53ff187545980c239a114e47) | 2026-03-10 | ZhenXing Zhu | Revert "dts: th1520: add vdec venc and video mem device node" |
-| [6a3c9a6f](https://github.com/RVCK-Project/rvck/commit/6a3c9a6f586185953e4867f4fbc37045002ca286) | 2026-03-10 | ZhenXing Zhu | Revert "chore: use xuantie instead of thead" |
-| [cfd5ec92](https://github.com/RVCK-Project/rvck/commit/cfd5ec92eac8aa16b4e2ad4db2a146ce1b90d12a) | 2023-09-21 | Yu Chien Peter Lin | riscv: Introduce NAPOT field to PTDUMP |
-| [1fd210c4](https://github.com/RVCK-Project/rvck/commit/1fd210c4e8ebb7e1570cfc33057291f7bd27d1f9) | 2023-09-21 | Yu Chien Peter Lin | riscv: Introduce PBMT field to PTDUMP |
-| [a69933ce](https://github.com/RVCK-Project/rvck/commit/a69933ce825217de40783212aad9c91e465daa2f) | 2023-09-21 | Yu Chien Peter Lin | riscv: Improve PTDUMP to show RSW with non-zero value |
-| [ad1d93ff](https://github.com/RVCK-Project/rvck/commit/ad1d93ff68a4995661b7b80573886dd635a41a0e) | 2024-04-20 | Atish Patra | KVM: riscv: selftests: Add commandline option for SBI PMU test |
-| [70da6bc0](https://github.com/RVCK-Project/rvck/commit/70da6bc048a68ed276e962640e8622250033e3a5) | 2024-04-20 | Atish Patra | KVM: riscv: selftests: Add a test for counter overflow |
-| [b8f98dea](https://github.com/RVCK-Project/rvck/commit/b8f98deae533b0765da2fcc196b1b8b2558dd4dd) | 2024-04-20 | Atish Patra | KVM: riscv: selftests: Add a test for PMU snapshot functionality |
-| [55232ea3](https://github.com/RVCK-Project/rvck/commit/55232ea315faef24af8ef124982af471d103c441) | 2024-04-20 | Atish Patra | KVM: riscv: selftests: Add SBI PMU selftest |
-| [35b99727](https://github.com/RVCK-Project/rvck/commit/35b99727756696599780b4a9b2502617e17f4bb7) | 2024-04-20 | Atish Patra | KVM: riscv: selftests: Add SBI PMU extension definitions |
-| [f0e268ca](https://github.com/RVCK-Project/rvck/commit/f0e268cafb40ca0a6f48a6da2f968f65df90ffe9) | 2024-04-20 | Atish Patra | KVM: riscv: selftests: Add Sscofpmf to get-reg-list test |
-| [5ce5c7cc](https://github.com/RVCK-Project/rvck/commit/5ce5c7cce6b39ace4a4e167784a55ac2bb032fbd) | 2024-04-20 | Atish Patra | KVM: riscv: selftests: Add helper functions for extension checks |
-| [891788a1](https://github.com/RVCK-Project/rvck/commit/891788a1f31a74656b7404546e208dfb58323bfe) | 2024-04-20 | Atish Patra | KVM: riscv: selftests: Move sbi definitions to its own header file |
-| [588b2fda](https://github.com/RVCK-Project/rvck/commit/588b2fdaf5d82aec553d3b682a0fd4462b6f128a) | 2024-01-22 | Haibo Xu | KVM: riscv: selftests: Add sstc timer test |
-| [2068a4e8](https://github.com/RVCK-Project/rvck/commit/2068a4e8b027a26d08399bf3fb4a18f5b2ce0065) | 2024-01-22 | Haibo Xu | KVM: riscv: selftests: Change vcpu_has_ext to a common function |
-| [377bd016](https://github.com/RVCK-Project/rvck/commit/377bd0167b77a81819cc50bc34a11a26f8137909) | 2024-01-22 | Haibo Xu | KVM: riscv: selftests: Add guest helper to get vcpu id |
-| [a43adb5b](https://github.com/RVCK-Project/rvck/commit/a43adb5bbd70cffdc829913c9586270f33f1860d) | 2024-01-22 | Haibo Xu | KVM: riscv: selftests: Add exception handling support |
-| [40bef847](https://github.com/RVCK-Project/rvck/commit/40bef847f81295b5487ea4009e7aa36f32abace2) | 2024-01-22 | Haibo Xu | KVM: arm64: selftests: Split arch_timer test code |
-| [c9a60f15](https://github.com/RVCK-Project/rvck/commit/c9a60f15fc558526205cb962acf3d69c41d08706) | 2024-01-22 | Paolo Bonzini | selftests/kvm: Fix issues with $(SPLIT_TESTS) |
-| [db448c6c](https://github.com/RVCK-Project/rvck/commit/db448c6c72d9b5aefed4eebdf804247eecc157ba) | 2024-04-20 | Atish Patra | RISC-V: KVM: Improve firmware counter read function |
-| [55b9f75a](https://github.com/RVCK-Project/rvck/commit/55b9f75a773e3ecaff5216935b52af23a244cf68) | 2024-04-20 | Atish Patra | RISC-V: KVM: Support 64 bit firmware counters on RV32 |
-| [49d59957](https://github.com/RVCK-Project/rvck/commit/49d599575b95455d5012f2cd28c6fb5281083df7) | 2024-04-20 | Atish Patra | RISC-V: KVM: Add perf sampling support for guests |
-| [563eed61](https://github.com/RVCK-Project/rvck/commit/563eed610633e238ff6b319fd109dd3b56fb61ef) | 2024-04-20 | Atish Patra | RISC-V: KVM: Implement SBI PMU Snapshot feature |
-| [b38537a8](https://github.com/RVCK-Project/rvck/commit/b38537a8df7f5e563b72f0ab8ef65426e566051c) | 2024-04-20 | Atish Patra | RISC-V: KVM: No need to exit to the user space if perf event failed |
-| [8ae0fa22](https://github.com/RVCK-Project/rvck/commit/8ae0fa2235b94e69a55746337e18ea863f27bb63) | 2024-04-20 | Atish Patra | RISC-V: KVM: No need to update the counter value during reset |
-| [3f065af9](https://github.com/RVCK-Project/rvck/commit/3f065af96ed51bcc0770cc400d960936558e8ec9) | 2024-04-20 | Atish Patra | drivers/perf: riscv: Implement SBI PMU snapshot function |
-| [0c75e50f](https://github.com/RVCK-Project/rvck/commit/0c75e50f2251343edb2f5ceb517236b955d113a1) | 2024-04-20 | Atish Patra | drivers/perf: riscv: Fix counter mask iteration for RV32 |
-| [ee6faed1](https://github.com/RVCK-Project/rvck/commit/ee6faed10ff1cf35f1efdbac487291246f2ddc1a) | 2024-04-20 | Atish Patra | RISC-V: Use the minor version mask while computing sbi version |
-| [eb7e8bbc](https://github.com/RVCK-Project/rvck/commit/eb7e8bbc72053b3c428dbd2385a48ce5d9a2e30e) | 2024-04-20 | Atish Patra | RISC-V: KVM: Rename the SBI_STA_SHMEM_DISABLE to a generic name |
-| [1dea6c99](https://github.com/RVCK-Project/rvck/commit/1dea6c995dbc86968c51bba6f8085eb6940cb1bd) | 2024-04-20 | Atish Patra | RISC-V: Add SBI PMU snapshot definitions |
-| [ebd5a8ae](https://github.com/RVCK-Project/rvck/commit/ebd5a8aeccfad39e1d35511bd5bc0e5828cf1b56) | 2024-04-20 | Atish Patra | drivers/perf: riscv: Use BIT macro for shifting operations |
-| [b150e995](https://github.com/RVCK-Project/rvck/commit/b150e995835ccd0007c361da6f19d8f23908619e) | 2024-04-20 | Atish Patra | drivers/perf: riscv: Read upper bits of a firmware counter |
-| [d841b53e](https://github.com/RVCK-Project/rvck/commit/d841b53e64e61dee9053145239d5914199771fa9) | 2024-04-20 | Atish Patra | RISC-V: Add FIRMWARE_READ_HI definition |
-| [e4d273c8](https://github.com/RVCK-Project/rvck/commit/e4d273c802df21a62c969ab7f67c42db758eec2e) | 2024-04-20 | Atish Patra | RISC-V: Fix the typo in Scountovf CSR name |
-| [a29ea96c](https://github.com/RVCK-Project/rvck/commit/a29ea96ce45de5b5e35c46c6d4bbf1eb9aa896c3) | 2023-12-20 | Andrew Jones | RISC-V: KVM: selftests: Add get-reg-list test for STA registers |
-| [7c145869](https://github.com/RVCK-Project/rvck/commit/7c1458695dc3a83f963ceaeff679827e84fd6207) | 2023-12-20 | Andrew Jones | RISC-V: KVM: selftests: Add steal_time test support |
-| [cae81950](https://github.com/RVCK-Project/rvck/commit/cae81950a2b80b148e489f5eb6c4e56164a3a2e5) | 2023-12-20 | Andrew Jones | RISC-V: KVM: selftests: Add guest_sbi_probe_extension |
-| [0ba9e45b](https://github.com/RVCK-Project/rvck/commit/0ba9e45b7d79d0a71874387c17435cdeaf62f597) | 2023-12-20 | Andrew Jones | RISC-V: KVM: selftests: Move sbi_ecall to processor.c |
-| [c6dc39ec](https://github.com/RVCK-Project/rvck/commit/c6dc39ecdcbfaa26d9bbd1b79b9b4ce08e0967e7) | 2023-12-20 | Andrew Jones | RISC-V: KVM: Implement SBI STA extension |
-| [907e8886](https://github.com/RVCK-Project/rvck/commit/907e88862cc35d090d3e936f6cd22d38b17510bd) | 2023-12-20 | Andrew Jones | RISC-V: KVM: Add support for SBI STA registers |
-| [e0bbf4c5](https://github.com/RVCK-Project/rvck/commit/e0bbf4c5a7d1af9509a6b2aff3fb7027a1d6ce82) | 2023-12-20 | Andrew Jones | RISC-V: KVM: Add support for SBI extension registers |
-| [c9dc3bd2](https://github.com/RVCK-Project/rvck/commit/c9dc3bd2581a8ea42b91fb9bf6079a3d0f17d261) | 2023-12-20 | Andrew Jones | RISC-V: KVM: Add SBI STA info to vcpu_arch |
-| [6a046d90](https://github.com/RVCK-Project/rvck/commit/6a046d90c73a7f79b62a8132ad15c2144e55d307) | 2023-12-20 | Andrew Jones | RISC-V: KVM: Add steal-update vcpu request |
-| [94d9492b](https://github.com/RVCK-Project/rvck/commit/94d9492bb6993a4982908f0e4804ffb16492eb3d) | 2023-12-20 | Andrew Jones | RISC-V: KVM: Add SBI STA extension skeleton |
-| [c4c858ba](https://github.com/RVCK-Project/rvck/commit/c4c858ba93dd0db85960f020009e22d02c210d26) | 2023-12-20 | Andrew Jones | RISC-V: paravirt: Implement steal-time support |
-| [79a54f4a](https://github.com/RVCK-Project/rvck/commit/79a54f4ac81eec9020c5f584260b0f89ce385af9) | 2023-12-20 | Andrew Jones | RISC-V: Add SBI STA extension definitions |
-| [374c8bf3](https://github.com/RVCK-Project/rvck/commit/374c8bf32b4da06f53c8862631f87186d48709d7) | 2023-12-20 | Andrew Jones | RISC-V: paravirt: Add skeleton for pv-time support |
-| [fd45228f](https://github.com/RVCK-Project/rvck/commit/fd45228fb0a365ada6642671435d13bfb0bd4afd) | 2023-12-13 | Andrew Jones | KVM: riscv: selftests: Add RISCV_SBI_EXT_REG |
-| [be470cfb](https://github.com/RVCK-Project/rvck/commit/be470cfba6caa4fb5e549f0ec273b1b56b92b3f8) | 2023-12-13 | Andrew Jones | RISC-V: KVM: Make SBI uapi consistent with ISA uapi |
-| [88f01730](https://github.com/RVCK-Project/rvck/commit/88f01730fef08510bfdb717a1706fb1e96245cb0) | 2023-11-28 | Anup Patel | KVM: riscv: selftests: Generate ISA extension reg_list using macros |
-| [809f65d8](https://github.com/RVCK-Project/rvck/commit/809f65d8da4738864ee7dfe44165fc9bdc880c07) | 2023-10-19 | Thomas Huth | KVM: selftests: Use TAP in the steal_time test |
-| [e499d838](https://github.com/RVCK-Project/rvck/commit/e499d838d20f8e28e494feedc5e58a53e365defb) | 2023-09-20 | Andrew Jones | KVM: riscv: selftests: get-reg-list print_reg should never fail |
-| [3e8d0e67](https://github.com/RVCK-Project/rvck/commit/3e8d0e679fd928676ab7bb7802f72a6d93ffeef4) | 2023-08-17 | Andrew Jones | KVM: selftests: Add array order helpers to riscv get-reg-list |
-| [95be4472](https://github.com/RVCK-Project/rvck/commit/95be44726e6db4e316f71693d2eae42711c34ee0) | 2024-01-22 | Haibo Xu | KVM: riscv: selftests: Switch to use macro from csr.h |
-| [8e663349](https://github.com/RVCK-Project/rvck/commit/8e663349ac6e067c8021783dec525fb72d637d89) | 2024-01-22 | Haibo Xu | tools: riscv: Add header file vdso/processor.h |
-| [0c27522b](https://github.com/RVCK-Project/rvck/commit/0c27522b306dbfa1c0e1fc3eac543661b65852d4) | 2024-01-22 | Haibo Xu | tools: riscv: Add header file csr.h |
-| [f4e9f973](https://github.com/RVCK-Project/rvck/commit/f4e9f97308c7c4a03aae610c3bb15f4ef289ad5b) | 2024-11-08 | Charlie Jenkins | riscv: Fix default misaligned access trap |
-| [f1b928a4](https://github.com/RVCK-Project/rvck/commit/f1b928a406ff48aa3d459b1ff7cf1e81db1b5e26) | 2025-12-06 | Eric Biggers | lib/crypto: riscv: Depend on RISCV_EFFICIENT_VECTOR_UNALIGNED_ACCESS |
-| [fb66e8d1](https://github.com/RVCK-Project/rvck/commit/fb66e8d15e7da93fb38f2761d299a80054dd7c9f) | 2025-03-04 | Andrew Jones | Documentation/kernel-parameters: Add riscv unaligned speed parameters |
-| [a7982e94](https://github.com/RVCK-Project/rvck/commit/a7982e9447a0f419da19d1a6b12e329a01cbfa98) | 2025-03-04 | Andrew Jones | riscv: Add parameter for skipping access speed tests |
-| [1344dfe9](https://github.com/RVCK-Project/rvck/commit/1344dfe9185fc052c5a595804fff923e7d0c7eff) | 2025-03-04 | Andrew Jones | riscv: Fix set up of vector cpu hotplug callback |
-| [58957838](https://github.com/RVCK-Project/rvck/commit/589578386cbda92a7d373e912faa050c064b4c4b) | 2025-03-04 | Andrew Jones | riscv: Fix set up of cpu hotplug callbacks |
-| [751be7c0](https://github.com/RVCK-Project/rvck/commit/751be7c0b58873667507612f17d0594134dc5b64) | 2025-03-04 | Andrew Jones | riscv: Change check_unaligned_access_speed_all_cpus to void |
-| [aff7b549](https://github.com/RVCK-Project/rvck/commit/aff7b549354777265d7c5c91af71e589c004fdd0) | 2025-03-04 | Andrew Jones | riscv: Fix check_unaligned_access_all_cpus |
-| [9844c618](https://github.com/RVCK-Project/rvck/commit/9844c618187e29e3c593ac6398a8a28ef8c041cf) | 2025-03-04 | Andrew Jones | riscv: Fix riscv_online_cpu_vec |
-| [edc59fce](https://github.com/RVCK-Project/rvck/commit/edc59fcec4a614bcc1e895a1d62d8436cc165879) | 2025-03-04 | Andrew Jones | riscv: Annotate unaligned access init functions |
-| [a13e98b0](https://github.com/RVCK-Project/rvck/commit/a13e98b090ad0b803222aef9959f43268c105d4a) | 2024-10-17 | Jesse Taube | RISC-V: hwprobe: Document unaligned vector perf key |
-| [7f2c8f07](https://github.com/RVCK-Project/rvck/commit/7f2c8f07395732f58ef02488ab0f71cc17e07e09) | 2024-10-17 | Jesse Taube | RISC-V: Report vector unaligned access speed hwprobe |
-| [096dc32f](https://github.com/RVCK-Project/rvck/commit/096dc32fa7c2b2865229c744128883fc4400413f) | 2024-10-17 | Jesse Taube | RISC-V: Detect unaligned vector accesses supported |
-| [46bac190](https://github.com/RVCK-Project/rvck/commit/46bac1904dfd5636e90328f67129ca529e936ad3) | 2024-10-17 | Jesse Taube | RISC-V: Replace RISCV_MISALIGNED with RISCV_SCALAR_MISALIGNED |
-| [c4f0c400](https://github.com/RVCK-Project/rvck/commit/c4f0c400d42c6a867b694beed76af5a76b2e59de) | 2024-10-17 | Jesse Taube | RISC-V: Scalar unaligned access emulated on hotplug CPUs |
-| [5153997f](https://github.com/RVCK-Project/rvck/commit/5153997f1d0cd052ab75671d820449ef13ec7adc) | 2024-10-17 | Jesse Taube | RISC-V: Check scalar unaligned access on all CPUs |
-| [06c27bb5](https://github.com/RVCK-Project/rvck/commit/06c27bb5f6d3950a39ba3725c8c7982c6fc1b800) | 2024-08-14 | Samuel Holland | riscv: misaligned: Restrict user access to kernel memory |
-| [2de90f00](https://github.com/RVCK-Project/rvck/commit/2de90f007b82e517d72ab2efd43cc1854109cce4) | 2024-08-09 | Evan Green | RISC-V: hwprobe: Add SCALAR to misaligned perf defines |
-| [276d67ea](https://github.com/RVCK-Project/rvck/commit/276d67eae4b88c4729e09bcddc2a8886424b47a9) | 2024-08-09 | Evan Green | RISC-V: hwprobe: Add MISALIGNED_PERF key |
-| [f19ab1a2](https://github.com/RVCK-Project/rvck/commit/f19ab1a2d2d431fa2903453abd3a283c0a56bfd1) | 2024-03-17 | Xingyou Chen | riscv: typo in comment for get_f64_reg |
-| [cb3f9f49](https://github.com/RVCK-Project/rvck/commit/cb3f9f498108ea720071c54359a56576c43cd2d1) | 2024-03-08 | Charlie Jenkins | riscv: Set unaligned access speed at compile time |
-| [c3b14694](https://github.com/RVCK-Project/rvck/commit/c3b1469464b77dbdb376901b96b222eb47b4f5a3) | 2024-03-08 | Charlie Jenkins | riscv: Decouple emulated unaligned accesses from access speed |
-| [801b4f8b](https://github.com/RVCK-Project/rvck/commit/801b4f8b62dbe676f0ad5b83e885754b32da3d5a) | 2024-03-08 | Charlie Jenkins | riscv: Only check online cpus for emulated accesses |
-| [35a04067](https://github.com/RVCK-Project/rvck/commit/35a040679bd948a19252d24e9c74232a4bad4d5e) | 2024-03-08 | Charlie Jenkins | riscv: lib: Introduce has_fast_unaligned_access() |
-| [4814bdcb](https://github.com/RVCK-Project/rvck/commit/4814bdcb9ab5097e30f5eeb8c1e963eba85454f7) | 2024-02-12 | Eric Biggers | crypto: riscv - add vector crypto accelerated AES-CBC-CTS |
-| [f7f7388e](https://github.com/RVCK-Project/rvck/commit/f7f7388e1e698a4d1a2a2f5018df8ebff461b66b) | 2024-02-06 | Clément Léger | riscv: misaligned: remove CONFIG_RISCV_M_MODE specific code |
-| [298ee403](https://github.com/RVCK-Project/rvck/commit/298ee403f3c062496d81759432625abe586a32a4) | 2024-01-08 | Charlie Jenkins | kunit: Add tests for csum_ipv6_magic and ip_fast_csum |
-| [13a04389](https://github.com/RVCK-Project/rvck/commit/13a0438963b4a835e821a071ff19482f899c6673) | 2024-01-08 | Charlie Jenkins | riscv: Add checksum library |
-| [563d0db0](https://github.com/RVCK-Project/rvck/commit/563d0db083bcba4e0c81c8241b1bbea742e78519) | 2024-01-08 | Charlie Jenkins | riscv: Add checksum header |
-| [1d3e9e16](https://github.com/RVCK-Project/rvck/commit/1d3e9e16c6c0965580ef1890b020b46d82efe234) | 2024-01-08 | Charlie Jenkins | riscv: Add static key for misaligned accesses |
-| [9a7c8669](https://github.com/RVCK-Project/rvck/commit/9a7c86690e28b63c4d1c7a39da951016642b2682) | 2024-01-08 | Charlie Jenkins | asm-generic: Improve csum_fold |
-| [0f15f7c5](https://github.com/RVCK-Project/rvck/commit/0f15f7c565e9d240d639b38c907a9d08793babd0) | 2023-12-25 | Jisheng Zhang | riscv: select DCACHE_WORD_ACCESS for efficient unaligned access HW |
-| [de3fecfe](https://github.com/RVCK-Project/rvck/commit/de3fecfe745bfe12148646386f7926802bd3733b) | 2023-12-25 | Jisheng Zhang | riscv: introduce RISCV_EFFICIENT_UNALIGNED_ACCESS |
-| [cfe4a8ea](https://github.com/RVCK-Project/rvck/commit/cfe4a8eae520d7f8f10a6d98c505a12e6594ad50) | 2023-11-23 | Ben Dooks | riscv; fix __user annotation in save_v_state() |
-| [680200b3](https://github.com/RVCK-Project/rvck/commit/680200b3c9a11e6d198d2adf5746a78109cd0c2b) | 2023-11-23 | Ben Dooks | riscv: fix __user annotation in traps_misaligned.c |
-| [66be17de](https://github.com/RVCK-Project/rvck/commit/66be17dec2f35300a870fe6e84af5e92aab30fa0) | 2023-11-06 | Evan Green | RISC-V: Show accurate per-hart isa in /proc/cpuinfo |
-| [2250e509](https://github.com/RVCK-Project/rvck/commit/2250e509b913702dcdf0cf8fa2f1db901c94867d) | 2026-02-02 | Chen Pei | Revert "riscv:uprobe: fix flush_icache to ensure that instructions are refreshed... |
-| [6fd8b07d](https://github.com/RVCK-Project/rvck/commit/6fd8b07dd451ce5cbeecc46a07ed0d30b19c9990) | 2024-01-21 | Jerry Shih | crypto: riscv - add vector crypto accelerated SM4 |
-| [e71fefdc](https://github.com/RVCK-Project/rvck/commit/e71fefdc49e0efa59486e203dc9aba37a5d47c54) | 2024-01-21 | Jerry Shih | crypto: riscv - add vector crypto accelerated SM3 |
-| [3accb695](https://github.com/RVCK-Project/rvck/commit/3accb69568e23eed4e95d483aa340214af3561fc) | 2024-01-21 | Jerry Shih | crypto: riscv - add vector crypto accelerated SHA-{512,384} |
-| [35179420](https://github.com/RVCK-Project/rvck/commit/351794202443e14fb062acf6ffa842bd979958a2) | 2024-01-21 | Jerry Shih | crypto: riscv - add vector crypto accelerated SHA-{256,224} |
-| [829267e9](https://github.com/RVCK-Project/rvck/commit/829267e9d825f943442988462782cd2967d709da) | 2024-01-21 | Jerry Shih | crypto: riscv - add vector crypto accelerated GHASH |
-| [754a7e98](https://github.com/RVCK-Project/rvck/commit/754a7e9899ef7c2e19a7f941edc43830fcaf6b16) | 2024-01-21 | Jerry Shih | crypto: riscv - add vector crypto accelerated ChaCha20 |
-| [0c7f75e6](https://github.com/RVCK-Project/rvck/commit/0c7f75e67e6bb786360bfa52c1994360b52667f3) | 2024-01-21 | Jerry Shih | crypto: riscv - add vector crypto accelerated AES-{ECB,CBC,CTR,XTS} |
-| [2099f301](https://github.com/RVCK-Project/rvck/commit/2099f301eb96219ac4d96345e7392297fde4d8c7) | 2024-01-21 | Heiko Stuebner | RISC-V: hook new crypto subdir into build-system |
-| [8b319967](https://github.com/RVCK-Project/rvck/commit/8b31996713985a5d4ce3be9f8b089e43a02b3e09) | 2024-01-21 | Eric Biggers | RISC-V: add TOOLCHAIN_HAS_VECTOR_CRYPTO |
-| [719807d0](https://github.com/RVCK-Project/rvck/commit/719807d0033f9d5201385ccd92ca0521494fdaaa) | 2024-01-21 | Heiko Stuebner | RISC-V: add helper function to read the vector VLEN |
-| [56a712a3](https://github.com/RVCK-Project/rvck/commit/56a712a3ac83fbc446ce932798161073c263e6e8) | 2023-10-12 | Ian Rogers | perf pmu: Lazily compute default config |
-| [ccf4a439](https://github.com/RVCK-Project/rvck/commit/ccf4a439af8e79587f423407bab157707cb0a2d8) | 2023-10-12 | Ian Rogers | perf pmu-events: Remember the perf_events_map for a PMU |
-| [1e3bf280](https://github.com/RVCK-Project/rvck/commit/1e3bf280cf501c780c09b64ddb22a158216006ee) | 2023-10-12 | Ian Rogers | perf pmu: Const-ify perf_pmu__config_terms |
-| [23610c8b](https://github.com/RVCK-Project/rvck/commit/23610c8bb514084a98ec8ab3f148c93c39928d2e) | 2023-10-12 | Ian Rogers | perf pmu: Const-ify file APIs |
-| [64dd924a](https://github.com/RVCK-Project/rvck/commit/64dd924a8929493d9e15067e8d2be077bd400657) | 2023-10-12 | Ian Rogers | perf arm-spe: Move PMU initialization from default config code |
-| [737a87e4](https://github.com/RVCK-Project/rvck/commit/737a87e40f8c88e7ffab4bcf8cdd7a73ff969917) | 2023-10-12 | Ian Rogers | perf intel-pt: Move PMU initialization from default config code |
-| [931f14b0](https://github.com/RVCK-Project/rvck/commit/931f14b00b3db89a2e4c5c9fa92080ebfcafc773) | 2023-10-12 | Ian Rogers | perf pmu: Rename perf_pmu__get_default_config to perf_pmu__arch_init |
-| [5431483e](https://github.com/RVCK-Project/rvck/commit/5431483ec836f556d6bfb882d26bf3f1466dfa33) | 2023-09-24 | Ian Rogers | perf pmus: Make PMU alias name loading lazy |
-| [17bb7cf6](https://github.com/RVCK-Project/rvck/commit/17bb7cf6cbd868cc331ca153589b49246b94baaf) | 2023-09-01 | Ian Rogers | perf parse-events: Introduce 'struct parse_events_terms' |
-| [b1310cba](https://github.com/RVCK-Project/rvck/commit/b1310cba2ed2cccbf3fd066e3fb0089b1156090b) | 2023-09-01 | Ian Rogers | perf parse-events: Copy fewer term lists |
-| [b96284f9](https://github.com/RVCK-Project/rvck/commit/b96284f93208fb995f5797d479421ac3a487699f) | 2023-09-01 | Ian Rogers | perf parse-events: Avoid enum casts |
-| [35727e33](https://github.com/RVCK-Project/rvck/commit/35727e33a9abad8bacc63ab9a0dcf9d667402e87) | 2023-09-01 | Ian Rogers | perf parse-events: Tidy up str parameter |
-| [ce655dd5](https://github.com/RVCK-Project/rvck/commit/ce655dd5935bf0b306167b375f39d510bb11aca9) | 2023-09-01 | Ian Rogers | perf parse-events: Remove unnecessary __maybe_unused |
-| [13d1ae81](https://github.com/RVCK-Project/rvck/commit/13d1ae81316f1863a01627ab2a0d8c1cb345cfcc) | 2024-04-22 | Shenlin Liang | perf kvm/riscv: Port perf kvm stat to RISC-V |
-| [23dbcebc](https://github.com/RVCK-Project/rvck/commit/23dbcebcd237bb92ffde1075ac35a5e368ef9f69) | 2024-04-22 | Shenlin Liang | RISCV: KVM: add tracepoints for entry and exit events |
-| [efa6cbcb](https://github.com/RVCK-Project/rvck/commit/efa6cbcb6b3145879f35fac47cc79e027f05d956) | 2024-06-21 | Huaming | defconfig:th1520: enable cma config |
-| [70400a2e](https://github.com/RVCK-Project/rvck/commit/70400a2e56406dc3c072ba8bea58d80af84df23c) | 2024-09-06 | Guo Ren | riscv: mm: Add support for Svinval extension |
-| [6ddd0e42](https://github.com/RVCK-Project/rvck/commit/6ddd0e4281ce3b2ea89cb5b1b41a2b7f90837467) | 2024-09-04 | Guo Ren | riscv: Add ACLINT SSWI support |
-| [12318968](https://github.com/RVCK-Project/rvck/commit/123189681073462b4971bef1ffb7e4cc44bad8b8) | 2024-07-29 | forain | drm: Fix HDMI hot-plug problem |
-| [026a8f84](https://github.com/RVCK-Project/rvck/commit/026a8f8495c0a8a89e97ef20dad2c69e6b59c21f) | 2024-07-25 | Hao Li | gpu/drm: hdmi: Add hdmi debounce to enhance hdmi plugin/out stable |
-| [6d7aa7ad](https://github.com/RVCK-Project/rvck/commit/6d7aa7ad1f8caf65498d39e596a7fbceba12bfe2) | 2024-07-21 | David Li | audio: th1520: fixup compile warning of i2s driver |
-| [5545f027](https://github.com/RVCK-Project/rvck/commit/5545f02723ccca7285e63575f8952fa29cf2c94d) | 2024-07-12 | David Li | dmaengine: dw-axi-dmac: Add support for Xuantie TH1520 DMA |
-| [cd24cf6f](https://github.com/RVCK-Project/rvck/commit/cd24cf6f35ec6920412fb6a48ff9fa34aab9eb94) | 2024-07-04 | Chen Pei | arch:rsicv:select ARCH_HAS_DMA_WRITE_COMBINE |
-| [2d9437a2](https://github.com/RVCK-Project/rvck/commit/2d9437a25023f7ebc4ba12ea7ac64549ba604720) | 2024-07-01 | Xiangyi Zeng | drivers: pinctrl: correct th1520 audio i2c1 bit mapping table |
-| [e8e09a24](https://github.com/RVCK-Project/rvck/commit/e8e09a241152149bff57624ccbc46b9962fd4fd4) | 2024-06-30 | Huaming | driver:padctrl:correct th1520 gpio_1 24/25 cfg |
-| [322a8e82](https://github.com/RVCK-Project/rvck/commit/322a8e829103f2a7ed2b89a0c068148888423b0e) | 2024-07-04 | Xiangyi Zeng | dts: th1520: add adc vref-supply regulator |
-| [9bef5562](https://github.com/RVCK-Project/rvck/commit/9bef5562c03a06918c85951bb494bef7b71ecd1a) | 2024-07-04 | Xiangyi Zeng | dts: th1520: add cpu thermal node and device thermal node |
-| [e4f20517](https://github.com/RVCK-Project/rvck/commit/e4f205170adf38fdd36451ac0c72d4029f23ae49) | 2024-07-04 | Xiangyi Zeng | drivers: event: add macro definition to control SW_PANIC event |
-| [76f8f541](https://github.com/RVCK-Project/rvck/commit/76f8f541e26f7ea0759f01a45534d3b3ac202576) | 2024-06-28 | David Li | audio: th1520: enable soundcard feature |
-| [3d3d6ed8](https://github.com/RVCK-Project/rvck/commit/3d3d6ed82b8fc14a3761211cc0f9b886ebf5fe1b) | 2024-06-27 | David Li | audio: th1520: support audiosys pinctrl feature |
-| [cb00f962](https://github.com/RVCK-Project/rvck/commit/cb00f962c6f87b2e7122f1188ba5cb81172fe43a) | 2024-06-26 | Xiangyi Zeng | dts: th1520: fix interrupt number config error in dts |
-| [3b996522](https://github.com/RVCK-Project/rvck/commit/3b996522288bab104323397ad9625de08b6090a9) | 2024-06-24 | forain | DPU: add DPU driver for Lichee-Pi-4A board |
-| [173ea821](https://github.com/RVCK-Project/rvck/commit/173ea8210e23260b283e2bc596708ff66f3a027b) | 2024-06-23 | tingming | dts: th1520: add npu device node |
-| [6efaaf64](https://github.com/RVCK-Project/rvck/commit/6efaaf6400545197dd19f2d271765d0bdc2af1f2) | 2024-06-21 | David Li | codec: audio: add codec driver for Lichee-Pi-4A board |
-| [eee5bd7f](https://github.com/RVCK-Project/rvck/commit/eee5bd7f29e4f7b46af5601505cf96df9af651f2) | 2024-06-20 | Chen Pei | riscv: vector: Fix the boot issue compiled using xuantie-toolchain or upstream-t... |
-| [3531cdf3](https://github.com/RVCK-Project/rvck/commit/3531cdf30ee4ae7ae5f0be07f956cd634693b402) | 2024-06-19 | Esther Z | drivers: cpufreq: add cpufreq driver. |
-| [a6c9526a](https://github.com/RVCK-Project/rvck/commit/a6c9526a1b9cbf217bd1f2f20d2dcd07ca61cb2d) | 2024-06-18 | Esther Z | riscv: dts: Introduce lichee-pi-4a fixed regulator support. |
-| [2e542bb2](https://github.com/RVCK-Project/rvck/commit/2e542bb2ebfc62156b9bbc63a6fc83e5061c9f9b) | 2024-06-17 | zhangye | Enable XUANTIE ISA for memcpy performance |
-| [edcb9edb](https://github.com/RVCK-Project/rvck/commit/edcb9edbba7d576333aa0d147ed6fe1e6123f935) | 2024-03-27 | Chen Pei | riscv: build: Support compiling kernel using Xuantie toolchain |
-| [442725c6](https://github.com/RVCK-Project/rvck/commit/442725c63e99d0ec6322a2d8fa6d1fae9620be54) | 2024-06-17 | David Li | i2s: remove debug message |
-| [e47885f8](https://github.com/RVCK-Project/rvck/commit/e47885f82b494d9c065f9f3cbd0d83eb5b83df8d) | 2024-06-17 | Xiangyi Zeng | riscv:dts: fix the aon gpio range configuration error |
-| [52510caa](https://github.com/RVCK-Project/rvck/commit/52510caa3156bcc071d98e0943a3bc0582cd56ab) | 2024-06-17 | Xiangyi Zeng | riscv:dts: fix spi/qspi1 cs pin duplicate configuration error |
-| [7791afcf](https://github.com/RVCK-Project/rvck/commit/7791afcf198f182b019a7d8c5cbb835d60700e60) | 2024-06-17 | Xiangyi Zeng | riscv:dts: fix the gpio range configuration error |
-| [b4ba84f0](https://github.com/RVCK-Project/rvck/commit/b4ba84f05746bbde94e122ae2f506ebfc36e69f7) | 2024-06-16 | Esther Z | drivers: regulator: add th1520 AON virtual regulator control support. |
-| [8333e86b](https://github.com/RVCK-Project/rvck/commit/8333e86b48f072acd5392f093cc825b692a95d61) | 2024-06-16 | Esther Z | dt-bindings: add AON resource id headfile |
-| [ccb4aa58](https://github.com/RVCK-Project/rvck/commit/ccb4aa588b76ed5ad7b02c709a67e182eb3d04c7) | 2024-06-16 | Esther Z | drivers: pmdomain: support th1520 Power domain control. |
-| [5aa4bff5](https://github.com/RVCK-Project/rvck/commit/5aa4bff572ac8ca8000e4f14fdbb9bdb40583cd4) | 2024-06-15 | David Li | i2s: add i2s driver for XuanTie TH1520 SoC |
-| [ea90098b](https://github.com/RVCK-Project/rvck/commit/ea90098b638d172cec2f2a1af510ab1696d6545d) | 2024-06-15 | David Li | configs: xuantie: correct definition of SoC Architecture |
-| [4370b518](https://github.com/RVCK-Project/rvck/commit/4370b5183b11d0dda896b71b8614db17ebd8b781) | 2024-06-11 | lst | i2c: designware: add support for hcnt/lcnt got from dt |
-| [6ea7c193](https://github.com/RVCK-Project/rvck/commit/6ea7c193c58fe527d85042f26d61aee6d6d58ee1) | 2024-06-06 | Xiangyi Zeng | riscv:dts:thead: Add TH1520 event and watchdog device node |
-| [fff99582](https://github.com/RVCK-Project/rvck/commit/fff995823a4577da74aa44d5750f282be334137b) | 2024-06-06 | Xiangyi Zeng | dt-bindings:wdt: Add Documentation for THEAD TH1520 pmic watchdog |
-| [51a3fdd9](https://github.com/RVCK-Project/rvck/commit/51a3fdd97383e507357eaaac38b5368c17db46f4) | 2024-06-06 | Xiangyi Zeng | drivers/watchdog: Add THEAD TH1520 pmic watchdog driver |
-| [11e7141a](https://github.com/RVCK-Project/rvck/commit/11e7141a0204d37f04892139ecdcd6f8875b7adf) | 2024-06-06 | Xiangyi Zeng | dt-bindings:event: Add Documentation for THEAD TH1520 event driver |
-| [bd0149be](https://github.com/RVCK-Project/rvck/commit/bd0149beaf43a111028fe89a3db8d9efabcb3e3c) | 2024-06-06 | Xiangyi Zeng | drivers/soc/event: Add THEAD TH1520 event driver |
-| [f690f65b](https://github.com/RVCK-Project/rvck/commit/f690f65bfab485445b5bac5a606bae8aae37d71a) | 2024-06-05 | xianbing Zhu | net:stmmac: increase timeout for dma reset |
-| [1c5f00ee](https://github.com/RVCK-Project/rvck/commit/1c5f00eede978dc7c06fefc5840bfb80e5ea02ed) | 2024-06-05 | xianbing Zhu | stmmac:dwmac-thead: add support for suspend/resume feature |
-| [68ff26db](https://github.com/RVCK-Project/rvck/commit/68ff26db127cd2309378e72a64f93825fc2ef40a) | 2024-06-04 | xianbing Zhu | net:dwmac-thead: dd ptp clk set and enable |
-| [9dc7efec](https://github.com/RVCK-Project/rvck/commit/9dc7efec1f515cc844fece3a9d1e710b35067d46) | 2024-06-05 | Esther Z | configs: Enable th1520 mailbox. |
-| [fc91cd65](https://github.com/RVCK-Project/rvck/commit/fc91cd658168cf9cacc3f51547f51a63941d8649) | 2021-08-10 | fugang.duan | firmware: thead: c910_aon: add th1520 Aon protocol driver |
-| [0d0d5615](https://github.com/RVCK-Project/rvck/commit/0d0d5615328f45271970636c5063ddd04a80fb0d) | 2024-06-04 | xianbing Zhu | mmc:sdhci-of-dwcmshc: th1520 add delay line in different mode and sdio rxclk del... |
-| [6e2b76c7](https://github.com/RVCK-Project/rvck/commit/6e2b76c74b15c443cbe9fd1deba8cfa3bb21e0c3) | 2024-06-03 | xianbing Zhu | mmc:sdhci-of-dwcmshc: th1520 larger tuning max loop count to 128 |
-| [7d04d396](https://github.com/RVCK-Project/rvck/commit/7d04d3963ea451b8e69b343bf8d594c9794a889e) | 2024-05-31 | xianbing Zhu | dts: th1520: enable sdio1 for wifi card in lichee-pi-4a |
-| [f3f0dd88](https://github.com/RVCK-Project/rvck/commit/f3f0dd884f9fa0bb4d29f6b2483d8b915a85f1e5) | 2024-05-31 | xianbing Zhu | mmc:sdhci-of-dwcmshc: th1520 sdhci add fix io voltage 1v8 |
-| [632e0c09](https://github.com/RVCK-Project/rvck/commit/632e0c0977d19393f8cf019f473f8d5338fc86e1) | 2024-05-30 | xianbing Zhu | mmc:sdhci-of-dwcmshc: th1520 resolve accss rpmb error in hs400 |
-| [c2ee8431](https://github.com/RVCK-Project/rvck/commit/c2ee843198a6114da401418ee1ae156d9c357eee) | 2024-05-30 | Xiangyi Zeng | drivers/dmac: add pm suspend/resume for dma driver |
-| [8885fa99](https://github.com/RVCK-Project/rvck/commit/8885fa9946de27072f52b90e7cf226c9a7b74361) | 2023-08-21 | David Li | audio: th1520: add dma chan str for dmaengine |
-| [020ca59b](https://github.com/RVCK-Project/rvck/commit/020ca59b74bf96a67b5e6c8a3fb6c02559114a2e) | 2024-05-30 | Xiangyi Zeng | riscv: dts: thead: Add THEAD TH1520 dmac1 and dmac2 device node |
-| [545a54e6](https://github.com/RVCK-Project/rvck/commit/545a54e65198195b44e71a1d18af29630b58cf24) | 2023-08-22 | sanyi | STR: fix pca953x resume bug |
-| [260acd90](https://github.com/RVCK-Project/rvck/commit/260acd9026722119be41c1c49206c7a05aeb4800) | 2024-05-28 | Xiangyi Zeng | drivers/iio/adc: add sysfs_remove_file when adc driver removed |
-| [36e4816b](https://github.com/RVCK-Project/rvck/commit/36e4816bbd22de41b649d7d21b48057d75046f6d) | 2024-05-27 | Xiangyi Zeng | drivers/pvt: add mr75203 driver pm feature and correct temperature coefficient |
-| [736997ff](https://github.com/RVCK-Project/rvck/commit/736997ffe58a3bb32c936e60f3c4d61169a9fcef) | 2024-05-27 | Xiangyi Zeng | riscv: dts: thead: Add THEAD TH1520 SPI/QSPI device node |
-| [f14ed93b](https://github.com/RVCK-Project/rvck/commit/f14ed93b2ee247aa5eaf7057ce9f192ea39ea52b) | 2024-05-27 | Xiangyi Zeng | dt-bindings: spi/qspi: Add Documentation for THEAD TH1520 SPI/QSPI |
-| [5d5c7da2](https://github.com/RVCK-Project/rvck/commit/5d5c7da2cd3ebe0308962e4c82aea9dd7779f200) | 2024-05-27 | Xiangyi Zeng | drivers/spi: Add THEAD TH1520 QSPI driver |
-| [d9fd01f7](https://github.com/RVCK-Project/rvck/commit/d9fd01f7d2b46a25193b02a54fe64517b7456a66) | 2024-05-19 | Wei Fu | riscv: dts: thead: Add XuanTie TH1520 Mailbox device node |
-| [a4da68bd](https://github.com/RVCK-Project/rvck/commit/a4da68bd9e3bd2c6e508dea57007a07736e06ac5) | 2024-05-17 | Fugang Duan | mailbox: add XuanTie TH1520 Mailbox IPC driver |
-| [45febcf5](https://github.com/RVCK-Project/rvck/commit/45febcf5dead29f7e74499a1defefc816c4b9f83) | 2024-05-19 | Wei Fu | dt-bindings: mailbox: Add a binding file for XuanTie TH1520 Mailbox |
-| [733807e3](https://github.com/RVCK-Project/rvck/commit/733807e3fd58ecfa42d99c3bb8f44529ec881c82) | 2024-05-17 | Xiangyi Zeng | dt-bindings: adc: Add Documentation for THEAD TH1520 ADC |
-| [3963eaae](https://github.com/RVCK-Project/rvck/commit/3963eaaef55fabaafd468c1b9fd910d6ce6edc11) | 2024-05-17 | Xiangyi Zeng | riscv: dts: thead: Add THEAD TH1520 ADC device node |
-| [18c4497b](https://github.com/RVCK-Project/rvck/commit/18c4497bc2cbd0e9638228285447cd9f81ef3884) | 2024-05-17 | Xiangyi Zeng | drivers/iio/adc: Add THEAD TH1520 ADC driver |
-| [51c329d2](https://github.com/RVCK-Project/rvck/commit/51c329d24d32248fe4422bca8b36232c5b2f6b62) | 2024-06-29 | Chen Pei | riscv: ptrace: Fix ptrace using uninitialized riscv_v_vsize |
-| [ec633acf](https://github.com/RVCK-Project/rvck/commit/ec633acf6cb8c703aa089c9e71eef12fca88079e) | 2024-03-18 | Heiko Stuebner | T-Head C9xx cores implement an older version (0.7.1) of the vector specification... |
+| [7ef025ed](https://github.com/unicornx/rvck/commit/7ef025edefd37b029a839c2d8b9d44a650046a7c) | 2026-09-12 | ZhenXing Zhu | firmware: thead: th1520_event: make stubs static inline |
+| [33036c1d](https://github.com/unicornx/rvck/commit/33036c1d51b1087a60fea803be77258cf3c15deb) | 2026-08-31 | Zhiguo Zhu | riscv: rvck_defconfig: enable ZhiHe A210 drivers as modules |
+| [2be278e3](https://github.com/unicornx/rvck/commit/2be278e3abdff45fc25e6791c555acd32c3188b7) | 2026-08-18 | Zhiguo Zhu | riscv: dts: zhihe: add A210 power domains |
+| [3637f441](https://github.com/unicornx/rvck/commit/3637f441b0be82bad39c6f08706d07da998a19b8) | 2026-08-18 | Zhiguo Zhu | riscv: dts: zhihe: add A210 AON subsystem |
+| [3852d5b8](https://github.com/unicornx/rvck/commit/3852d5b8177e5fbbb2f3834a82feda3f69997d98) | 2026-08-18 | Zhiguo Zhu | riscv: dts: zhihe: add A210 pinctrl |
+| [3b772adb](https://github.com/unicornx/rvck/commit/3b772adbe1d544ccfd5056256a67070761099f54) | 2026-08-18 | Zhiguo Zhu | pmdomain: zhihe: add A210 power domain support |
+| [c39b5d99](https://github.com/unicornx/rvck/commit/c39b5d998060fc1438f575c59142159196ed7dc6) | 2026-08-27 | Zhiguo Zhu | dt-bindings: power: zhihe: add A210 power domains |
+| [f325c4d6](https://github.com/unicornx/rvck/commit/f325c4d6d2744871f29385802f76513d7f188970) | 2026-08-27 | Zhiguo Zhu | dt-bindings: clock: zhihe: add A210 CCU |
+| [58be5ef7](https://github.com/unicornx/rvck/commit/58be5ef7724863a3296d18ff8585ec4af5fd675e) | 2026-08-18 | Zhiguo Zhu | regulator: zhihe: add A210 AON regulator driver |
+| [cca30de4](https://github.com/unicornx/rvck/commit/cca30de4a619939788a90820c09fbb19fc061252) | 2026-08-18 | Zhiguo Zhu | firmware: zhihe: add A210 AON subsystem driver |
+| [c0c7d328](https://github.com/unicornx/rvck/commit/c0c7d3281c6d78d696497ba2d72f07ab5ba336c3) | 2026-08-18 | Zhiguo Zhu | mailbox: zhihe: add A210 mailbox controller driver |
+| [c7c9f326](https://github.com/unicornx/rvck/commit/c7c9f3266351037c820b2dcccf922a14702b6fb6) | 2026-08-27 | Zhiguo Zhu | dt-bindings: regulator: zhihe: add A210 AON regulator |
+| [21b04f50](https://github.com/unicornx/rvck/commit/21b04f50d7148c9cf68fa668ed7a7b9a67b261be) | 2026-08-27 | Zhiguo Zhu | dt-bindings: mailbox: zhihe: add A210 mailbox controller |
+| [781b0a4b](https://github.com/unicornx/rvck/commit/781b0a4bc145280b7a95878d89c8a74dc138adee) | 2026-08-27 | Zhiguo Zhu | dt-bindings: firmware: zhihe: add A210 AON subsystem |
+| [85a7b9ad](https://github.com/unicornx/rvck/commit/85a7b9ad391983cbcd4f01d2db211b89514aee8f) | 2026-08-18 | Zhiguo Zhu | pinctrl: zhihe: add A210 pinctrl driver |
+| [6c1baf38](https://github.com/unicornx/rvck/commit/6c1baf381d03ddffd4d671fa29c305b378c93ded) | 2026-08-18 | Zhiguo Zhu | dt-bindings: pinctrl: zhihe: add A210 pinctrl |
+| [9916733c](https://github.com/unicornx/rvck/commit/9916733cf6639c95c69e0f5574adf516915a52bb) | 2026-08-18 | Zhiguo Zhu | riscv: dts: zhihe: add A210 Ethernet controllers |
+| [1ddaa43b](https://github.com/unicornx/rvck/commit/1ddaa43b3c767d41806e3a14ecde6813cce65731) | 2026-08-18 | Zhiguo Zhu | net: stmmac: add ZhiHe A210 DWMAC glue layer |
+| [e1e97633](https://github.com/unicornx/rvck/commit/e1e976339911583ff51405d54d430ccddbdd2c70) | 2026-08-18 | Zhiguo Zhu | dt-bindings: net: zhihe: add A210 DWMAC |
+| [83e0349d](https://github.com/unicornx/rvck/commit/83e0349ded64af2753f7f1d89124166d1e28b6ec) | 2026-08-20 | Zhiguo Zhu | dt-bindings: mfd: syscon: add ZhiHe A210 GMAC syscon |
+| [037ab531](https://github.com/unicornx/rvck/commit/037ab53104ed4be2a47fddf2d9a0e2298d897fd8) | 2026-08-13 | Zhiguo Zhu | riscv: rvck_defconfig: enable ZhiHe A210 support |
+| [abe1c03c](https://github.com/unicornx/rvck/commit/abe1c03c41cd56b6f418bd4f60012b075edeca1d) | 2026-08-13 | Zhiguo Zhu | riscv: dts: add ZhiHe A210 device tree support |
+| [8f1b362f](https://github.com/unicornx/rvck/commit/8f1b362f43dce5a63b1dbd561cb059a880a82a5b) | 2026-08-13 | Zhiguo Zhu | irqchip/sifive-plic: add ZhiHe A210 PLIC support |
+| [12749a37](https://github.com/unicornx/rvck/commit/12749a37df12a03201b0157e0f657e63a7be3c4c) | 2026-08-11 | Zhiguo Zhu | mmc: sdhci-of-dwcmshc: add ZhiHe A210 support |
+| [f68c4453](https://github.com/unicornx/rvck/commit/f68c4453c0108a23d224384b666e3012ec58d2da) | 2026-08-13 | Zhiguo Zhu | reset: zhihe: add A210 reset controller driver |
+| [4e18fcdd](https://github.com/unicornx/rvck/commit/4e18fcdddbf43cd6f4ff22f4b9856f26c996aa0e) | 2026-08-13 | Zhiguo Zhu | clk: zhihe: add A210 clock controller driver |
+| [ee58af71](https://github.com/unicornx/rvck/commit/ee58af711f617d8e706372820bdcd3173e0307ad) | 2026-08-13 | Zhiguo Zhu | riscv: add Kconfig option for ZHIHE SoC family |
+| [9b613706](https://github.com/unicornx/rvck/commit/9b61370618b274afdeb60dd261db93b589c76a60) | 2026-08-13 | Zhiguo Zhu | dt-bindings: interrupt-controller: sifive,plic: add ZhiHe A210 |
+| [16cb40c1](https://github.com/unicornx/rvck/commit/16cb40c1bd1518215324fe7b06eb06b5ad7f4137) | 2026-08-11 | Zhiguo Zhu | dt-bindings: mmc: snps,dwcmshc: add ZhiHe A210 |
+| [2e851c31](https://github.com/unicornx/rvck/commit/2e851c318ca8427a0e311f44b5f3546ba42bbf35) | 2026-08-13 | Zhiguo Zhu | dt-bindings: reset: zhihe: add reset controller for A210 |
+| [160ce2ca](https://github.com/unicornx/rvck/commit/160ce2ca5fa4518bbffc0420a3fff326dfb95de2) | 2026-08-13 | Zhiguo Zhu | dt-bindings: clock: zhihe: add clock controller for A210 |
+| [56447c87](https://github.com/unicornx/rvck/commit/56447c874b7f5347bd298de1ecb27a47430aaefa) | 2026-08-13 | Zhiguo Zhu | dt-bindings: riscv: zhihe: Add A210 evaluation board |
+| [a9e0444f](https://github.com/unicornx/rvck/commit/a9e0444fbaefdabec10a4e196e595b063da66e53) | 2026-08-13 | Zhiguo Zhu | dt-bindings: vendor-prefixes: add ZhiHe |
+| [dc5ddbb7](https://github.com/unicornx/rvck/commit/dc5ddbb72d3aea85d16b94efa74df669d92e5778) | 2024-05-10 | Andy Chiu | riscv: vector: adjust minimum Vector requirement to ZVE32X |
+| [fa0470cc](https://github.com/unicornx/rvck/commit/fa0470cc240bf6ec60520c8846af5dc2e3e51066) | 2025-09-19 | Han Gao | riscv: dts: thead: add xtheadvector to the th1520 devicetree |
+| [830f6cc9](https://github.com/unicornx/rvck/commit/830f6cc9471fde4040330389b9a7750b150d2e7c) | 2025-11-19 | Sergey Matyukevich | riscv: dts: allwinner: d1: fix vlenb property |
+| [38e409a6](https://github.com/unicornx/rvck/commit/38e409a6f1fdeda6afc4ef940d54d16225b34300) | 2025-10-18 | Paul Walmsley | riscv: cpufeature: avoid uninitialized variable in has_thead_homogeneous_vlenb() |
+| [bee10d36](https://github.com/unicornx/rvck/commit/bee10d36b57456418a0922af47d9dfea8c9d2c9b) | 2025-05-23 | Han Gao | riscv: vector: Fix context save/restore with xtheadvector |
+| [299a6d34](https://github.com/unicornx/rvck/commit/299a6d34ff243df11236f1bd0492495cfa5cc667) | 2024-11-13 | Charlie Jenkins | selftests: riscv: Support xtheadvector in vector tests |
+| [283011cb](https://github.com/unicornx/rvck/commit/283011cb9c2e83cdcc1bc458aa4e06b81b6188ac) | 2024-11-13 | Charlie Jenkins | selftests: riscv: Fix vector tests |
+| [116314c5](https://github.com/unicornx/rvck/commit/116314c5afe2058b0b842a1e667ba0ac729c5f88) | 2024-11-13 | Charlie Jenkins | riscv: hwprobe: Document thead vendor extensions and xtheadvector extension |
+| [12f08c41](https://github.com/unicornx/rvck/commit/12f08c413b6d874585575c1c2948a5fffa2ada57) | 2024-11-13 | Charlie Jenkins | riscv: vector: Support xtheadvector save/restore |
+| [0e9f0614](https://github.com/unicornx/rvck/commit/0e9f0614b70207e80e6bf041306453c5237e99d9) | 2024-11-13 | Charlie Jenkins | riscv: Add xtheadvector instruction definitions |
+| [a292ab3c](https://github.com/unicornx/rvck/commit/a292ab3c621c8589e7a912b8f1a63cfc1af99f02) | 2024-11-13 | Charlie Jenkins | riscv: csr: Add CSR encodings for CSR_VXRM/CSR_VXSAT |
+| [81441c8f](https://github.com/unicornx/rvck/commit/81441c8f9b59e9e6826be009b46ca72668dd4cbe) | 2024-11-13 | Heiko Stuebner | RISC-V: define the elements of the VCSR vector CSR |
+| [387a084a](https://github.com/unicornx/rvck/commit/387a084a57adf1774b9f0d94f0b5a853d7e53b24) | 2024-11-13 | Charlie Jenkins | riscv: vector: Use vlenb from DT for thead |
+| [8057019a](https://github.com/unicornx/rvck/commit/8057019a0eff7c1c95e634e1982c0aa407f7554a) | 2024-11-13 | Charlie Jenkins | riscv: Add thead and xtheadvector as a vendor extension |
+| [6e886241](https://github.com/unicornx/rvck/commit/6e8862415e6b0efcb67219520f389a1f396068ed) | 2024-11-13 | Charlie Jenkins | riscv: dts: allwinner: Add xtheadvector to the D1/D1s devicetree |
+| [11a1f2d4](https://github.com/unicornx/rvck/commit/11a1f2d49dcf1f655f60fdc97f3fdc9347caebcd) | 2024-11-13 | Charlie Jenkins | dt-bindings: cpus: add a thead vlen register length property |
+| [18f2ee2a](https://github.com/unicornx/rvck/commit/18f2ee2acb5f6ed242567595a8167f3fee9d3f17) | 2024-11-13 | Charlie Jenkins | dt-bindings: riscv: Add xtheadvector ISA extension description |
+| [1ec6ebef](https://github.com/unicornx/rvck/commit/1ec6ebefc59259ea77e87de2ccb67488b4db49f2) | 2023-10-09 | Conor Dooley | riscv: dts: allwinner: convert isa detection to new properties |
+| [d58f8276](https://github.com/unicornx/rvck/commit/d58f8276a87d36c810980cc612a17f4457c3de61) | 2026-07-29 | ZhenXing Zhu | Revert "T-Head C9xx cores implement an older version (0.7.1) of the vector speci... |
+| [1e0ba5fd](https://github.com/unicornx/rvck/commit/1e0ba5fd0c6884f1f2536564aeb5ec38065d71e7) | 2026-07-29 | ZhenXing Zhu | Revert "riscv: xtheadvector: enable vector function" |
+| [9bcefcba](https://github.com/unicornx/rvck/commit/9bcefcba4585be0cd70dc95361237ca89f369d82) | 2026-07-29 | ZhenXing Zhu | Revert "xtheadvector: fix it used as v-ext when hwprobe is used" |
+| [617acf41](https://github.com/unicornx/rvck/commit/617acf4147a2b1f7caf179dff43765706419ec54) | 2026-07-29 | ZhenXing Zhu | Revert "fix: riscv: xtheadvector: fix setup_v_vsize" |
+| [58de2e6e](https://github.com/unicornx/rvck/commit/58de2e6ee7a8b5d043eb4f58bc61b210e5d6d147) | 2024-01-03 | Leonardo Bras | riscv: Introduce set_compat_task() in asm/compat.h |
+| [5b9c5b4b](https://github.com/unicornx/rvck/commit/5b9c5b4b4e8dd84a91232a4676bfb507c6b3b3b5) | 2024-01-03 | Leonardo Bras | riscv: Introduce is_compat_thread() into compat.h |
+| [6b4eddac](https://github.com/unicornx/rvck/commit/6b4eddac787933d71c561323e6acc2fbf35d87e8) | 2024-01-03 | Leonardo Bras | riscv: add compile-time test into is_compat_task() |
+| [3f3f92d9](https://github.com/unicornx/rvck/commit/3f3f92d9d035696cf9918db407fdaf044f4ce23f) | 2024-01-03 | Leonardo Bras | riscv: Replace direct thread flag check with is_compat_task() |
+| [7d603de8](https://github.com/unicornx/rvck/commit/7d603de8ae29f13e4c091d65610635432d1adf3d) | 2024-10-16 | Samuel Holland | KVM: riscv: selftests: Add Smnpm and Ssnpm to get-reg-list test |
+| [b225dbef](https://github.com/unicornx/rvck/commit/b225dbefe4d8a4acfdcb2d06f6bf6dc648637d66) | 2024-10-16 | Samuel Holland | riscv: selftests: Add a pointer masking test |
+| [5c165c42](https://github.com/unicornx/rvck/commit/5c165c424502f45cdbd80b5cacf7adcb7fc5f633) | 2024-10-16 | Samuel Holland | riscv: Allow ptrace control of the tagged address ABI |
+| [2330a3ad](https://github.com/unicornx/rvck/commit/2330a3ad258e57c890b3669f9949530b6f703417) | 2024-10-16 | Samuel Holland | riscv: Add support for the tagged address ABI |
+| [54d8313c](https://github.com/unicornx/rvck/commit/54d8313c9eba0e4469985c04dcda31662691f0df) | 2024-10-16 | Samuel Holland | riscv: Add support for userspace pointer masking |
+| [e010f144](https://github.com/unicornx/rvck/commit/e010f144e70ab27d2d02ca23014aa3b27976bbe1) | 2024-10-16 | Samuel Holland | riscv: Add CSR definitions for pointer masking |
+| [6337a537](https://github.com/unicornx/rvck/commit/6337a537ddbdab10e9c1e2b37ca6115ff1613003) | 2026-04-04 | Charlie Jenkins | selftests: riscv: Add license to cfi selftest |
+| [2aec0482](https://github.com/unicornx/rvck/commit/2aec04824feb568053099b7c99eb38aa8589b473) | 2026-04-04 | Paul Walmsley | prctl: cfi: change the branch landing pad prctl()s to be more descriptive |
+| [b541f271](https://github.com/unicornx/rvck/commit/b541f271fce88a1caa1a5e8560047076f2cdc6cc) | 2026-04-04 | Zong Li | riscv: cfi: clear CFI lock status in start_thread() |
+| [c9fb99a9](https://github.com/unicornx/rvck/commit/c9fb99a9df94c5da5334f0910d96289216904ce2) | 2026-04-04 | Paul Walmsley | riscv: ptrace: cfi: expand "SS" references to "shadow stack" in uapi headers |
+| [5ccdb9de](https://github.com/unicornx/rvck/commit/5ccdb9de56aafef422d8c09ab0710dd9944a0136) | 2026-04-04 | Paul Walmsley | prctl: rename branch landing pad implementation functions to be more explicit |
+| [1e11ec8a](https://github.com/unicornx/rvck/commit/1e11ec8a153687aad16bc4ac81254aeb178b2559) | 2026-04-04 | Paul Walmsley | riscv: ptrace: expand "LP" references to "branch landing pads" in uapi headers |
+| [07ca5c73](https://github.com/unicornx/rvck/commit/07ca5c73aa753b2fbcb29ebe6da1eae5920a6e93) | 2026-04-04 | Paul Walmsley | riscv: ptrace: cfi: fix "PRACE" typo in uapi header |
+| [fb03972a](https://github.com/unicornx/rvck/commit/fb03972a4ff266ec73144eaf78f9141945722e05) | 2026-04-02 | Paul Walmsley | riscv: use _BITUL macro rather than BIT() in ptrace uapi and kselftests |
+| [46a274a8](https://github.com/unicornx/rvck/commit/46a274a85093a351a4f2b31d8eecf291c3784b08) | 2026-01-25 | Deepak Gupta | kselftest/riscv: add kselftest for user mode CFI |
+| [cdcf3c1a](https://github.com/unicornx/rvck/commit/cdcf3c1ae4818493eb359aa69ca080ad95176b2c) | 2026-01-25 | Deepak Gupta | riscv: add documentation for shadow stack |
+| [2a80d94e](https://github.com/unicornx/rvck/commit/2a80d94e2fcf0b307d38d9a0a3587decc31e3934) | 2026-01-25 | Deepak Gupta | riscv: add documentation for landing pad / indirect branch tracking |
+| [7a133fde](https://github.com/unicornx/rvck/commit/7a133fde60388df95151affb6424e0e2793772c5) | 2026-01-25 | Deepak Gupta | riscv: create a Kconfig fragment for shadow stack and landing pad support |
+| [61a7e3ca](https://github.com/unicornx/rvck/commit/61a7e3cafe338fbf716e066c8c751302a5489fab) | 2026-01-25 | Deepak Gupta | arch/riscv: add dual vdso creation logic and select vdso based on hw |
+| [6629fe51](https://github.com/unicornx/rvck/commit/6629fe51bbebc06582016e5ba14f77a2807c7934) | 2026-01-25 | Jim Shu | arch/riscv: compile vdso with landing pad and shadow stack note |
+| [b3183fd2](https://github.com/unicornx/rvck/commit/b3183fd21e9660dd33ec9253ea1b7cd0ed90afd8) | 2024-10-16 | Alexandre Ghiti | riscv: Check that vdso does not contain any dynamic relocations |
+| [3430505e](https://github.com/unicornx/rvck/commit/3430505e83c977179dc6f0980f246f3eba9ce8e1) | 2026-01-25 | Deepak Gupta | riscv: enable kernel access to shadow stack memory via the FWFT SBI call |
+| [e5f057a6](https://github.com/unicornx/rvck/commit/e5f057a6fc1c7d69763a09472f786a507ab83e01) | 2026-01-25 | Deepak Gupta | riscv: add kernel command line option to opt out of user CFI |
+| [30fe8423](https://github.com/unicornx/rvck/commit/30fe84235acdf2a820be2761136fa97083e96fff) | 2026-01-25 | Deepak Gupta | riscv/hwprobe: add zicfilp / zicfiss enumeration in hwprobe |
+| [4540050d](https://github.com/unicornx/rvck/commit/4540050d729495f546ede6b67ef679e65171cd1d) | 2026-01-25 | Paul Walmsley | riscv: hwprobe: add support for RISCV_HWPROBE_KEY_IMA_EXT_1 |
+| [70ea7ffe](https://github.com/unicornx/rvck/commit/70ea7ffee66169c10837b38bbe903b5625979c2e) | 2026-01-25 | Deepak Gupta | riscv/ptrace: expose riscv CFI status and state via ptrace and in core files |
+| [e47f7f8c](https://github.com/unicornx/rvck/commit/e47f7f8c4d16a8db4355f2019e1c4665671c6077) | 2026-01-25 | Deepak Gupta | riscv/kernel: update __show_regs() to print shadow stack register |
+| [42004816](https://github.com/unicornx/rvck/commit/420048163e36a9fd471d2bc700872a2f2591c913) | 2026-01-25 | Deepak Gupta | riscv/signal: save and restore the shadow stack on a signal |
+| [ff0505af](https://github.com/unicornx/rvck/commit/ff0505af7fbd487690845700988c8510e7991965) | 2026-01-25 | Deepak Gupta | riscv/traps: Introduce software check exception and uprobe handling |
+| [24183f85](https://github.com/unicornx/rvck/commit/24183f85c150511a6ffc6a63ec5313c23e64b0c1) | 2026-01-25 | Deepak Gupta | riscv: Implement indirect branch tracking prctls |
+| [c47ba593](https://github.com/unicornx/rvck/commit/c47ba5934f350985550a2357a862d616a542f22c) | 2026-01-25 | Deepak Gupta | prctl: add arch-agnostic prctl()s for indirect branch tracking |
+| [6bc53eed](https://github.com/unicornx/rvck/commit/6bc53eeda7d6c88a947cb59ac91ec3406866a6e5) | 2024-10-01 | Mark Brown | mman: Add map_shadow_stack() flags |
+| [cd97afe1](https://github.com/unicornx/rvck/commit/cd97afe16ecf8e42e586bbce0c0edace62d4cf5a) | 2024-10-01 | Mark Brown | prctl: arch-agnostic prctl for shadow stack |
+| [8b3c78e6](https://github.com/unicornx/rvck/commit/8b3c78e6efd535f1549517bf11bb919eb2e705e6) | 2026-01-25 | Deepak Gupta | riscv: Implement arch-agnostic shadow stack prctls |
+| [dfdd12c6](https://github.com/unicornx/rvck/commit/dfdd12c659746894aca28ebbbdfe1d765849ecf7) | 2026-01-25 | Deepak Gupta | riscv/shstk: If needed allocate a new shadow stack on clone |
+| [d77037d9](https://github.com/unicornx/rvck/commit/d77037d9586941f3d5a309f7376e411cb1d36aec) | 2026-01-25 | Deepak Gupta | riscv/mm: Implement map_shadow_stack() syscall |
+| [cf0f89cd](https://github.com/unicornx/rvck/commit/cf0f89cd3ea0bc9c6be6a9cd4daf0735eddeabaa) | 2026-01-25 | Deepak Gupta | riscv/mm: update write protect to work on shadow stacks |
+| [71dc6640](https://github.com/unicornx/rvck/commit/71dc6640505aefc52f86754d95deeceec6ead4da) | 2026-01-25 | Deepak Gupta | riscv/mm: teach pte_mkwrite to manufacture shadow stack PTEs |
+| [a829a245](https://github.com/unicornx/rvck/commit/a829a2450f7f932313aed42e555a5f57c9738fa9) | 2026-01-25 | Deepak Gupta | riscv/mm: manufacture shadow stack ptes |
+| [cd8207d7](https://github.com/unicornx/rvck/commit/cd8207d741d0ffd07044b86de9f8ba26c785e4c2) | 2026-01-25 | Deepak Gupta | riscv/mm: ensure PROT_WRITE leads to VM_READ \| VM_WRITE |
+| [bd7596c9](https://github.com/unicornx/rvck/commit/bd7596c9f88b12e3baddf1bfef18fb799bfbc32c) | 2026-01-25 | Deepak Gupta | riscv: Add usercfi state for task and save/restore of CSR_SSP on trap entry/exit |
+| [b17648d4](https://github.com/unicornx/rvck/commit/b17648d4278d9de926451d7dcd648c24cf2c1442) | 2026-01-25 | Deepak Gupta | riscv: add Zicfiss / Zicfilp extension CSR and bit definitions |
+| [18f8995d](https://github.com/unicornx/rvck/commit/18f8995d5d1b0753f1144021b55fe03fb0d1ef8c) | 2026-01-25 | Deepak Gupta | riscv: zicfiss / zicfilp enumeration |
+| [e917051f](https://github.com/unicornx/rvck/commit/e917051f296ac42a0aed7fa787d1c9d28fde424f) | 2026-01-25 | Deepak Gupta | dt-bindings: riscv: document zicfilp and zicfiss in extensions.yaml |
+| [272405d0](https://github.com/unicornx/rvck/commit/272405d03ca4465bb5ac553722804de02cbd700f) | 2026-01-25 | Deepak Gupta | mm: add VM_SHADOW_STACK definition for riscv |
+| [64a6ccb5](https://github.com/unicornx/rvck/commit/64a6ccb5bc649007700f344bfdd09edc53fcc2f2) | 2024-04-27 | Masahiro Yamada | kbuild: use $(obj)/ instead of $(src)/ for common pattern rules |
+| [e470b35a](https://github.com/unicornx/rvck/commit/e470b35a0f43cd256e247e5c2d46a158cb64da6c) | 2024-03-13 | Vladimir Isaev | riscv: hwprobe: do not produce frtace relocation |
+| [d23ca62d](https://github.com/unicornx/rvck/commit/d23ca62dfa59fe267d8c55eb35dd381d492fabb7) | 2025-03-20 | Charlie Jenkins | riscv: entry: Split ret_from_fork() into user and kernel |
+| [e48d8d6e](https://github.com/unicornx/rvck/commit/e48d8d6e0430bcc3cab05ed7255942f0b4c788fc) | 2025-03-20 | Charlie Jenkins | riscv: entry: Convert ret_from_fork() to C |
+| [9bda5cd2](https://github.com/unicornx/rvck/commit/9bda5cd24dee0a5e05d785a0384c44e14ddcd969) | 2025-04-11 | Xi Ruoyao | RISC-V: vDSO: Wire up getrandom() vDSO implementation |
+| [aaef10a7](https://github.com/unicornx/rvck/commit/aaef10a7b77868d5f6f320536efc7da0be4ffc08) | 2024-08-22 | Christophe Leroy | random: vDSO: add missing c-getrandom-y in Makefile |
+| [2583a3ea](https://github.com/unicornx/rvck/commit/2583a3eacc9ae964b60c48b831dbd7c434835e25) | 2025-11-12 | Andy Chiu | riscv: signal: abstract header saving for setup_sigcontext |
+| [c6065885](https://github.com/unicornx/rvck/commit/c6065885bae4a4cb158b17d31d9333f312e63ba5) | 2023-09-14 | Sohil Mehta | arch: Reserve map_shadow_stack() syscall number for all architectures |
+| [7c3410ba](https://github.com/unicornx/rvck/commit/7c3410ba700f631fff94bf10eb315b85cb87a758) | 2026-06-04 | ZhenXing Zhu | soc: thead: adapt AON drivers to new th1520-aon protocol API |
+| [5ca6dd1f](https://github.com/unicornx/rvck/commit/5ca6dd1f045da5c39d577793c942e49d582721a1) | 2026-06-04 | ZhenXing Zhu | drivers/soc/event: Add THEAD TH1520 event driver |
+| [2600a246](https://github.com/unicornx/rvck/commit/2600a246e17ecbdf8e700854c4bda88a151bda5d) | 2026-06-04 | ZhenXing Zhu | drivers/watchdog: Add THEAD TH1520 pmic watchdog driver |
+| [4040c5d0](https://github.com/unicornx/rvck/commit/4040c5d01799799d51e541443de256a1c0c41d97) | 2026-06-03 | ZhenXing Zhu | riscv: dts: th1520: add watchdog nodes for reboot support |
+| [649576dd](https://github.com/unicornx/rvck/commit/649576dd134a2c3975b00103ffe6c2ed25018e5a) | 2026-06-03 | ZhenXing Zhu | riscv: th1520: lpi4a: fix fan not spinning |
+| [c9a1a040](https://github.com/unicornx/rvck/commit/c9a1a0409fb55dab344ef77deae368c59934d356) | 2026-06-03 | ZhenXing Zhu | riscv: defconfig: th1520: fix DWMAC config symbol for ethernet |
+| [69695ea8](https://github.com/unicornx/rvck/commit/69695ea88eecadac7fec5a408067df2adf393898) | 2024-04-19 | Robin Murphy | dma-mapping: Simplify arch_setup_dma_ops() |
+| [21bf6cc1](https://github.com/unicornx/rvck/commit/21bf6cc1d95f6d57894f96165db08e125c42855f) | 2024-04-19 | Robin Murphy | iommu/dma: Centralise iommu_setup_dma_ops() |
+| [a2dd19f3](https://github.com/unicornx/rvck/commit/a2dd19f3b0c2d8ba058bdae128802f85330bd398) | 2024-04-19 | Robin Murphy | iommu/dma: Make limit checks self-contained |
+| [cd3ac894](https://github.com/unicornx/rvck/commit/cd3ac894e07d5e472823376e0a6267af0e88ab8c) | 2024-04-19 | Robin Murphy | dma-mapping: Add helpers for dma_range_map bounds |
+| [b1a667b6](https://github.com/unicornx/rvck/commit/b1a667b6ef182a3162998df5da359f7bae54569f) | 2024-04-19 | Robin Murphy | ACPI/IORT: Handle memory address size limits as limits |
+| [2bfce299](https://github.com/unicornx/rvck/commit/2bfce2998e8a121ec00cdbe49b6d8cf67a5b13eb) | 2024-04-19 | Robin Murphy | OF: Simplify DMA range calculations |
+| [e1793496](https://github.com/unicornx/rvck/commit/e17934960ada7067ef40ee89700838a9cbd58638) | 2024-04-19 | Robin Murphy | OF: Retire dma-ranges mask workaround |
+| [973d8828](https://github.com/unicornx/rvck/commit/973d8828ae09127c8a9acac1a883f0d017e5cfe5) | 2024-01-22 | Haibo Xu | KVM: selftests: Add CONFIG_64BIT definition for the build |
+| [3b3a97e9](https://github.com/unicornx/rvck/commit/3b3a97e9c0b5ad30a449f2245489be55f963604b) | 2024-06-03 | Andrew Jones | KVM: selftests: Fix RISC-V compilation |
+| [f9d56549](https://github.com/unicornx/rvck/commit/f9d565490f9d6271a8f87555ef1517c158ff01d0) | 2026-05-29 | ZhenXing Zhu | KVM: riscv: selftests: Move sbi definitions to its own header file |
+| [f39805f9](https://github.com/unicornx/rvck/commit/f39805f9715468b4f0e35960a59d573806c14405) | 2026-05-29 | ZhenXing Zhu | Revert "KVM: riscv: selftests: Move sbi definitions to its own header file" |
+| [916f7904](https://github.com/unicornx/rvck/commit/916f790469f7322172b67044cd715d69320ee882) | 2025-06-26 | Michal Wilczynski | riscv: dts: thead: th1520: Add GPU clkgen reset to AON node |
+| [c6a67673](https://github.com/unicornx/rvck/commit/c6a67673b72eccb14d0ea854ffc83ff992c31b25) | 2025-03-03 | Michal Wilczynski | reset: thead: Add TH1520 reset controller driver |
+| [c3eb79a7](https://github.com/unicornx/rvck/commit/c3eb79a718d417b97715ddabcb9ec01271a8df39) | 2025-03-03 | Michal Wilczynski | dt-bindings: reset: Add T-HEAD TH1520 SoC Reset Controller |
+| [ad02dda2](https://github.com/unicornx/rvck/commit/ad02dda2debdc7bca6c9fc8da8a698a448e831cf) | 2026-03-12 | ZhenXing Zhu | Revert "dt-bindings: reset: Document th1520 reset control" |
+| [1204084c](https://github.com/unicornx/rvck/commit/1204084ce71f4a6f76803700a3a13338383eb8ac) | 2026-03-12 | ZhenXing Zhu | Revert "reset: Add th1520 reset driver support" |
+| [d9d05871](https://github.com/unicornx/rvck/commit/d9d0587147ea531beacc16886662895d66a7695c) | 2026-03-12 | ZhenXing Zhu | Revert "reset: th1520: to support npu/fce reset feature" |
+| [2c436608](https://github.com/unicornx/rvck/commit/2c436608964a8c243b85e19681ec1145eb297569) | 2026-04-20 | ZhenXing Zhu | riscv: dts: thead: Fix aon node for OpenSBI compatibility |
+| [62c8c66d](https://github.com/unicornx/rvck/commit/62c8c66deec50b0703537b2eae9e014a19ba1dd6) | 2026-04-17 | ZhenXing Zhu | clk: Kconfig: Restore thead clock driver Kconfig inclusion |
+| [7488da3e](https://github.com/unicornx/rvck/commit/7488da3e0405cbf61877524093a61cf65cac4007) | 2026-03-12 | ZhenXing Zhu | Revert "riscv:dts:thead: Add TH1520 event and watchdog device node" |
+| [d935097b](https://github.com/unicornx/rvck/commit/d935097ba82549175e72d798ce9c997148c96e08) | 2026-03-12 | ZhenXing Zhu | Revert "i2s: add i2s driver for XuanTie TH1520 SoC" |
+| [f1e916e8](https://github.com/unicornx/rvck/commit/f1e916e88cb52a34a27ecd7461dfabc1dbcac9c5) | 2026-03-12 | ZhenXing Zhu | Revert "audio: th1520: add tdm driver for XuanTie TH1520 SoC" |
+| [39b20a69](https://github.com/unicornx/rvck/commit/39b20a69596886b2acbb52d9ac24eaeeee7ad428) | 2026-03-12 | ZhenXing Zhu | Revert "dts: audio: to support i2s-8ch feature" |
+| [6c6c5205](https://github.com/unicornx/rvck/commit/6c6c52054e634930910b549f68c7a2d71fe49ed2) | 2026-03-12 | ZhenXing Zhu | Revert "audio: th1520: to support tdm/spdif feature" |
+| [fddb012f](https://github.com/unicornx/rvck/commit/fddb012fb92a5eee994b5ffa36a81f43fa728315) | 2025-02-19 | Michal Wilczynski | riscv: dts: thead: Introduce power domain nodes with aon firmware |
+| [ef2ec69d](https://github.com/unicornx/rvck/commit/ef2ec69dfb2dc49674c63ffcdf515c89dcc80b62) | 2024-02-08 | Krzysztof Kozlowski | pmdomain: core: constify of_phandle_args in xlate |
+| [c137dbb1](https://github.com/unicornx/rvck/commit/c137dbb148e08406b629466dd9c77c76881c97d7) | 2025-03-11 | Michal Wilczynski | dt-bindings: power: Add TH1520 SoC power domains |
+| [8f305488](https://github.com/unicornx/rvck/commit/8f3054884373142881bfb4c081dcb6d9303f9bb8) | 2023-09-11 | Ulf Hansson | pmdomain: Prepare to move Kconfig files into the pmdomain subsystem |
+| [96b96c70](https://github.com/unicornx/rvck/commit/96b96c70d23c31d3b9568d6a74fb489a6006dac9) | 2025-03-14 | Arnd Bergmann | pmdomain: thead: fix TH1520_AON_PROTOCOL dependency |
+| [96ec591e](https://github.com/unicornx/rvck/commit/96ec591e0181a74887deaf307e9c9ddc7d77add2) | 2025-03-11 | Michal Wilczynski | pmdomain: thead: Add power-domain driver for TH1520 |
+| [6d3ee292](https://github.com/unicornx/rvck/commit/6d3ee292bba6a1d871825d9ca83e3b99d54b522f) | 2025-03-11 | Michal Wilczynski | firmware: thead: Add AON firmware protocol driver |
+| [8488c23a](https://github.com/unicornx/rvck/commit/8488c23a5bfd6bd13370a8b0fc3cd508dca9b7cd) | 2026-03-11 | ZhenXing Zhu | Revert "regdump:add regdump support for lpi4a and light-a && rename some dts nam... |
+| [a7e8cc49](https://github.com/unicornx/rvck/commit/a7e8cc49981a467d2e3692c3b652a4c026f9aae9) | 2026-03-11 | ZhenXing Zhu | Revert "drivers/soc/event: Add THEAD TH1520 event driver" |
+| [ae30ee58](https://github.com/unicornx/rvck/commit/ae30ee58611b44262e760525edc2412232f6a661) | 2026-03-11 | ZhenXing Zhu | Revert "add c906 audio support" |
+| [b37e31dd](https://github.com/unicornx/rvck/commit/b37e31ddcaf96d22c5db0e03701487d8bb57e42b) | 2026-03-11 | ZhenXing Zhu | Revert "drivers: regulator: add th1520 AON virtual regulator control support." |
+| [e10ea672](https://github.com/unicornx/rvck/commit/e10ea6727432bc52fd537fd14c8f1f78dfbf257b) | 2026-03-10 | ZhenXing Zhu | Revert "drivers/watchdog: Add THEAD TH1520 pmic watchdog driver" |
+| [baf6bd9a](https://github.com/unicornx/rvck/commit/baf6bd9abd39fb82753f15dd483d627494fb0d39) | 2026-03-10 | ZhenXing Zhu | Revert "firmware: thead: c910_aon: add th1520 Aon protocol driver" |
+| [5ddfb9a2](https://github.com/unicornx/rvck/commit/5ddfb9a28535eb450950ad2612d71f6e16ee7441) | 2026-03-10 | ZhenXing Zhu | Revert "drivers: cpufreq: add cpufreq driver." |
+| [124dd988](https://github.com/unicornx/rvck/commit/124dd9883fde14a8c5b94c9f6b894a498f50c59e) | 2026-03-10 | ZhenXing Zhu | Revert "dts: th1520: to modify rvbook dts" |
+| [29cebba7](https://github.com/unicornx/rvck/commit/29cebba731f0fb4e2f72ddee05be361fdc0af20e) | 2026-03-10 | ZhenXing Zhu | Revert "audio: th1520: add soundcard dts node of th1520-a-val board" |
+| [21d3fca6](https://github.com/unicornx/rvck/commit/21d3fca6a47b0c0a3a69e8b0bbb83271232cc3fe) | 2026-03-10 | ZhenXing Zhu | Revert "dts:th1520-a: add th1520-a-val.dts and th1520-a-val-sec.dts" |
+| [e21f4240](https://github.com/unicornx/rvck/commit/e21f4240c8fa544e1790e9867d9cb5284fa0af0a) | 2026-03-10 | ZhenXing Zhu | Revert "drivers: pmdomain: support th1520 Power domain control." |
+| [4df0f1d8](https://github.com/unicornx/rvck/commit/4df0f1d8c85a6faa1cfaea5030bcdee361d35c2c) | 2026-03-10 | ZhenXing Zhu | Revert "dts: add GPU device node" |
+| [766c4d48](https://github.com/unicornx/rvck/commit/766c4d4848fe0c116525f9b0adad598ec6f9175c) | 2026-03-10 | ZhenXing Zhu | Revert "dts: th1520: add cpu thermal node and device thermal node" |
+| [d4b2fbc9](https://github.com/unicornx/rvck/commit/d4b2fbc9b3a820216340ea95e6e1625924059a47) | 2026-03-10 | ZhenXing Zhu | Revert "dts: th1520: add npu device node" |
+| [e960af43](https://github.com/unicornx/rvck/commit/e960af43e371ab2769478ace4c5b5ab8e2c2743b) | 2026-03-10 | ZhenXing Zhu | Revert "dts: th1520: to add npu device node" |
+| [5ca056ee](https://github.com/unicornx/rvck/commit/5ca056ee3e8f3c17e840c0fc3469e747772cabd9) | 2026-03-10 | ZhenXing Zhu | Revert "dts: th1520: add th1520-a-val-crash.dts and th1520-lpi4a-product-crash.d... |
+| [704b8baa](https://github.com/unicornx/rvck/commit/704b8baa99f761ed062daf8a6a6e19a2f08cccb5) | 2026-03-10 | ZhenXing Zhu | Revert "dts: th1520: add cpu thermal node and device thermal node" |
+| [748af2cc](https://github.com/unicornx/rvck/commit/748af2ccfef518f2d0f60efd27131c05ca8ff6bd) | 2026-03-10 | ZhenXing Zhu | Revert "dtb:lipi:enable VI module config" |
+| [8ba4a21e](https://github.com/unicornx/rvck/commit/8ba4a21ea3bc7a9f62162fdbb8765ac9313ff458) | 2026-03-10 | ZhenXing Zhu | Revert "dts: th1520: add vdec venc and video mem device node" |
+| [4609e89a](https://github.com/unicornx/rvck/commit/4609e89a5e0c65acdff1f392387348d181330787) | 2026-03-10 | ZhenXing Zhu | Revert "chore: use xuantie instead of thead" |
+| [27e284c4](https://github.com/unicornx/rvck/commit/27e284c4a9731ac37b89e2a4dabb80645ee5991c) | 2023-09-21 | Yu Chien Peter Lin | riscv: Introduce NAPOT field to PTDUMP |
+| [2c4c1440](https://github.com/unicornx/rvck/commit/2c4c144002d70749d672263d36f27383bcbc4906) | 2023-09-21 | Yu Chien Peter Lin | riscv: Introduce PBMT field to PTDUMP |
+| [29f99b6a](https://github.com/unicornx/rvck/commit/29f99b6a2c8ca3a690438cf88ffc230dfac26b72) | 2023-09-21 | Yu Chien Peter Lin | riscv: Improve PTDUMP to show RSW with non-zero value |
+| [d042103f](https://github.com/unicornx/rvck/commit/d042103f790affb596c812d786fa8644c0bef7c5) | 2024-04-20 | Atish Patra | KVM: riscv: selftests: Add commandline option for SBI PMU test |
+| [ea1c755d](https://github.com/unicornx/rvck/commit/ea1c755d276e431a4c294ba52a4492dafa072652) | 2024-04-20 | Atish Patra | KVM: riscv: selftests: Add a test for counter overflow |
+| [cac4119d](https://github.com/unicornx/rvck/commit/cac4119dad68b4df040c10656643ff119d550171) | 2024-04-20 | Atish Patra | KVM: riscv: selftests: Add a test for PMU snapshot functionality |
+| [faff089c](https://github.com/unicornx/rvck/commit/faff089cc91ee97e4c76c975d17b81800b135b26) | 2024-04-20 | Atish Patra | KVM: riscv: selftests: Add SBI PMU selftest |
+| [a4d8ceac](https://github.com/unicornx/rvck/commit/a4d8ceac0969dfad69f8891a35c8b32cbc9504b8) | 2024-04-20 | Atish Patra | KVM: riscv: selftests: Add SBI PMU extension definitions |
+| [a13fb217](https://github.com/unicornx/rvck/commit/a13fb2174710bd06dad320676aad35a01519d573) | 2024-04-20 | Atish Patra | KVM: riscv: selftests: Add Sscofpmf to get-reg-list test |
+| [6c4314e0](https://github.com/unicornx/rvck/commit/6c4314e0b3bf61d6fc7e3d2dba0644d392c021fc) | 2024-04-20 | Atish Patra | KVM: riscv: selftests: Add helper functions for extension checks |
+| [4c713332](https://github.com/unicornx/rvck/commit/4c7133323d13bdc63a6c077441a0b2c38bb2abe2) | 2024-04-20 | Atish Patra | KVM: riscv: selftests: Move sbi definitions to its own header file |
+| [b1085331](https://github.com/unicornx/rvck/commit/b108533106e56daf856d7656619ca18f4a670add) | 2024-01-22 | Haibo Xu | KVM: riscv: selftests: Add sstc timer test |
+| [f7e9dbbc](https://github.com/unicornx/rvck/commit/f7e9dbbcfbf2e627341c6cfcbfa0c13a29531b5c) | 2024-01-22 | Haibo Xu | KVM: riscv: selftests: Change vcpu_has_ext to a common function |
+| [4b08b137](https://github.com/unicornx/rvck/commit/4b08b137cd42b54e50d44cead24907ba13ebab51) | 2024-01-22 | Haibo Xu | KVM: riscv: selftests: Add guest helper to get vcpu id |
+| [d56230e4](https://github.com/unicornx/rvck/commit/d56230e475666dc86b2a7f655fb5293a6b900dd3) | 2024-01-22 | Haibo Xu | KVM: riscv: selftests: Add exception handling support |
+| [7407f836](https://github.com/unicornx/rvck/commit/7407f836c1a4569ac7ccd3dfad36cba5945b0615) | 2024-01-22 | Haibo Xu | KVM: arm64: selftests: Split arch_timer test code |
+| [98806dbc](https://github.com/unicornx/rvck/commit/98806dbc91b39d7dca3b24b1b0df8018d53b5d1c) | 2024-01-22 | Paolo Bonzini | selftests/kvm: Fix issues with $(SPLIT_TESTS) |
+| [ef5b29d9](https://github.com/unicornx/rvck/commit/ef5b29d9a539b1c814a7d40ceb58b03219b85c6a) | 2024-04-20 | Atish Patra | RISC-V: KVM: Improve firmware counter read function |
+| [2c07f0d7](https://github.com/unicornx/rvck/commit/2c07f0d76505c26f567efbb29b1dafb396e54377) | 2024-04-20 | Atish Patra | RISC-V: KVM: Support 64 bit firmware counters on RV32 |
+| [b639a556](https://github.com/unicornx/rvck/commit/b639a5561bc979ade4cdd285a2667d78c2e4f6b1) | 2024-04-20 | Atish Patra | RISC-V: KVM: Add perf sampling support for guests |
+| [fb755544](https://github.com/unicornx/rvck/commit/fb7555446c8380573f44cb2bfb2f7d03b927c0bd) | 2024-04-20 | Atish Patra | RISC-V: KVM: Implement SBI PMU Snapshot feature |
+| [72c59d43](https://github.com/unicornx/rvck/commit/72c59d43492a4da7a97c2b406951dac1798021fe) | 2024-04-20 | Atish Patra | RISC-V: KVM: No need to exit to the user space if perf event failed |
+| [8bcecc27](https://github.com/unicornx/rvck/commit/8bcecc27a7ac3db31c28bee4d45daa4fe7c3580a) | 2024-04-20 | Atish Patra | RISC-V: KVM: No need to update the counter value during reset |
+| [dd078689](https://github.com/unicornx/rvck/commit/dd078689eff64dbce2793800c3f5735dcd5ce544) | 2024-04-20 | Atish Patra | drivers/perf: riscv: Implement SBI PMU snapshot function |
+| [ca7504ae](https://github.com/unicornx/rvck/commit/ca7504ae79be1db30c351fc817cf93f2e6f7cbfc) | 2024-04-20 | Atish Patra | drivers/perf: riscv: Fix counter mask iteration for RV32 |
+| [77f8772f](https://github.com/unicornx/rvck/commit/77f8772f18c1939b8f838ae83bcbc10a49922ae0) | 2024-04-20 | Atish Patra | RISC-V: Use the minor version mask while computing sbi version |
+| [122df8ef](https://github.com/unicornx/rvck/commit/122df8ef593f820ca28a17edfb05c677772eeeb5) | 2024-04-20 | Atish Patra | RISC-V: KVM: Rename the SBI_STA_SHMEM_DISABLE to a generic name |
+| [aeb2742f](https://github.com/unicornx/rvck/commit/aeb2742f18b4e9e0bf9bed286741a2c120512181) | 2024-04-20 | Atish Patra | RISC-V: Add SBI PMU snapshot definitions |
+| [35e6e642](https://github.com/unicornx/rvck/commit/35e6e64236017318f38abb9011f7ec32de4aac47) | 2024-04-20 | Atish Patra | drivers/perf: riscv: Use BIT macro for shifting operations |
+| [64f63400](https://github.com/unicornx/rvck/commit/64f6340065b4e7bcca9f3dfe108a7c40c71ad741) | 2024-04-20 | Atish Patra | drivers/perf: riscv: Read upper bits of a firmware counter |
+| [dc7513b9](https://github.com/unicornx/rvck/commit/dc7513b9fa3336d39e8f4662e4a57b8e90da9fb6) | 2024-04-20 | Atish Patra | RISC-V: Add FIRMWARE_READ_HI definition |
+| [48bc3a74](https://github.com/unicornx/rvck/commit/48bc3a745a4653a957b19a4b433888a1b0d835ec) | 2024-04-20 | Atish Patra | RISC-V: Fix the typo in Scountovf CSR name |
+| [7cb0909a](https://github.com/unicornx/rvck/commit/7cb0909a2ca45d3950be53e56b33039895887901) | 2023-12-20 | Andrew Jones | RISC-V: KVM: selftests: Add get-reg-list test for STA registers |
+| [9170ea74](https://github.com/unicornx/rvck/commit/9170ea7408698ef6303dc873ae11f6a9fc1c9c6f) | 2023-12-20 | Andrew Jones | RISC-V: KVM: selftests: Add steal_time test support |
+| [c3e4d91f](https://github.com/unicornx/rvck/commit/c3e4d91fbc5ce746507a21876b63f672de8367a1) | 2023-12-20 | Andrew Jones | RISC-V: KVM: selftests: Add guest_sbi_probe_extension |
+| [a811945f](https://github.com/unicornx/rvck/commit/a811945f62d912bd7f264f0cfb295df8047307a2) | 2023-12-20 | Andrew Jones | RISC-V: KVM: selftests: Move sbi_ecall to processor.c |
+| [3330176a](https://github.com/unicornx/rvck/commit/3330176ad6269af36df8db3bd8c338ae943b4885) | 2023-12-20 | Andrew Jones | RISC-V: KVM: Implement SBI STA extension |
+| [534cb89c](https://github.com/unicornx/rvck/commit/534cb89c4e3d61c576f6a4cb2170531fa531b831) | 2023-12-20 | Andrew Jones | RISC-V: KVM: Add support for SBI STA registers |
+| [699f6401](https://github.com/unicornx/rvck/commit/699f64019a48f9b4f7c4cc786ca097d3035a800c) | 2023-12-20 | Andrew Jones | RISC-V: KVM: Add support for SBI extension registers |
+| [a7727a28](https://github.com/unicornx/rvck/commit/a7727a285d8a7539f75cb0bc94fa404f6a6d1aee) | 2023-12-20 | Andrew Jones | RISC-V: KVM: Add SBI STA info to vcpu_arch |
+| [503a8148](https://github.com/unicornx/rvck/commit/503a814801ab3e3a427bc00ef34694a3366d214b) | 2023-12-20 | Andrew Jones | RISC-V: KVM: Add steal-update vcpu request |
+| [bff6669e](https://github.com/unicornx/rvck/commit/bff6669eadcecef751f5d3c10b935e1ab71364af) | 2023-12-20 | Andrew Jones | RISC-V: KVM: Add SBI STA extension skeleton |
+| [aa457853](https://github.com/unicornx/rvck/commit/aa4578537d7257aa9135766543cb5cd587277fdf) | 2023-12-20 | Andrew Jones | RISC-V: paravirt: Implement steal-time support |
+| [29f23bb7](https://github.com/unicornx/rvck/commit/29f23bb7bff2c864fd32a15a31be7cf1d5061163) | 2023-12-20 | Andrew Jones | RISC-V: Add SBI STA extension definitions |
+| [a6ba8067](https://github.com/unicornx/rvck/commit/a6ba8067066989c85745eab91726963669182959) | 2023-12-20 | Andrew Jones | RISC-V: paravirt: Add skeleton for pv-time support |
+| [b6f8e3da](https://github.com/unicornx/rvck/commit/b6f8e3daf647b08723ddcbc4a37157aca0709f4e) | 2023-12-13 | Andrew Jones | KVM: riscv: selftests: Add RISCV_SBI_EXT_REG |
+| [65da94fb](https://github.com/unicornx/rvck/commit/65da94fb14029ab6a5f9c621e5af904c5ab7f1d7) | 2023-12-13 | Andrew Jones | RISC-V: KVM: Make SBI uapi consistent with ISA uapi |
+| [d88cca09](https://github.com/unicornx/rvck/commit/d88cca097ca949f3dbcd336dc12331bff8e0960d) | 2023-11-28 | Anup Patel | KVM: riscv: selftests: Generate ISA extension reg_list using macros |
+| [ab8f3a2e](https://github.com/unicornx/rvck/commit/ab8f3a2edf407e1e7d01a6c18b435cc8ff41eac8) | 2023-10-19 | Thomas Huth | KVM: selftests: Use TAP in the steal_time test |
+| [734d1cd1](https://github.com/unicornx/rvck/commit/734d1cd1212cd8f422bcc2bcbd604c18e2669f62) | 2023-09-20 | Andrew Jones | KVM: riscv: selftests: get-reg-list print_reg should never fail |
+| [4b9b89c0](https://github.com/unicornx/rvck/commit/4b9b89c0df8cdccbe80e522dae00dfdf918a7591) | 2023-08-17 | Andrew Jones | KVM: selftests: Add array order helpers to riscv get-reg-list |
+| [a7423235](https://github.com/unicornx/rvck/commit/a742323549469fae792f17149f236f6d2e089d95) | 2024-01-22 | Haibo Xu | KVM: riscv: selftests: Switch to use macro from csr.h |
+| [6eb70c7a](https://github.com/unicornx/rvck/commit/6eb70c7a79c7e27fb41a2d968a457b6008df510f) | 2024-01-22 | Haibo Xu | tools: riscv: Add header file vdso/processor.h |
+| [7ec73a36](https://github.com/unicornx/rvck/commit/7ec73a363a3311b868ce5749df6a4e715f0ec35b) | 2024-01-22 | Haibo Xu | tools: riscv: Add header file csr.h |
+| [971267ff](https://github.com/unicornx/rvck/commit/971267ffa05ad6bd22eaa633176f488c92872103) | 2024-11-08 | Charlie Jenkins | riscv: Fix default misaligned access trap |
+| [231c400d](https://github.com/unicornx/rvck/commit/231c400d2d9caa45f956f2eb9cab274ca383d3b7) | 2025-12-06 | Eric Biggers | lib/crypto: riscv: Depend on RISCV_EFFICIENT_VECTOR_UNALIGNED_ACCESS |
+| [8c7bd6cc](https://github.com/unicornx/rvck/commit/8c7bd6cc528d33895fe503a1331ef5673491ce70) | 2025-03-04 | Andrew Jones | Documentation/kernel-parameters: Add riscv unaligned speed parameters |
+| [8b0d457f](https://github.com/unicornx/rvck/commit/8b0d457f7f209b93b5fc5159ac15a2906d4179a6) | 2025-03-04 | Andrew Jones | riscv: Add parameter for skipping access speed tests |
+| [32433411](https://github.com/unicornx/rvck/commit/324334115152c039ba5852a8775fc89e901a4f01) | 2025-03-04 | Andrew Jones | riscv: Fix set up of vector cpu hotplug callback |
+| [750d3ee7](https://github.com/unicornx/rvck/commit/750d3ee7852c95151005df68ed6f832e5ae4c183) | 2025-03-04 | Andrew Jones | riscv: Fix set up of cpu hotplug callbacks |
+| [61075a40](https://github.com/unicornx/rvck/commit/61075a40a1208decc03b2d35dca68bad38a8eb7f) | 2025-03-04 | Andrew Jones | riscv: Change check_unaligned_access_speed_all_cpus to void |
+| [f6b95f34](https://github.com/unicornx/rvck/commit/f6b95f34c62d100d4159c3d10bf9dbe3eda25911) | 2025-03-04 | Andrew Jones | riscv: Fix check_unaligned_access_all_cpus |
+| [8738d86e](https://github.com/unicornx/rvck/commit/8738d86eccb88a2ce33263bebd5b40e5915a639d) | 2025-03-04 | Andrew Jones | riscv: Fix riscv_online_cpu_vec |
+| [13e68d71](https://github.com/unicornx/rvck/commit/13e68d7195e4e7af9bd51ce0717cb85785534d62) | 2025-03-04 | Andrew Jones | riscv: Annotate unaligned access init functions |
+| [c406c056](https://github.com/unicornx/rvck/commit/c406c056b5cfdaea761774e5e8eb93169ea48188) | 2024-10-17 | Jesse Taube | RISC-V: hwprobe: Document unaligned vector perf key |
+| [65fdb23b](https://github.com/unicornx/rvck/commit/65fdb23b6915f7cad832c8e8d5d3d2cade12a31b) | 2024-10-17 | Jesse Taube | RISC-V: Report vector unaligned access speed hwprobe |
+| [f2d21bf8](https://github.com/unicornx/rvck/commit/f2d21bf8c8530be4a22049bd8d8cd2934eb9ff56) | 2024-10-17 | Jesse Taube | RISC-V: Detect unaligned vector accesses supported |
+| [8da52e58](https://github.com/unicornx/rvck/commit/8da52e58c0a145c8e00680c41202aed8e0b5b975) | 2024-10-17 | Jesse Taube | RISC-V: Replace RISCV_MISALIGNED with RISCV_SCALAR_MISALIGNED |
+| [05988015](https://github.com/unicornx/rvck/commit/059880156e645726802c7e84a2b4bbad759067a7) | 2024-10-17 | Jesse Taube | RISC-V: Scalar unaligned access emulated on hotplug CPUs |
+| [e9adf72d](https://github.com/unicornx/rvck/commit/e9adf72d2f34b2ad48411c0168c903d37b210bca) | 2024-10-17 | Jesse Taube | RISC-V: Check scalar unaligned access on all CPUs |
+| [eee31245](https://github.com/unicornx/rvck/commit/eee31245f466fbee5cdd76ad511ba60df5f407f7) | 2024-08-14 | Samuel Holland | riscv: misaligned: Restrict user access to kernel memory |
+| [6ebe9ab8](https://github.com/unicornx/rvck/commit/6ebe9ab864a857d7356351f7315dc9d83a38b11e) | 2024-08-09 | Evan Green | RISC-V: hwprobe: Add SCALAR to misaligned perf defines |
+| [0626f990](https://github.com/unicornx/rvck/commit/0626f990b236895da1d289264ba7a9e4b06d5aaa) | 2024-08-09 | Evan Green | RISC-V: hwprobe: Add MISALIGNED_PERF key |
+| [166a4aeb](https://github.com/unicornx/rvck/commit/166a4aeb49c9eab7312cdd9f8986a0a6e2f9b2c2) | 2024-03-17 | Xingyou Chen | riscv: typo in comment for get_f64_reg |
+| [7dc0664b](https://github.com/unicornx/rvck/commit/7dc0664b7b99916bfbbe7fa639e13cdfe5029b7b) | 2024-03-08 | Charlie Jenkins | riscv: Set unaligned access speed at compile time |
+| [c18bba99](https://github.com/unicornx/rvck/commit/c18bba9910ca39513035ad0ac049df432946d52e) | 2024-03-08 | Charlie Jenkins | riscv: Decouple emulated unaligned accesses from access speed |
+| [28dcde25](https://github.com/unicornx/rvck/commit/28dcde253e4353f8f586dcbbc94bb4ab1b3d7359) | 2024-03-08 | Charlie Jenkins | riscv: Only check online cpus for emulated accesses |
+| [b42e8159](https://github.com/unicornx/rvck/commit/b42e815972240455e6526184b37f115ec0ef513d) | 2024-03-08 | Charlie Jenkins | riscv: lib: Introduce has_fast_unaligned_access() |
+| [10055ae2](https://github.com/unicornx/rvck/commit/10055ae2fdd82f59e771c19932aa8f76b0b14e5b) | 2024-02-12 | Eric Biggers | crypto: riscv - add vector crypto accelerated AES-CBC-CTS |
+| [bc64c563](https://github.com/unicornx/rvck/commit/bc64c5631bb31851e84bea74f933f63e13393340) | 2024-02-06 | Clément Léger | riscv: misaligned: remove CONFIG_RISCV_M_MODE specific code |
+| [6114df0b](https://github.com/unicornx/rvck/commit/6114df0bf2a6580d5084d1c74b90098736e268a7) | 2024-01-08 | Charlie Jenkins | kunit: Add tests for csum_ipv6_magic and ip_fast_csum |
+| [99c3dffd](https://github.com/unicornx/rvck/commit/99c3dffdc5fd4af9a2e670ee8c87b97f2dc6d1d6) | 2024-01-08 | Charlie Jenkins | riscv: Add checksum library |
+| [3b95abed](https://github.com/unicornx/rvck/commit/3b95abed344c96298bd3d073ab152cef0bf3d5d7) | 2024-01-08 | Charlie Jenkins | riscv: Add checksum header |
+| [f42e0de3](https://github.com/unicornx/rvck/commit/f42e0de316b00aeabbaf8db084452cbacfb1f8f1) | 2024-01-08 | Charlie Jenkins | riscv: Add static key for misaligned accesses |
+| [7f78d99e](https://github.com/unicornx/rvck/commit/7f78d99e0c6a1135ae44768787a36f6451271b6f) | 2024-01-08 | Charlie Jenkins | asm-generic: Improve csum_fold |
+| [3d69e05d](https://github.com/unicornx/rvck/commit/3d69e05d1a6cc2bf5bde0ae3596c5f132fbde9fc) | 2023-12-25 | Jisheng Zhang | riscv: select DCACHE_WORD_ACCESS for efficient unaligned access HW |
+| [c8f9a157](https://github.com/unicornx/rvck/commit/c8f9a1575369520045dfa219f3c909add008131e) | 2023-12-25 | Jisheng Zhang | riscv: introduce RISCV_EFFICIENT_UNALIGNED_ACCESS |
+| [c71f9498](https://github.com/unicornx/rvck/commit/c71f9498482526ad4ccb2dc2d059fa0f7b49299a) | 2023-11-23 | Ben Dooks | riscv; fix __user annotation in save_v_state() |
+| [2c524778](https://github.com/unicornx/rvck/commit/2c524778fa22d76d3a2c0dc3ef9ee4ec952ae98e) | 2023-11-23 | Ben Dooks | riscv: fix __user annotation in traps_misaligned.c |
+| [a3e47e2f](https://github.com/unicornx/rvck/commit/a3e47e2f633c700a664bcb4194e5f57b68c9b6fc) | 2023-11-06 | Evan Green | RISC-V: Show accurate per-hart isa in /proc/cpuinfo |
+| [7c903145](https://github.com/unicornx/rvck/commit/7c903145d672a25243fd54fd1c97eff20cb12365) | 2026-02-02 | Chen Pei | Revert "riscv:uprobe: fix flush_icache to ensure that instructions are refreshed... |
+| [ad513845](https://github.com/unicornx/rvck/commit/ad513845d9ef090fe907756e9c752628d0544d42) | 2024-01-21 | Jerry Shih | crypto: riscv - add vector crypto accelerated SM4 |
+| [ad7f570a](https://github.com/unicornx/rvck/commit/ad7f570a00a0cc2fd1e7acf6b3b32bd5be4de67c) | 2024-01-21 | Jerry Shih | crypto: riscv - add vector crypto accelerated SM3 |
+| [018b2db4](https://github.com/unicornx/rvck/commit/018b2db4126669f60858a72613a52952f3cd185b) | 2024-01-21 | Jerry Shih | crypto: riscv - add vector crypto accelerated SHA-{512,384} |
+| [3f992fb6](https://github.com/unicornx/rvck/commit/3f992fb6f4c1f1f0e5452a100f1edceff79dd5e7) | 2024-01-21 | Jerry Shih | crypto: riscv - add vector crypto accelerated SHA-{256,224} |
+| [7be64440](https://github.com/unicornx/rvck/commit/7be64440994259db4e1ac80d0113f9561fe8aba9) | 2024-01-21 | Jerry Shih | crypto: riscv - add vector crypto accelerated GHASH |
+| [ab3e3e5b](https://github.com/unicornx/rvck/commit/ab3e3e5be86d66c86b6860b3c9ab2bf3161e234d) | 2024-01-21 | Jerry Shih | crypto: riscv - add vector crypto accelerated ChaCha20 |
+| [3f2d2615](https://github.com/unicornx/rvck/commit/3f2d2615ccd26b9414912838cb43766656684b03) | 2024-01-21 | Jerry Shih | crypto: riscv - add vector crypto accelerated AES-{ECB,CBC,CTR,XTS} |
+| [b4d0cb77](https://github.com/unicornx/rvck/commit/b4d0cb77a50f34332c132f1adb4cb2dfbee298f5) | 2024-01-21 | Heiko Stuebner | RISC-V: hook new crypto subdir into build-system |
+| [a5c985d4](https://github.com/unicornx/rvck/commit/a5c985d46919213a86afab4f75afe92c493dbe55) | 2024-01-21 | Eric Biggers | RISC-V: add TOOLCHAIN_HAS_VECTOR_CRYPTO |
+| [b0cdbbb5](https://github.com/unicornx/rvck/commit/b0cdbbb5d531fdf4fc27053736503023af59a504) | 2024-01-21 | Heiko Stuebner | RISC-V: add helper function to read the vector VLEN |
+| [837add73](https://github.com/unicornx/rvck/commit/837add730c3ef45756f1be627f6f930852a83687) | 2023-10-12 | Ian Rogers | perf pmu: Lazily compute default config |
+| [90f0a8f8](https://github.com/unicornx/rvck/commit/90f0a8f8906f2c470ae2b8a539d6f0fd0ba8da42) | 2023-10-12 | Ian Rogers | perf pmu-events: Remember the perf_events_map for a PMU |
+| [70e0e755](https://github.com/unicornx/rvck/commit/70e0e755146fd34acc909708dbe8ca8308075fff) | 2023-10-12 | Ian Rogers | perf pmu: Const-ify perf_pmu__config_terms |
+| [ac9611a9](https://github.com/unicornx/rvck/commit/ac9611a9df74ae7e90f05726bfe198d364de36c7) | 2023-10-12 | Ian Rogers | perf pmu: Const-ify file APIs |
+| [34a702d1](https://github.com/unicornx/rvck/commit/34a702d1599501f22d63fb5fc2d54fe3862a2a30) | 2023-10-12 | Ian Rogers | perf arm-spe: Move PMU initialization from default config code |
+| [8ca8cdfe](https://github.com/unicornx/rvck/commit/8ca8cdfea9202e148a2b4ce548cea145be0dfed1) | 2023-10-12 | Ian Rogers | perf intel-pt: Move PMU initialization from default config code |
+| [9da28d4f](https://github.com/unicornx/rvck/commit/9da28d4f9ce5f137747c185e39fe6973985da2cc) | 2023-10-12 | Ian Rogers | perf pmu: Rename perf_pmu__get_default_config to perf_pmu__arch_init |
+| [2897ef01](https://github.com/unicornx/rvck/commit/2897ef0123d46bedab6082c423cba2a3625a9565) | 2023-09-24 | Ian Rogers | perf pmus: Make PMU alias name loading lazy |
+| [1c9389b9](https://github.com/unicornx/rvck/commit/1c9389b95e12c1ea65b66a87749934e2ae3cbfce) | 2023-09-01 | Ian Rogers | perf parse-events: Introduce 'struct parse_events_terms' |
+| [059c2b65](https://github.com/unicornx/rvck/commit/059c2b65f0dcdbb3179ccf7bda328c7a5fd3df2b) | 2023-09-01 | Ian Rogers | perf parse-events: Copy fewer term lists |
+| [b51c7666](https://github.com/unicornx/rvck/commit/b51c76669272c4fe4003b5061da22d72061d2e84) | 2023-09-01 | Ian Rogers | perf parse-events: Avoid enum casts |
+| [77bb3542](https://github.com/unicornx/rvck/commit/77bb3542b34b63c930f9a46c736862d952ac3420) | 2023-09-01 | Ian Rogers | perf parse-events: Tidy up str parameter |
+| [db1e2d30](https://github.com/unicornx/rvck/commit/db1e2d305674636c68174ce1e9db55cff38957cc) | 2023-09-01 | Ian Rogers | perf parse-events: Remove unnecessary __maybe_unused |
+| [d1bd257d](https://github.com/unicornx/rvck/commit/d1bd257d0c48f79a27e3aea85edd06eadfa57fdb) | 2024-04-22 | Shenlin Liang | perf kvm/riscv: Port perf kvm stat to RISC-V |
+| [8e018be9](https://github.com/unicornx/rvck/commit/8e018be9648181d008f382934b5339ea0a3833d3) | 2024-04-22 | Shenlin Liang | RISCV: KVM: add tracepoints for entry and exit events |
+| [c281baff](https://github.com/unicornx/rvck/commit/c281baffce197fb70774ec3496be1ea2cc50ffa8) | 2024-06-21 | Huaming | defconfig:th1520: enable cma config |
+| [85ebbeaf](https://github.com/unicornx/rvck/commit/85ebbeaf33b49fd0e01e33f551d85b2ecdf585ba) | 2024-09-06 | Guo Ren | riscv: mm: Add support for Svinval extension |
+| [3ea68e28](https://github.com/unicornx/rvck/commit/3ea68e284dca22726247578384f832188bcf2739) | 2024-09-04 | Guo Ren | riscv: Add ACLINT SSWI support |
+| [afda97a8](https://github.com/unicornx/rvck/commit/afda97a8a8108453738f7b7988b7bda508ebc852) | 2024-07-29 | forain | drm: Fix HDMI hot-plug problem |
+| [ec842c65](https://github.com/unicornx/rvck/commit/ec842c6550ff0836c4bf8315e4f8adaf5558c882) | 2024-07-25 | Hao Li | gpu/drm: hdmi: Add hdmi debounce to enhance hdmi plugin/out stable |
+| [2efc5381](https://github.com/unicornx/rvck/commit/2efc5381e8fab8a3835da6051086c08e69e5121e) | 2024-07-21 | David Li | audio: th1520: fixup compile warning of i2s driver |
+| [d8efdaec](https://github.com/unicornx/rvck/commit/d8efdaecf7c82d3c9af18cd0eb7bd6c8a473a3b2) | 2024-07-12 | David Li | dmaengine: dw-axi-dmac: Add support for Xuantie TH1520 DMA |
+| [a0d92e98](https://github.com/unicornx/rvck/commit/a0d92e98f936353dce9be1f98131bbb30fdfb937) | 2024-07-04 | Chen Pei | arch:rsicv:select ARCH_HAS_DMA_WRITE_COMBINE |
+| [2b94074e](https://github.com/unicornx/rvck/commit/2b94074e4bc7b83e995748b1e70a30ff8e90c77f) | 2024-07-01 | Xiangyi Zeng | drivers: pinctrl: correct th1520 audio i2c1 bit mapping table |
+| [0e366296](https://github.com/unicornx/rvck/commit/0e366296320e69737b6c7236df4b6af96ee5dc91) | 2024-06-30 | Huaming | driver:padctrl:correct th1520 gpio_1 24/25 cfg |
+| [e10683f8](https://github.com/unicornx/rvck/commit/e10683f8d19cb7c0be0cd802366b83463cb82cdd) | 2024-07-04 | Xiangyi Zeng | dts: th1520: add adc vref-supply regulator |
+| [3b7a2493](https://github.com/unicornx/rvck/commit/3b7a249366428cb65ad208241ab4f4b4aeba1c1c) | 2024-07-04 | Xiangyi Zeng | dts: th1520: add cpu thermal node and device thermal node |
+| [baa3552b](https://github.com/unicornx/rvck/commit/baa3552b978ef61c3190739885ce8b710495965d) | 2024-07-04 | Xiangyi Zeng | drivers: event: add macro definition to control SW_PANIC event |
+| [03a582fa](https://github.com/unicornx/rvck/commit/03a582fabbbedfeda8ec5f7ef9740e76c8d417c6) | 2024-06-28 | David Li | audio: th1520: enable soundcard feature |
+| [516020a5](https://github.com/unicornx/rvck/commit/516020a5eb2aea445f086d227fc3152e7fa11d56) | 2024-06-27 | David Li | audio: th1520: support audiosys pinctrl feature |
+| [76c78522](https://github.com/unicornx/rvck/commit/76c785221b16aca20aac4c635372aedf8c01db78) | 2024-06-26 | Xiangyi Zeng | dts: th1520: fix interrupt number config error in dts |
+| [061d52b3](https://github.com/unicornx/rvck/commit/061d52b3cf56711afc17ffa294c811301404c29e) | 2024-06-24 | forain | DPU: add DPU driver for Lichee-Pi-4A board |
+| [d6fe1bc4](https://github.com/unicornx/rvck/commit/d6fe1bc405f4d498372f3e5bedbd9e555033061f) | 2024-06-23 | tingming | dts: th1520: add npu device node |
+| [c4f3398a](https://github.com/unicornx/rvck/commit/c4f3398a463935a158b2cfc9eafb5a8dbe27b703) | 2024-06-21 | David Li | codec: audio: add codec driver for Lichee-Pi-4A board |
+| [3a54839e](https://github.com/unicornx/rvck/commit/3a54839e88c82c6a4c97abd2be2f33fc8e748196) | 2024-06-20 | Chen Pei | riscv: vector: Fix the boot issue compiled using xuantie-toolchain or upstream-t... |
+| [f507d71b](https://github.com/unicornx/rvck/commit/f507d71b6f313477ea40b3e977e23f5473baade3) | 2024-06-19 | Esther Z | drivers: cpufreq: add cpufreq driver. |
+| [2250e20e](https://github.com/unicornx/rvck/commit/2250e20ebd7c240666d2ff82dcc8d574a88ecbfb) | 2024-06-18 | Esther Z | riscv: dts: Introduce lichee-pi-4a fixed regulator support. |
+| [42c7db94](https://github.com/unicornx/rvck/commit/42c7db94be58a627f90153886d74f06f8149fdb1) | 2024-06-17 | zhangye | Enable XUANTIE ISA for memcpy performance |
+| [85e43b38](https://github.com/unicornx/rvck/commit/85e43b38abf3047b554728c531a8adf95ea5e6a1) | 2024-03-27 | Chen Pei | riscv: build: Support compiling kernel using Xuantie toolchain |
+| [21429304](https://github.com/unicornx/rvck/commit/21429304637a74b343bf575ac71ab967b9dc7a0c) | 2024-06-17 | David Li | i2s: remove debug message |
+| [fc5e7618](https://github.com/unicornx/rvck/commit/fc5e76182dc13b8ae1903fb43d961c8a00104101) | 2024-06-17 | Xiangyi Zeng | riscv:dts: fix the aon gpio range configuration error |
+| [f70dc8cd](https://github.com/unicornx/rvck/commit/f70dc8cd017c1fbb3e46c93618908f92c01dc847) | 2024-06-17 | Xiangyi Zeng | riscv:dts: fix spi/qspi1 cs pin duplicate configuration error |
+| [6508471b](https://github.com/unicornx/rvck/commit/6508471b76f03dada732632c9831de6f8edef872) | 2024-06-17 | Xiangyi Zeng | riscv:dts: fix the gpio range configuration error |
+| [3b9bd4e7](https://github.com/unicornx/rvck/commit/3b9bd4e7ce69f890b0d520b8125abadc8d4bf1a2) | 2024-06-16 | Esther Z | drivers: regulator: add th1520 AON virtual regulator control support. |
+| [81218468](https://github.com/unicornx/rvck/commit/8121846809db60a20b830c3c692e0ccb8dfcfede) | 2024-06-16 | Esther Z | dt-bindings: add AON resource id headfile |
+| [269ec3f3](https://github.com/unicornx/rvck/commit/269ec3f312a9085db8e124e9261fef4d9a177b77) | 2024-06-16 | Esther Z | drivers: pmdomain: support th1520 Power domain control. |
+| [b406b57d](https://github.com/unicornx/rvck/commit/b406b57db05acaea70a7a336084c43f2b3c7cd39) | 2024-06-15 | David Li | i2s: add i2s driver for XuanTie TH1520 SoC |
+| [4cf4d42c](https://github.com/unicornx/rvck/commit/4cf4d42c8b59f3b68b6fa3dc4e3a6175610928a8) | 2024-06-15 | David Li | configs: xuantie: correct definition of SoC Architecture |
+| [da1f3192](https://github.com/unicornx/rvck/commit/da1f31927fb23f3347cdfcaab5d005c09191e173) | 2024-06-11 | lst | i2c: designware: add support for hcnt/lcnt got from dt |
+| [ef7c33b4](https://github.com/unicornx/rvck/commit/ef7c33b4b98ac010d5261bdfbfc1595c33fb71e8) | 2024-06-06 | Xiangyi Zeng | riscv:dts:thead: Add TH1520 event and watchdog device node |
+| [018157f0](https://github.com/unicornx/rvck/commit/018157f03303e533538b93b8777d33b39e8399a8) | 2024-06-06 | Xiangyi Zeng | dt-bindings:wdt: Add Documentation for THEAD TH1520 pmic watchdog |
+| [9713cd7d](https://github.com/unicornx/rvck/commit/9713cd7da1684804906f317e13e19e2cfca66660) | 2024-06-06 | Xiangyi Zeng | drivers/watchdog: Add THEAD TH1520 pmic watchdog driver |
+| [5c25f346](https://github.com/unicornx/rvck/commit/5c25f346f07e2a3eec618de18e9734990b93bfd2) | 2024-06-06 | Xiangyi Zeng | dt-bindings:event: Add Documentation for THEAD TH1520 event driver |
+| [aabce927](https://github.com/unicornx/rvck/commit/aabce92791918abcf833cb4a10fcc68e79bd3d3f) | 2024-06-06 | Xiangyi Zeng | drivers/soc/event: Add THEAD TH1520 event driver |
+| [bf51dbc2](https://github.com/unicornx/rvck/commit/bf51dbc26ce5f86be7aa9649b7f8f3ca0927738a) | 2024-06-05 | xianbing Zhu | net:stmmac: increase timeout for dma reset |
+| [6a097c65](https://github.com/unicornx/rvck/commit/6a097c652cfb8a070bcd655ded7fca3d80c8cc42) | 2024-06-05 | xianbing Zhu | stmmac:dwmac-thead: add support for suspend/resume feature |
+| [efd98840](https://github.com/unicornx/rvck/commit/efd98840d409d477afb8c42b264371236e430e16) | 2024-06-04 | xianbing Zhu | net:dwmac-thead: dd ptp clk set and enable |
+| [8ffb7665](https://github.com/unicornx/rvck/commit/8ffb7665a23c79530acfa39998b8af8f3fc8bb0a) | 2024-06-05 | Esther Z | configs: Enable th1520 mailbox. |
+| [8e06ffc0](https://github.com/unicornx/rvck/commit/8e06ffc079a24c68767bb4c9ed07698960b610d7) | 2021-08-10 | fugang.duan | firmware: thead: c910_aon: add th1520 Aon protocol driver |
+| [1adb3527](https://github.com/unicornx/rvck/commit/1adb3527732511ad996da7c339b03fe8e52fbcc4) | 2024-06-04 | xianbing Zhu | mmc:sdhci-of-dwcmshc: th1520 add delay line in different mode and sdio rxclk del... |
+| [22623955](https://github.com/unicornx/rvck/commit/22623955552c36e7057a820eb6b681fc344aa5ae) | 2024-06-03 | xianbing Zhu | mmc:sdhci-of-dwcmshc: th1520 larger tuning max loop count to 128 |
+| [e8b119e5](https://github.com/unicornx/rvck/commit/e8b119e55da312393cca1bd90be0acdfd0c41159) | 2024-05-31 | xianbing Zhu | dts: th1520: enable sdio1 for wifi card in lichee-pi-4a |
+| [adac9649](https://github.com/unicornx/rvck/commit/adac9649d0ac4545164d4baaef3021b653c64192) | 2024-05-31 | xianbing Zhu | mmc:sdhci-of-dwcmshc: th1520 sdhci add fix io voltage 1v8 |
+| [0478fa5c](https://github.com/unicornx/rvck/commit/0478fa5c6712a378aa539e14759699f1805ae9a2) | 2024-05-30 | xianbing Zhu | mmc:sdhci-of-dwcmshc: th1520 resolve accss rpmb error in hs400 |
+| [7c1b3ada](https://github.com/unicornx/rvck/commit/7c1b3ada9ad2fb5b54eb4feb7d364ee40c7c0750) | 2024-05-30 | Xiangyi Zeng | drivers/dmac: add pm suspend/resume for dma driver |
+| [2538c97d](https://github.com/unicornx/rvck/commit/2538c97ddcea1dfa49cb345175d58ef960a88b35) | 2023-08-21 | David Li | audio: th1520: add dma chan str for dmaengine |
+| [a7fcd7e8](https://github.com/unicornx/rvck/commit/a7fcd7e877fe91aa1d4c4183a0da3102a91871ef) | 2024-05-30 | Xiangyi Zeng | riscv: dts: thead: Add THEAD TH1520 dmac1 and dmac2 device node |
+| [bd6be006](https://github.com/unicornx/rvck/commit/bd6be0064ddaf5c92bf4342e0927ebb5f8cc8a85) | 2023-08-22 | sanyi | STR: fix pca953x resume bug |
+| [47d638fe](https://github.com/unicornx/rvck/commit/47d638fecb8cd44b329cc9b3e3df278ee3339324) | 2024-05-28 | Xiangyi Zeng | drivers/iio/adc: add sysfs_remove_file when adc driver removed |
+| [bc086151](https://github.com/unicornx/rvck/commit/bc0861515dda4eda3b9f35dbd2784df288385106) | 2024-05-27 | Xiangyi Zeng | drivers/pvt: add mr75203 driver pm feature and correct temperature coefficient |
+| [358a60ba](https://github.com/unicornx/rvck/commit/358a60baffe8d71607b808fd6cdcc0aff59f38dd) | 2024-05-27 | Xiangyi Zeng | riscv: dts: thead: Add THEAD TH1520 SPI/QSPI device node |
+| [a396b852](https://github.com/unicornx/rvck/commit/a396b852f4082d54acb2396d5af726b606ecb790) | 2024-05-27 | Xiangyi Zeng | dt-bindings: spi/qspi: Add Documentation for THEAD TH1520 SPI/QSPI |
+| [af7b2652](https://github.com/unicornx/rvck/commit/af7b265296c7a3916411aeff478cb22ea6a3e8ca) | 2024-05-27 | Xiangyi Zeng | drivers/spi: Add THEAD TH1520 QSPI driver |
+| [e9c5805e](https://github.com/unicornx/rvck/commit/e9c5805ec1f30cfd39f0ff1b4d0abb540b7a607e) | 2024-05-19 | Wei Fu | riscv: dts: thead: Add XuanTie TH1520 Mailbox device node |
+| [f298c8d9](https://github.com/unicornx/rvck/commit/f298c8d9a51e0e089e0f4b7f92b2f8451c520ab4) | 2024-05-17 | Fugang Duan | mailbox: add XuanTie TH1520 Mailbox IPC driver |
+| [ff65097c](https://github.com/unicornx/rvck/commit/ff65097cfa75af3c663a582b71e391de2c5c57b3) | 2024-05-19 | Wei Fu | dt-bindings: mailbox: Add a binding file for XuanTie TH1520 Mailbox |
+| [ba80255a](https://github.com/unicornx/rvck/commit/ba80255a26b5cd5e94ec72b10a9313265cf56861) | 2024-05-17 | Xiangyi Zeng | dt-bindings: adc: Add Documentation for THEAD TH1520 ADC |
+| [3fefcc38](https://github.com/unicornx/rvck/commit/3fefcc3837f588b9ccf86b8c6a61fc7f3a1059f2) | 2024-05-17 | Xiangyi Zeng | riscv: dts: thead: Add THEAD TH1520 ADC device node |
+| [8794a252](https://github.com/unicornx/rvck/commit/8794a252123eab9b4d8542570eb6042eda5fbefc) | 2024-05-17 | Xiangyi Zeng | drivers/iio/adc: Add THEAD TH1520 ADC driver |
+| [3e2dee30](https://github.com/unicornx/rvck/commit/3e2dee3011c91e6c86560d0d3d0e351bffe9ce33) | 2024-06-29 | Chen Pei | riscv: ptrace: Fix ptrace using uninitialized riscv_v_vsize |
+| [6c6e3235](https://github.com/unicornx/rvck/commit/6c6e32351389ae5c814321d4847ae3d9422a097c) | 2024-03-18 | Heiko Stuebner | T-Head C9xx cores implement an older version (0.7.1) of the vector specification... |
 ---
 
-**共 406 条提交（显示全部）**
+**共 351 条提交（显示全部）**
 
 [分页显示](阿里达摩院.md) | [纯文本视图](阿里达摩院_commits.txt)
 ## 🔙 返回
@@ -435,5 +380,5 @@
 
 ---
 
-*本页面最后更新于 2026-11-06 17:36:55*
-*数据来源: 主分支 rvck-6.6@dc246d68*
+*本页面最后更新于 2026-11-11 17:35:51*
+*数据来源: 主分支 rvck-6.6@0bee6ebb*
