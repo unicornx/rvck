@@ -4,7 +4,7 @@
 <p><strong>📊 统计信息</strong></p>
 <ul>
 <li><strong>贡献提交数</strong>: 579</li>
-<li><strong>统计时间</strong>: 2026-11-27 15:00:13</li>
+<li><strong>统计时间</strong>: 2026-11-28 09:00:24</li>
 <li><strong>主分支</strong>: rvck-6.6</li>
 <li><strong>起始标签</strong>: v6.6.161</li>
 </ul>
@@ -18,9 +18,9 @@
 
 | 提交哈希 | 日期 | 原始作者 | 标题 |
 |----------|------|----------|------|
-| [f6d6897e](https://github.com/unicornx/rvck/commit/f6d6897e5f4d9f65b4cb83aa671bb620ba57dc0f) | 2026-11-27 | Ben Dooks | [DROPPED] riscv: save the SR_SUM status over switches |
-| [f6dfb346](https://github.com/unicornx/rvck/commit/f6dfb346874442d01969b2eccac7713cc5564893) | 2026-11-27 | Atish Patra | [DROPPED] RISC-V: KVM: Teardown riscv specific bits after kvm_exit |
-| [5e0f239e](https://github.com/unicornx/rvck/commit/5e0f239ed05ea4ec14485118d2e6e1b25ea56907) | 2026-11-27 | Mayuresh Chitale | [DROPPED] RISC-V: KVM: Add kvm_vcpu_config |
+| [4c841fa3](https://github.com/unicornx/rvck/commit/4c841fa38ec98ad24fe5e3ca8b5d63681b0a4b6f) | 2026-11-28 | Ben Dooks | [DROPPED] riscv: save the SR_SUM status over switches |
+| [6445ca0a](https://github.com/unicornx/rvck/commit/6445ca0aebedb398849271bb30d0cb8f3789daef) | 2026-11-28 | Atish Patra | [DROPPED] RISC-V: KVM: Teardown riscv specific bits after kvm_exit |
+| [a3e0d90b](https://github.com/unicornx/rvck/commit/a3e0d90b94b8444bd894208975c2b00233166bd7) | 2026-11-28 | Mayuresh Chitale | [DROPPED] RISC-V: KVM: Add kvm_vcpu_config |
 | [849f8929](https://github.com/unicornx/rvck/commit/849f8929ef13fe8377297e888f264b0496459524) | 2025-09-10 | Chen Pei | ACPI: SPCR: Add support for DBG2 RISC-V SBI port subtype |
 | [c14fdee9](https://github.com/unicornx/rvck/commit/c14fdee9e5e6aaa8fb73a7d911eb6f8bfeebc43f) | 2025-10-24 | Punit Agrawal | ACPI: SPCR: Check for table version when using precise baudrate |
 | [16e749be](https://github.com/unicornx/rvck/commit/16e749be4492115729957b75911e872c184f418b) | 2025-09-13 | Chen Pei | ACPI: SPCR: Support Precise Baud Rate field |
@@ -608,5 +608,5 @@
 
 ---
 
-*本页面最后更新于 2026-11-27 15:00:13*
+*本页面最后更新于 2026-11-28 09:00:24*
 *数据来源: 主分支 rvck-6.6@b420239d*
